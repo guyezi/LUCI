@@ -43,3 +43,4 @@ function proto.contains_interface(self, ifc)
 end
 
 netmod:register_pattern_virtual("^vpn%-%w")
+

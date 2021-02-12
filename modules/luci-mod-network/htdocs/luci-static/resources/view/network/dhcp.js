@@ -31,15 +31,15 @@ CBILeaseStatus = form.DummyValue.extend({
 	renderWidget: function(section_id, option_id, cfgvalue) {
 		return E([
 			E('h4', _('Active DHCP Leases')),
-			E('table', { 'id': 'lease_status_table', 'class': 'table' }, [
-				E('tr', { 'class': 'tr table-titles' }, [
-					E('th', { 'class': 'th' }, _('Hostname')),
-					E('th', { 'class': 'th' }, _('IPv4-Address')),
-					E('th', { 'class': 'th' }, _('MAC-Address')),
-					E('th', { 'class': 'th' }, _('Lease time remaining'))
+			E('div', { 'id': 'lease_status_table', 'class': 'table' }, [
+				E('div', { 'class': 'tr table-titles' }, [
+					E('div', { 'class': 'th' }, _('Hostname')),
+					E('div', { 'class': 'th' }, _('IPv4-Address')),
+					E('div', { 'class': 'th' }, _('MAC-Address')),
+					E('div', { 'class': 'th' }, _('Lease time remaining'))
 				]),
-				E('tr', { 'class': 'tr placeholder' }, [
-					E('td', { 'class': 'td' }, E('em', _('Collecting data...')))
+				E('div', { 'class': 'tr placeholder' }, [
+					E('div', { 'class': 'td' }, E('em', _('Collecting data...')))
 				])
 			])
 		]);
@@ -50,15 +50,15 @@ CBILease6Status = form.DummyValue.extend({
 	renderWidget: function(section_id, option_id, cfgvalue) {
 		return E([
 			E('h4', _('Active DHCPv6 Leases')),
-			E('table', { 'id': 'lease6_status_table', 'class': 'table' }, [
-				E('tr', { 'class': 'tr table-titles' }, [
-					E('th', { 'class': 'th' }, _('Host')),
-					E('th', { 'class': 'th' }, _('IPv6-Address')),
-					E('th', { 'class': 'th' }, _('DUID')),
-					E('th', { 'class': 'th' }, _('Lease time remaining'))
+			E('div', { 'id': 'lease6_status_table', 'class': 'table' }, [
+				E('div', { 'class': 'tr table-titles' }, [
+					E('div', { 'class': 'th' }, _('Host')),
+					E('div', { 'class': 'th' }, _('IPv6-Address')),
+					E('div', { 'class': 'th' }, _('DUID')),
+					E('div', { 'class': 'th' }, _('Leasetime remaining'))
 				]),
-				E('tr', { 'class': 'tr placeholder' }, [
-					E('td', { 'class': 'td' }, E('em', _('Collecting data...')))
+				E('div', { 'class': 'tr placeholder' }, [
+					E('div', { 'class': 'td' }, E('em', _('Collecting data...')))
 				])
 			])
 		]);
@@ -189,7 +189,7 @@ return view.extend({
 			_('local <abbr title="Domain Name System">DNS</abbr> file'));
 
 		o.depends('noresolv', '0');
-		o.placeholder = '/tmp/resolv.conf.d/resolv.conf.auto';
+		o.placeholder = '/tmp/resolv.conf.auto';
 		o.optional = true;
 
 
@@ -280,13 +280,6 @@ return view.extend({
 		o.optional = true;
 		o.placeholder = '/example.org/10.1.2.3';
 		o.validate = validateServerSpec;
-
-
-		o = s.taboption('general', form.DynamicList, 'address', _('Addresses'),
-			_('List of domains to force to an IP address.'));
-
-		o.optional = true;
-		o.placeholder = '/router.local/192.168.0.1';
 
 
 		o = s.taboption('general', form.Flag, 'rebind_protection',
@@ -432,8 +425,11 @@ return view.extend({
 		so.datatype = 'list(unique(macaddr))';
 		so.rmempty  = true;
 		so.cfgvalue = function(section) {
-			var macs = L.toArray(uci.get('dhcp', section, 'mac')),
+			var macs = uci.get('dhcp', section, 'mac'),
 			    result = [];
+
+			if (!Array.isArray(macs))
+				macs = (macs != null && macs != '') ? macs.split(/\ss+/) : [];
 
 			for (var i = 0, mac; (mac = macs[i]) != null; i++)
 				if (/^([0-9a-fA-F]{1,2}):([0-9a-fA-F]{1,2}):([0-9a-fA-F]{1,2}):([0-9a-fA-F]{1,2}):([0-9a-fA-F]{1,2}):([0-9a-fA-F]{1,2})$/.test(mac))

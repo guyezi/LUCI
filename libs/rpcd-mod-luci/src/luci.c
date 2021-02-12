@@ -802,19 +802,11 @@ static bool rpc_luci_get_iwinfo(struct blob_buf *buf, const char *devname,
 	struct iwinfo_crypto_entry crypto = {};
 	struct iwinfo_hardware_id ids = {};
 	const struct iwinfo_ops *iw;
-	void *iwlib = NULL;
-	void *o, *o2, *a;
-	glob_t paths;
-	int nret, i;
+	void *iwlib, *o, *o2, *a;
+	int nret;
 
 	if (!iw_backend || !iw_close || !iw_modenames) {
-		if (glob("/usr/lib/libiwinfo.so*", 0, NULL, &paths) != 0)
-			return false;
-
-		for (i = 0; i < paths.gl_pathc && !iwlib; i++)
-			iwlib = dlopen(paths.gl_pathv[i], RTLD_LAZY | RTLD_LOCAL);
-
-		globfree(&paths);
+		iwlib = dlopen("libiwinfo.so", RTLD_LAZY | RTLD_LOCAL);
 
 		if (!iwlib)
 			return false;

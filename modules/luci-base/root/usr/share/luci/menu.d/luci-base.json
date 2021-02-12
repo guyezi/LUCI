@@ -32,6 +32,15 @@
 		}
 	},
 
+	"admin/vpn": {
+		"title": "VPN",
+		"order": 30,
+		"action": {
+			"type": "firstchild",
+			"recurse": true
+		}
+	},
+
 	"admin/services": {
 		"title": "Services",
 		"order": 40,
@@ -50,22 +59,15 @@
 		}
 	},
 
-	"admin/vpn": {
-		"title": "VPN",
-		"order": 70,
-		"action": {
-			"type": "firstchild",
-			"recurse": true
-		}
-	},
-
 	"admin/translations/*": {
 		"action": {
 			"type": "call",
 			"module": "luci.controller.admin.index",
 			"function": "action_translations"
 		},
-		"auth": {}
+		"auth": {
+			"methods": [ "cookie:sysauth" ]
+		}
 	},
 
 	"admin/ubus/*": {
@@ -84,9 +86,6 @@
 			"type": "call",
 			"module": "luci.controller.admin.index",
 			"function": "action_logout"
-		},
-		"depends": {
-			"acl": [ "luci-base" ]
 		}
 	},
 
@@ -147,6 +146,8 @@
 			"module": "luci.controller.admin.index",
 			"function": "action_menu"
 		},
-		"auth": {}
+		"auth": {
+			"methods": [ "cookie:sysauth" ]
+		}
 	}
 }

@@ -1,12 +1,12 @@
 msgid ""
 msgstr ""
-"Content-Type: text/plain; charset=UTF-8\n"
 "Project-Id-Version: PACKAGE VERSION\n"
 "PO-Revision-Date: 2019-01-09 06:58-0500\n"
 "Last-Translator: Daniel F. Dickinson <cshored@thecshore.com>\n"
 "Language-Team: English\n"
 "Language: en\n"
 "MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
@@ -150,10 +150,6 @@ msgstr "Global Settings"
 msgid "Go to NUT CGI"
 msgstr "Go to NUT CGI"
 
-#: applications/luci-app-nut/root/usr/share/rpcd/acl.d/luci-app-nut.json:3
-msgid "Grant UCI access for luci-app-nut"
-msgstr ""
-
 #: applications/luci-app-nut/luasrc/model/cbi/nut_cgi.lua:16
 msgid "Host"
 msgstr "Host"
@@ -224,12 +220,7 @@ msgstr "Max USB HID Length Reported"
 msgid "Maximum Age of Data"
 msgstr "Maximum Age of Data"
 
-#: applications/luci-app-nut/luasrc/model/cbi/nut_server.lua:91
-msgid "Maximum Retries"
-msgstr "Maximum Retries"
-
 #: applications/luci-app-nut/luasrc/model/cbi/nut_server.lua:87
-#: applications/luci-app-nut/luasrc/model/cbi/nut_server.lua:158
 msgid "Maximum Start Delay"
 msgstr "Maximum Start Delay"
 
@@ -244,6 +235,14 @@ msgstr "Maximum number of times to try starting a driver."
 #: applications/luci-app-nut/luasrc/model/cbi/nut_server.lua:101
 msgid "Maximum time in seconds between refresh of UPS status"
 msgstr "Maximum time in seconds between refresh of UPS status"
+
+#: applications/luci-app-nut/luasrc/model/cbi/nut_server.lua:91
+msgid "Maxium Retries"
+msgstr "Maxium Retries"
+
+#: applications/luci-app-nut/luasrc/model/cbi/nut_server.lua:158
+msgid "Maxium Start Delay"
+msgstr "Maxium Start Delay"
 
 #: applications/luci-app-nut/luasrc/model/cbi/nut_monitor.lua:17
 msgid "Minimum required number or power supplies"
@@ -266,22 +265,22 @@ msgstr "NUT Users"
 msgid "Name of UPS"
 msgstr "Name of UPS"
 
-#: applications/luci-app-nut/root/usr/share/luci/menu.d/luci-app-nut.json:3
+#: applications/luci-app-nut/luasrc/controller/nut.lua:11
 msgid "Network UPS Tools"
 msgstr "Network UPS Tools"
 
+#: applications/luci-app-nut/luasrc/controller/nut.lua:22
 #: applications/luci-app-nut/luasrc/model/cbi/nut_cgi.lua:6
-#: applications/luci-app-nut/root/usr/share/luci/menu.d/luci-app-nut.json:44
 msgid "Network UPS Tools (CGI)"
 msgstr "Network UPS Tools (CGI)"
 
+#: applications/luci-app-nut/luasrc/controller/nut.lua:18
 #: applications/luci-app-nut/luasrc/model/cbi/nut_monitor.lua:7
-#: applications/luci-app-nut/root/usr/share/luci/menu.d/luci-app-nut.json:31
 msgid "Network UPS Tools (Monitor)"
 msgstr "Network UPS Tools (Monitor)"
 
+#: applications/luci-app-nut/luasrc/controller/nut.lua:14
 #: applications/luci-app-nut/luasrc/model/cbi/nut_server.lua:9
-#: applications/luci-app-nut/root/usr/share/luci/menu.d/luci-app-nut.json:18
 msgid "Network UPS Tools (Server)"
 msgstr "Network UPS Tools (Server)"
 
@@ -602,6 +601,3 @@ msgstr "chroot"
 #: applications/luci-app-nut/luasrc/model/cbi/nut_monitor.lua:14
 msgid "upsmon drops privileges to this user"
 msgstr "upsmon drops privileges to this user"
-
-#~ msgid "Maxium Start Delay"
-#~ msgstr "Maxium Start Delay"

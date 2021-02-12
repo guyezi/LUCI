@@ -118,10 +118,6 @@ msgstr "Farklı seçenekler hakkında daha fazla bilgi için kontrol edin"
 msgid "Google"
 msgstr "Google"
 
-#: applications/luci-app-https-dns-proxy/root/usr/share/rpcd/acl.d/luci-app-https-dns-proxy.json:3
-msgid "Grant UCI and file access for luci-app-https-dns-proxy"
-msgstr "luci-app-https-dns-proxy için UCI ve dosya erişimi verin"
-
 #: applications/luci-app-https-dns-proxy/luasrc/model/cbi/https-dns-proxy.lua:126
 msgid ""
 "If update DNSMASQ config is selected, when you add/remove any instances "
@@ -247,10 +243,3 @@ msgstr "devre dışı"
 #: applications/luci-app-https-dns-proxy/luasrc/https-dns-proxy/providers.disabled/cn.rubyfish.dns.lua:3
 msgid "rubyfish.cn"
 msgstr "rubyfish.cn"
-
-#~ msgid ""
-#~ "When you add/remove any instances below, they will be used to override "
-#~ "the 'DNS forwardings' section of %sDHCP and DNS%s."
-#~ msgstr ""
-#~ "Aşağıdakilerden herhangi birini eklediğiniz/kaldırdığınızda, bunlar "
-#~ "%sDHCP ve DNS%s'in 'DNS İletimleri' bölümünü geçersiz kılacaktır."

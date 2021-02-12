@@ -30,10 +30,6 @@ msgstr ""
 "Bevor p910nd verwendet werden kann müssen Pakete für USB (kmod-usb-printer) "
 "und Parallelport (kmod-lp)-Support installiert werden."
 
-#: applications/luci-app-p910nd/root/usr/share/rpcd/acl.d/luci-app-p910nd.json:3
-msgid "Grant UCI access for luci-app-p910nd"
-msgstr "Gewähre UCI Zugriff auf luci-app-p910nd"
-
 #: applications/luci-app-p910nd/luasrc/model/cbi/p910nd.lua:22
 msgid "Interface"
 msgstr "Schnittstelle"
@@ -58,10 +54,7 @@ msgstr "TCP-Listen Port."
 msgid "enable"
 msgstr "aktivieren"
 
+#: applications/luci-app-p910nd/luasrc/controller/p910nd.lua:13
 #: applications/luci-app-p910nd/luasrc/model/cbi/p910nd.lua:9
-#: applications/luci-app-p910nd/root/usr/share/luci/menu.d/luci-app-p910nd.json:3
 msgid "p910nd - Printer server"
 msgstr "p910nd - Printserver"
-
-#~ msgid "p910nd listens on port 910+N. E.g. 9100 for the first printer."
-#~ msgstr "p910nd hoert auf Port 910+N. Z.B. 9100 fuer ersten Drucker"

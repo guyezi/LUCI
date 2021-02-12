@@ -1,6 +1,4 @@
 'use strict';
-'require view';
-'require poll';
 'require fs';
 'require ui';
 'require uci';
@@ -100,7 +98,7 @@ async function handleAction(ev) {
 		}
 	}
 
-	poll.start();
+	L.Poll.start();
 	fs.exec_direct('/etc/init.d/adblock', [ev])
 	var running = 1;
 	while (running === 1) {
@@ -111,10 +109,10 @@ async function handleAction(ev) {
 			}
 		})
 	}
-	poll.stop();
+	L.Poll.stop();
 }
 
-return view.extend({
+return L.view.extend({
 	load: function() {
 		return Promise.all([
 			L.resolveDefault(fs.exec_direct('/etc/init.d/adblock', ['list']), {}),
@@ -131,7 +129,7 @@ return view.extend({
 		/*
 			poll runtime information
 		*/
-		pollData: poll.add(function() {
+		pollData: L.Poll.add(function() {
 			return L.resolveDefault(fs.read_direct('/tmp/adb_runtime.json'), 'null').then(function(res) {
 				var info = JSON.parse(res);
 				var status = document.getElementById('status');
@@ -144,7 +142,7 @@ return view.extend({
 					} else {
 						if (status.classList.contains("spinning")) {
 							status.classList.remove("spinning");
-							poll.stop();
+							L.Poll.stop();
 						}
 					}
 					if (status.textContent.substr(0,6) === 'paused' && document.getElementById('btn_suspend')) {
@@ -290,25 +288,12 @@ return view.extend({
 		o.nocreate = true;
 		o.rmempty = true;
 
-		o = s.taboption('general', form.Flag, 'adb_forcedns', _('Force Local DNS'), _('Redirect all DNS queries from specified zones to the local DNS resolver, applies to UDP and TCP protocol.'));
+		o = s.taboption('general', form.Flag, 'adb_forcedns', _('Force Local DNS'), _('Redirect all DNS queries from \'lan\' zone to the local DNS resolver, applies to UDP and TCP protocol.'));
 		o.rmempty = false;
 
-		o = s.taboption('general', widgets.ZoneSelect, 'adb_zonelist', _('Forced Zones'), _('Firewall source zones that should be forced locally.'));
+		o = s.taboption('general', form.Value, 'adb_portlist', _('Local DNS Ports'), _('Space separated list of DNS-related firewall ports which should be forced locally.'));
 		o.depends('adb_forcedns', '1');
-		o.unspecified = true;
-		o.multiple = true;
-		o.nocreate = true;
-		o.rmempty = true;
-
-		o = s.taboption('general', form.DynamicList, 'adb_portlist', _('Forced Ports'), _('Firewall ports that should be forced locally.'));
-		o.depends('adb_forcedns', '1');
-		o.unspecified = true;
-		o.multiple = true;
-		o.nocreate = false;
-		o.datatype = 'port';
-		o.value('53');
-		o.value('853');
-		o.value('5353');
+		o.placeholder = '53 853 5353';
 		o.rmempty = true;
 
 		o = s.taboption('general', form.Flag, 'adb_safesearch', _('Enable SafeSearch'), _('Enforcing SafeSearch for google, bing, duckduckgo, yandex, youtube and pixabay.'));

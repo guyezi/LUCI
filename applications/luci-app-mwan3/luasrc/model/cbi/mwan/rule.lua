@@ -61,13 +61,9 @@ mwan_rule.sortable = true
 mwan_rule.template = "cbi/tblsection"
 mwan_rule.extedit = dsp.build_url("admin", "network", "mwan", "rule", "%s")
 function mwan_rule.create(self, section)
-	if #section > 15 then
-		self.invalid_cts = true
-	else
-		TypedSection.create(self, section)
-		m.uci:save("mwan3")
-		luci.http.redirect(dsp.build_url("admin", "network", "mwan", "rule", section))
-	end
+	TypedSection.create(self, section)
+	m.uci:save("mwan3")
+	luci.http.redirect(dsp.build_url("admin", "network", "mwan", "rule", section))
 end
 
 src_ip = mwan_rule:option(DummyValue, "src_ip", translate("Source address"))

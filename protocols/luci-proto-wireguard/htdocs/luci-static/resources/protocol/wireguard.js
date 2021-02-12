@@ -1,24 +1,13 @@
 'use strict';
-'require ui';
 'require uci';
-'require rpc';
 'require form';
 'require network';
-
-var generateKey = rpc.declare({
-	object: 'luci.wireguard',
-	method: 'generateKeyPair',
-	expect: { keys: {} }
-});
 
 function validateBase64(section_id, value) {
 	if (value.length == 0)
 		return true;
 
 	if (value.length != 44 || !value.match(/^(?:[A-Za-z0-9+\/]{4})*(?:[A-Za-z0-9+\/]{2}==|[A-Za-z0-9+\/]{3}=)?$/))
-		return _('Invalid Base64 key string');
-
-	if (value[43] != "=" )
 		return _('Invalid Base64 key string');
 
 	return true;
@@ -63,18 +52,6 @@ return network.registerProtocol('wireguard', {
 		o.validate = validateBase64;
 		o.rmempty = false;
 
-		o = s.taboption('general', form.Button, 'generate_key', _('Generate Key'));
-		o.inputstyle = 'apply';
-		o.onclick = ui.createHandlerFn(this, function(section_id, ev) {
-			 return generateKey().then(function(keypair) {
-				var keyInput = document.getElementById('widget.cbid.network.%s.private_key'.format(section_id)),
-				    changeEvent = new Event('change');
-
-				keyInput.value = keypair.priv || '';
-				keyInput.dispatchEvent(changeEvent);
-			});
-		}, s.section);
-
 		o = s.taboption('general', form.Value, 'listen_port', _('Listen Port'), _('Optional. UDP port used for outgoing and incoming packets.'));
 		o.datatype = 'port';
 		o.placeholder = _('random');
@@ -84,8 +61,6 @@ return network.registerProtocol('wireguard', {
 		o.datatype = 'ipaddr';
 		o.optional = true;
 
-		o = s.taboption('general', form.Flag, 'nohostroute', _('No Host Routes'), _('Optional. Do not create host routes to peers.'));
-		o.optional = true;
 
 		// -- advanced --------------------------------------------------------------------
 
@@ -147,14 +122,7 @@ return network.registerProtocol('wireguard', {
 
 		o = ss.option(form.DynamicList, 'allowed_ips', _('Allowed IPs'), _("Required. IP addresses and prefixes that this peer is allowed to use inside the tunnel. Usually the peer's tunnel IP addresses and the networks the peer routes through the tunnel."));
 		o.datatype = 'ipaddr';
-		o.validate = function(section, value) {
-			var opt = this.map.lookupOption('allowed_ips', section);
-			var ips = opt[0].formvalue(section);
-			if (ips.length == 0) {
-				return _('Value must not be empty');
-			}
-			return true;
-		};
+		o.rmempty = false;
 
 		o = ss.option(form.Flag, 'route_allowed_ips', _('Route Allowed IPs'), _('Optional. Create routes for Allowed IPs for this peer.'));
 

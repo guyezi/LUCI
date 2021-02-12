@@ -36,10 +36,6 @@ msgstr ""
 msgid "Enable"
 msgstr "सक्षम करा"
 
-#: applications/luci-app-vpnbypass/root/usr/share/rpcd/acl.d/luci-app-vpnbypass.json:3
-msgid "Grant UCI and file access for luci-app-vpnbypass"
-msgstr ""
-
 #: applications/luci-app-vpnbypass/luasrc/view/vpnbypass/js.htm:51
 msgid "Loading"
 msgstr "लोड करीत आहे"
@@ -123,9 +119,3 @@ msgstr ""
 #: applications/luci-app-vpnbypass/luasrc/model/cbi/vpnbypass.lua:44
 msgid "VPN Bypass Settings"
 msgstr ""
-
-#~ msgid "is not installed or not found"
-#~ msgstr "स्थापित केलेले नाही किंवा सापडले नाही"
-
-#~ msgid "Reload"
-#~ msgstr "रीलोड करा"

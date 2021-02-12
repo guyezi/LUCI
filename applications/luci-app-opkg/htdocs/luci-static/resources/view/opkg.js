@@ -1,98 +1,3 @@
-'use strict';
-'require view';
-'require fs';
-'require ui';
-'require rpc';
-
-var css = '								\
-	.controls {							\
-		display: flex;					\
-		margin: .5em 0 1em 0;			\
-		flex-wrap: wrap;				\
-		justify-content: space-around;	\
-	}									\
-										\
-	.controls > * {						\
-		padding: .25em;					\
-		white-space: nowrap;			\
-		flex: 1 1 33%;					\
-		box-sizing: border-box;			\
-		display: flex;					\
-		flex-wrap: wrap;				\
-	}									\
-										\
-	.controls > *:first-child,			\
-	.controls > * > label {				\
-		flex-basis: 100%;				\
-		min-width: 250px;				\
-	}									\
-										\
-	.controls > *:nth-child(2),			\
-	.controls > *:nth-child(3) {		\
-		flex-basis: 20%;				\
-	}									\
-										\
-	.controls > * > .btn {				\
-		flex-basis: 20px;				\
-		text-align: center;				\
-	}									\
-										\
-	.controls > * > * {					\
-		flex-grow: 1;					\
-		align-self: center;				\
-	}									\
-										\
-	.controls > div > input {			\
-		width: auto;					\
-	}									\
-										\
-	.td.version,						\
-	.td.size {							\
-		white-space: nowrap;			\
-	}									\
-										\
-	ul.deps, ul.deps ul, ul.errors {	\
-		margin-left: 1em;				\
-	}									\
-										\
-	ul.deps li, ul.errors li {			\
-		list-style: none;				\
-	}									\
-										\
-	ul.deps li:before {					\
-		content: "↳";					\
-		display: inline-block;			\
-		width: 1em;						\
-		margin-left: -1em;				\
-	}									\
-										\
-	ul.deps li > span {					\
-		white-space: nowrap;			\
-	}									\
-										\
-	ul.errors li {						\
-		color: #c44;					\
-		font-size: 90%;					\
-		font-weight: bold;				\
-		padding-left: 1.5em;			\
-	}									\
-										\
-	ul.errors li:before {				\
-		content: "⚠";					\
-		display: inline-block;			\
-		width: 1.5em;					\
-		margin-left: -1.5em;			\
-	}									\
-';
-
-var isReadonlyView = !L.hasViewPermission() || null;
-
-var callMountPoints = rpc.declare({
-	object: 'luci',
-	method: 'getMountPoints',
-	expect: { result: [] }
-});
-
 var packages = {
 	available: { providers: {}, pkgs: {} },
 	installed: { providers: {}, pkgs: {} }
@@ -566,8 +471,6 @@ function renderDependencies(depends, info)
 	info.seen = info.seen || [];
 
 	for (var i = 0; i < deps.length; i++) {
-		var dep, vop, ver;
-
 		if (deps[i] === 'libc')
 			continue;
 
@@ -677,7 +580,7 @@ function handleInstall(ev)
 		]);
 	}
 
-	ui.showModal(_('Details for package <em>%h</em>').format(pkg.name), [
+	L.showModal(_('Details for package <em>%h</em>').format(pkg.name), [
 		E('ul', {}, [
 			E('li', '<strong>%s:</strong> %h'.format(_('Version'), pkg.version)),
 			E('li', '<strong>%s:</strong> %h'.format(_('Size'), size)),
@@ -686,22 +589,20 @@ function handleInstall(ev)
 		desc || '',
 		errs || inst || '',
 		E('div', { 'class': 'right' }, [
-			E('label', { 'class': 'cbi-checkbox', 'style': 'float:left' }, [
-				E('input', { 'id': 'overwrite-cb', 'type': 'checkbox', 'name': 'overwrite', 'disabled': isReadonlyView }), ' ',
-				E('label', { 'for': 'overwrite-cb' }), ' ',
+			E('label', { 'class': 'cbi-checkbox', 'style': 'float:left; padding-top:.5em' }, [
+				E('input', { 'type': 'checkbox', 'name': 'overwrite' }), ' ',
 				_('Overwrite files from other package(s)')
 			]),
 			E('div', {
 				'class': 'btn',
-				'click': ui.hideModal
+				'click': L.hideModal
 			}, _('Cancel')),
 			' ',
 			E('div', {
 				'data-command': 'install',
 				'data-package': name,
 				'class': 'btn cbi-button-action',
-				'click': handleOpkg,
-				'disabled': isReadonlyView
+				'click': handleOpkg
 			}, _('Install'))
 		])
 	]);
@@ -734,11 +635,11 @@ function handleManualInstall(ev)
 		warning = E('p', {}, _('Really attempt to install <em>%h</em>?').format(name_or_url));
 	}
 
-	ui.showModal(_('Manually install package'), [
+	L.showModal(_('Manually install package'), [
 		warning,
 		E('div', { 'class': 'right' }, [
 			E('div', {
-				'click': ui.hideModal,
+				'click': L.hideModal,
 				'class': 'btn cbi-button-neutral'
 			}, _('Cancel')),
 			' ', install
@@ -748,29 +649,11 @@ function handleManualInstall(ev)
 
 function handleConfig(ev)
 {
-	var conf = {};
-
-	ui.showModal(_('OPKG Configuration'), [
+	L.showModal(_('OPKG Configuration'), [
 		E('p', { 'class': 'spinning' }, _('Loading configuration data…'))
 	]);
 
-	fs.list('/etc/opkg').then(function(partials) {
-		var files = [ '/etc/opkg.conf' ];
-
-		for (var i = 0; i < partials.length; i++)
-			if (partials[i].type == 'file' && partials[i].name.match(/\.conf$/))
-				files.push('/etc/opkg/' + partials[i].name);
-
-		return Promise.all(files.map(function(file) {
-			return fs.read(file)
-				.then(L.bind(function(conf, file, res) { conf[file] = res }, this, conf, file))
-				.catch(function(err) {
-					ui.addNotification(null, E('p', {}, [ _('Unable to read %s: %s').format(file, err) ]));
-					ui.hideModal();
-					throw err;
-				});
-		}));
-	}).then(function() {
+	L.get('admin/system/opkg/config', null, function(xhr, conf) {
 		var body = [
 			E('p', {}, _('Below is a listing of the various configuration files used by <em>opkg</em>. Use <em>opkg.conf</em> for global settings and <em>customfeeds.conf</em> for custom repository entries. The configuration in the other files may be changed but is usually not preserved by <em>sysupgrade</em>.'))
 		];
@@ -786,7 +669,7 @@ function handleConfig(ev)
 		body.push(E('div', { 'class': 'right' }, [
 			E('div', {
 				'class': 'btn cbi-button-neutral',
-				'click': ui.hideModal
+				'click': L.hideModal
 			}, _('Cancel')),
 			' ',
 			E('div', {
@@ -798,21 +681,16 @@ function handleConfig(ev)
 							data[textarea.getAttribute('name')] = textarea.value
 						});
 
-					ui.showModal(_('OPKG Configuration'), [
+					L.showModal(_('OPKG Configuration'), [
 						E('p', { 'class': 'spinning' }, _('Saving configuration data…'))
 					]);
 
-					Promise.all(Object.keys(data).map(function(file) {
-						return fs.write(file, data[file]).catch(function(err) {
-							ui.addNotification(null, E('p', {}, [ _('Unable to save %s: %s').format(file, err) ]));
-						});
-					})).then(ui.hideModal);
-				},
-				'disabled': isReadonlyView
+					L.post('admin/system/opkg/config', { data: JSON.stringify(data) }, L.hideModal);
+				}
 			}, _('Save')),
 		]));
 
-		ui.showModal(_('OPKG Configuration'), body);
+		L.showModal(_('OPKG Configuration'), body);
 	});
 }
 
@@ -837,30 +715,28 @@ function handleRemove(ev)
 		]);
 	}
 
-	ui.showModal(_('Remove package <em>%h</em>').format(pkg.name), [
+	L.showModal(_('Remove package <em>%h</em>').format(pkg.name), [
 		E('ul', {}, [
 			E('li', '<strong>%s:</strong> %h'.format(_('Version'), pkg.version)),
 			E('li', '<strong>%s:</strong> %h'.format(_('Size'), size))
 		]),
 		desc || '',
 		E('div', { 'style': 'display:flex; justify-content:space-between; flex-wrap:wrap' }, [
-			E('label', { 'class': 'cbi-checkbox', 'style': 'float:left' }, [
-				E('input', { 'id': 'autoremove-cb', 'type': 'checkbox', 'checked': 'checked', 'name': 'autoremove', 'disabled': isReadonlyView }), ' ',
-				E('label', { 'for': 'autoremove-cb' }), ' ',
+			E('label', {}, [
+				E('input', { type: 'checkbox', checked: 'checked', name: 'autoremove' }),
 				_('Automatically remove unused dependencies')
 			]),
 			E('div', { 'style': 'flex-grow:1', 'class': 'right' }, [
 				E('div', {
 					'class': 'btn',
-					'click': ui.hideModal
+					'click': L.hideModal
 				}, _('Cancel')),
 				' ',
 				E('div', {
 					'data-command': 'remove',
 					'data-package': name,
 					'class': 'btn cbi-button-negative',
-					'click': handleOpkg,
-					'disabled': isReadonlyView
+					'click': handleOpkg
 				}, _('Remove'))
 			])
 		])
@@ -873,25 +749,15 @@ function handleOpkg(ev)
 		var cmd = ev.target.getAttribute('data-command'),
 		    pkg = ev.target.getAttribute('data-package'),
 		    rem = document.querySelector('input[name="autoremove"]'),
-		    owr = document.querySelector('input[name="overwrite"]');
+		    owr = document.querySelector('input[name="overwrite"]'),
+		    url = 'admin/system/opkg/exec/' + encodeURIComponent(cmd);
 
-		var dlg = ui.showModal(_('Executing package manager'), [
+		var dlg = L.showModal(_('Executing package manager'), [
 			E('p', { 'class': 'spinning' },
 				_('Waiting for the <em>opkg %h</em> command to complete…').format(cmd))
 		]);
 
-		var argv = [ cmd, '--force-removal-of-dependent-packages' ];
-
-		if (rem && rem.checked)
-			argv.push('--autoremove');
-
-		if (owr && owr.checked)
-			argv.push('--force-overwrite');
-
-		if (pkg != null)
-			argv.push(pkg);
-
-		fs.exec_direct('/usr/libexec/opkg-call', argv, 'json').then(function(res) {
+		L.post(url, { package: pkg, autoremove: rem ? rem.checked : false, overwrite: owr ? owr.checked : false }, function(xhr, res) {
 			dlg.removeChild(dlg.lastChild);
 
 			if (res.stdout)
@@ -909,10 +775,10 @@ function handleOpkg(ev)
 				E('div', {
 					'class': 'btn',
 					'click': L.bind(function(res) {
-						if (ui.menu && ui.menu.flushCache)
-							ui.menu.flushCache();
+						if (L.ui.menu && L.ui.menu.flushCache)
+							L.ui.menu.flushCache();
 
-						ui.hideModal();
+						L.hideModal();
 						updateLists();
 
 						if (res.code !== 0)
@@ -921,9 +787,6 @@ function handleOpkg(ev)
 							resolveFn(res);
 					}, this, res)
 				}, _('Dismiss'))));
-		}).catch(function(err) {
-			ui.addNotification(null, E('p', _('Unable to execute <em>opkg %s</em> command: %s').format(cmd, err)));
-			ui.hideModal();
 		});
 	});
 }
@@ -931,8 +794,8 @@ function handleOpkg(ev)
 function handleUpload(ev)
 {
 	var path = '/tmp/upload.ipk';
-	return ui.uploadFile(path).then(L.bind(function(btn, res) {
-		ui.showModal(_('Manually install package'), [
+	return L.ui.uploadFile(path).then(L.bind(function(btn, res) {
+		L.showModal(_('Manually install package'), [
 			E('p', {}, _('Installing packages from untrusted sources is a potential security risk! Really attempt to install <em>%h</em>?').format(res.name)),
 			E('ul', {}, [
 				res.size ? E('li', {}, '%s: %1024.2mB'.format(_('Size'), res.size)) : '',
@@ -942,8 +805,8 @@ function handleUpload(ev)
 			E('div', { 'class': 'right' }, [
 				E('div', {
 					'click': function(ev) {
-						ui.hideModal();
-						fs.remove(path);
+						L.hideModal();
+						L.fs.remove(path);
 					},
 					'class': 'btn cbi-button-neutral'
 				}, _('Cancel')), ' ',
@@ -953,7 +816,7 @@ function handleUpload(ev)
 					'data-package': path,
 					'click': function(ev) {
 						handleOpkg(ev).finally(function() {
-							fs.remove(path)
+							L.fs.remove(path)
 						});
 					}
 				}, _('Install'))
@@ -962,16 +825,7 @@ function handleUpload(ev)
 	}, this, ev.target));
 }
 
-function downloadLists()
-{
-	return Promise.all([
-		callMountPoints(),
-		fs.exec_direct('/usr/libexec/opkg-call', [ 'list-available' ]),
-		fs.exec_direct('/usr/libexec/opkg-call', [ 'list-installed' ])
-	]);
-}
-
-function updateLists(data)
+function updateLists()
 {
 	cbi_update_table('#packages', [],
 		E('div', { 'class': 'spinning' }, _('Loading package information…')));
@@ -979,110 +833,42 @@ function updateLists(data)
 	packages.available = { providers: {}, pkgs: {} };
 	packages.installed = { providers: {}, pkgs: {} };
 
-	return (data ? Promise.resolve(data) : downloadLists()).then(function(data) {
+	L.get('admin/system/opkg/statvfs', null, function(xhr, stat) {
 		var pg = document.querySelector('.cbi-progressbar'),
-		    mount = L.toArray(data[0].filter(function(m) { return m.mount == '/' || m.mount == '/overlay' }))
-		    	.sort(function(a, b) { return a.mount > b.mount })[0] || { size: 0, free: 0 };
+		    total = stat.blocks || 0,
+		    free = stat.bfree || 0;
 
-		pg.firstElementChild.style.width = Math.floor(mount.size ? ((100 / mount.size) * mount.free) : 100) + '%';
-		pg.setAttribute('title', '%s (%.1024mB)'.format(pg.firstElementChild.style.width, mount.free));
+		pg.firstElementChild.style.width = Math.floor(total ? ((100 / total) * free) : 100) + '%';
+		pg.setAttribute('title', '%s (%.1024mB)'.format(pg.firstElementChild.style.width, free * (stat.frsize || 0)));
 
-		parseList(data[1], packages.available);
-		parseList(data[2], packages.installed);
-
-		display(document.querySelector('input[name="filter"]').value);
+		L.get('admin/system/opkg/list/available', null, function(xhr) {
+			parseList(xhr.responseText, packages.available);
+			L.get('admin/system/opkg/list/installed', null, function(xhr) {
+				parseList(xhr.responseText, packages.installed);
+				display(document.querySelector('input[name="filter"]').value);
+			});
+		});
 	});
 }
 
-var keyTimeout = null;
+window.requestAnimationFrame(function() {
+	var filter = document.querySelector('input[name="filter"]'),
+	    keyTimeout = null;
 
-function handleKeyUp(ev) {
-	if (keyTimeout !== null)
-		window.clearTimeout(keyTimeout);
+	filter.value = filter.getAttribute('value');
+	filter.addEventListener('keyup',
+		function(ev) {
+			if (keyTimeout !== null)
+				window.clearTimeout(keyTimeout);
 
-	keyTimeout = window.setTimeout(function() {
-		display(ev.target.value);
-	}, 250);
-}
-
-return view.extend({
-	load: function() {
-		return downloadLists();
-	},
-
-	render: function(listData) {
-		var query = decodeURIComponent(L.toArray(location.search.match(/\bquery=([^=]+)\b/))[1] || '');
-
-		var view = E([], [
-			E('style', { 'type': 'text/css' }, [ css ]),
-
-			E('h2', {}, _('Software')),
-
-			E('div', { 'class': 'controls' }, [
-				E('div', {}, [
-					E('label', {}, _('Free space') + ':'),
-					E('div', { 'class': 'cbi-progressbar', 'title': _('unknown') }, E('div', {}, [ '\u00a0' ]))
-				]),
-
-				E('div', {}, [
-					E('label', {}, _('Filter') + ':'),
-					E('span', { 'class': 'control-group' }, [
-						E('input', { 'type': 'text', 'name': 'filter', 'placeholder': _('Type to filter…'), 'value': query, 'keyup': handleKeyUp }),
-						E('button', { 'class': 'btn cbi-button', 'click': handleReset }, [ _('Clear') ])
-					])
-				]),
-
-				E('div', {}, [
-					E('label', {}, _('Download and install package') + ':'),
-					E('span', { 'class': 'control-group' }, [
-						E('input', { 'type': 'text', 'name': 'install', 'placeholder': _('Package name or URL…'), 'keydown': function(ev) { if (ev.keyCode === 13) handleManualInstall(ev) }, 'disabled': isReadonlyView }),
-						E('button', { 'class': 'btn cbi-button cbi-button-action', 'click': handleManualInstall, 'disabled': isReadonlyView }, [ _('OK') ])
-					])
-				]),
-
-				E('div', {}, [
-					E('label', {}, _('Actions') + ':'), ' ',
-					E('span', { 'class': 'control-group' }, [
-						E('button', { 'class': 'btn cbi-button-positive', 'data-command': 'update', 'click': handleOpkg, 'disabled': isReadonlyView }, [ _('Update lists…') ]), ' ',
-						E('button', { 'class': 'btn cbi-button-action', 'click': handleUpload, 'disabled': isReadonlyView }, [ _('Upload Package…') ]), ' ',
-						E('button', { 'class': 'btn cbi-button-neutral', 'click': handleConfig }, [ _('Configure opkg…') ])
-					])
-				])
-			]),
-
-			E('ul', { 'class': 'cbi-tabmenu mode' }, [
-				E('li', { 'data-mode': 'available', 'class': 'available cbi-tab', 'click': handleMode }, E('a', { 'href': '#' }, [ _('Available') ])),
-				E('li', { 'data-mode': 'installed', 'class': 'installed cbi-tab-disabled', 'click': handleMode }, E('a', { 'href': '#' }, [ _('Installed') ])),
-				E('li', { 'data-mode': 'updates', 'class': 'installed cbi-tab-disabled', 'click': handleMode }, E('a', { 'href': '#' }, [ _('Updates') ]))
-			]),
-
-			E('div', { 'class': 'controls', 'style': 'display:none' }, [
-				E('div', { 'id': 'pager', 'class': 'center' }, [
-					E('button', { 'class': 'btn cbi-button-neutral prev', 'aria-label': _('Previous page'), 'click': handlePage }, [ '«' ]),
-					E('div', { 'class': 'text' }, [ 'dummy' ]),
-					E('button', { 'class': 'btn cbi-button-neutral next', 'aria-label': _('Next page'), 'click': handlePage }, [ '»' ])
-				])
-			]),
-
-			E('table', { 'id': 'packages', 'class': 'table' }, [
-				E('tr', { 'class': 'tr cbi-section-table-titles' }, [
-					E('th', { 'class': 'th col-2 left' }, [ _('Package name') ]),
-					E('th', { 'class': 'th col-2 left version' }, [ _('Version') ]),
-					E('th', { 'class': 'th col-1 center size'}, [ _('Size (.ipk)') ]),
-					E('th', { 'class': 'th col-10 left' }, [ _('Description') ]),
-					E('th', { 'class': 'th right cbi-section-actions' }, [ '\u00a0' ])
-				])
-			])
-		]);
-
-		requestAnimationFrame(function() {
-			updateLists(listData)
+			keyTimeout = window.setTimeout(function() {
+				display(ev.target.value);
+			}, 250);
 		});
 
-		return view;
-	},
+	document.querySelector('#pager > .prev').addEventListener('click', handlePage);
+	document.querySelector('#pager > .next').addEventListener('click', handlePage);
+	document.querySelector('.cbi-tabmenu.mode').addEventListener('click', handleMode);
 
-	handleSave: null,
-	handleSaveApply: null,
-	handleReset: null
+	updateLists();
 });

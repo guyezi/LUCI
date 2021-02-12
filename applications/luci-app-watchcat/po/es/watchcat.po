@@ -17,10 +17,6 @@ msgstr ""
 msgid "Forced reboot delay"
 msgstr "Espera para forzar reinicio"
 
-#: applications/luci-app-watchcat/root/usr/share/rpcd/acl.d/luci-app-watchcat.json:3
-msgid "Grant UCI access for luci-app-watchcat"
-msgstr "Conceder acceso a UCI para luci-app-watchcat"
-
 #: applications/luci-app-watchcat/luasrc/model/cbi/watchcat/watchcat.lua:40
 msgid "Host address to ping"
 msgstr "Dirección de host para hacer ping"
@@ -61,8 +57,8 @@ msgstr "Host al que hacer ping"
 msgid "Ping period"
 msgstr "Período de ping"
 
+#: applications/luci-app-watchcat/luasrc/controller/watchcat.lua:10
 #: applications/luci-app-watchcat/luasrc/model/cbi/watchcat/watchcat.lua:5
-#: applications/luci-app-watchcat/root/usr/share/luci/menu.d/luci-app-watchcat.json:3
 msgid "Watchcat"
 msgstr "Watchcat"
 

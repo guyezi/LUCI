@@ -46,10 +46,6 @@ msgstr "Rychlost stahování dat (kbit/s)"
 msgid "Enable"
 msgstr "Povolit"
 
-#: applications/luci-app-qos/root/usr/share/rpcd/acl.d/luci-app-qos.json:3
-msgid "Grant UCI access for luci-app-qos"
-msgstr ""
-
 #: applications/luci-app-qos/luasrc/model/cbi/qos/qos.lua:25
 msgid "Half-duplex"
 msgstr "Poloviční duplex"
@@ -70,7 +66,7 @@ msgstr "Porty"
 msgid "Protocol"
 msgstr "Protokol"
 
-#: applications/luci-app-qos/root/usr/share/luci/menu.d/luci-app-qos.json:3
+#: applications/luci-app-qos/luasrc/controller/qos.lua:13
 msgid "QoS"
 msgstr "QoS"
 
@@ -125,22 +121,3 @@ msgstr "normální priorita"
 #: applications/luci-app-qos/luasrc/model/cbi/qos/qos.lua:40
 msgid "priority"
 msgstr "nejvyšší priorita (malé rámce)"
-
-#~ msgid "Service"
-#~ msgstr "Služba"
-
-#~ msgid "Downlink"
-#~ msgstr "Stahování"
-
-#~ msgid "Internet Connection"
-#~ msgstr "Připojení k internetu"
-
-#~ msgid "Uplink"
-#~ msgstr "Odesílání"
-
-#, fuzzy
-#~ msgid "allf"
-#~ msgstr "allf"
-
-#~ msgid "qos_connbytes"
-#~ msgstr "qos_connbytes"

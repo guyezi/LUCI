@@ -48,7 +48,8 @@ endef
 
 define Package/rpcd-mod-luci/postinst
 #!/bin/sh
-[ -n "$$IPKG_INSTROOT" ] || /etc/init.d/rpcd reload
+killall -HUP rpcd 2>/dev/null
+exit 0
 endef
 
 $(eval $(call BuildPackage,rpcd-mod-luci))

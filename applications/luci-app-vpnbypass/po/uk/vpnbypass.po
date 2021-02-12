@@ -37,10 +37,6 @@ msgstr ""
 msgid "Enable"
 msgstr "Увімкнути"
 
-#: applications/luci-app-vpnbypass/root/usr/share/rpcd/acl.d/luci-app-vpnbypass.json:3
-msgid "Grant UCI and file access for luci-app-vpnbypass"
-msgstr ""
-
 #: applications/luci-app-vpnbypass/luasrc/view/vpnbypass/js.htm:51
 msgid "Loading"
 msgstr "Завантаження"
@@ -124,9 +120,3 @@ msgstr ""
 #: applications/luci-app-vpnbypass/luasrc/model/cbi/vpnbypass.lua:44
 msgid "VPN Bypass Settings"
 msgstr ""
-
-#~ msgid "for syntax"
-#~ msgstr "для синтаксису"
-
-#~ msgid "is not installed or not found"
-#~ msgstr "не встановлено, або не знайдено"

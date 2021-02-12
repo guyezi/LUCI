@@ -5,9 +5,6 @@
 		"action": {
 			"type": "template",
 			"path": "admin_status/index"
-		},
-		"depends": {
-			"acl": [ "luci-mod-status-index" ]
 		}
 	},
 
@@ -17,9 +14,6 @@
 		"action": {
 			"type": "view",
 			"path": "status/iptables"
-		},
-		"depends": {
-			"acl": [ "luci-mod-status-firewall" ]
 		}
 	},
 
@@ -29,9 +23,6 @@
 		"action": {
 			"type": "view",
 			"path": "status/routes"
-		},
-		"depends": {
-			"acl": [ "luci-mod-status-routes" ]
 		}
 	},
 
@@ -41,9 +32,6 @@
 		"action": {
 			"type": "view",
 			"path": "status/syslog"
-		},
-		"depends": {
-			"acl": [ "luci-mod-status-logs" ]
 		}
 	},
 
@@ -53,9 +41,6 @@
 		"action": {
 			"type": "view",
 			"path": "status/dmesg"
-		},
-		"depends": {
-			"acl": [ "luci-mod-status-logs" ]
 		}
 	},
 
@@ -65,22 +50,6 @@
 		"action": {
 			"type": "view",
 			"path": "status/processes"
-		},
-		"depends": {
-			"acl": [ "luci-mod-status-processes" ]
-		}
-	},
-
-	"admin/status/channel_analysis": {
-		"title": "Channel Analysis",
-		"order": 7,
-		"action": {
-			"type": "view",
-			"path": "status/channel_analysis"
-		},
-		"depends": {
-			"acl": [ "luci-mod-status-channel_analysis" ],
-			"uci": { "wireless": { "@wifi-device": true } }
 		}
 	},
 
@@ -90,9 +59,6 @@
 		"action": {
 			"type": "alias",
 			"path": "admin/status/realtime/load"
-		},
-		"depends": {
-			"acl": [ "luci-mod-status-realtime" ]
 		}
 	},
 

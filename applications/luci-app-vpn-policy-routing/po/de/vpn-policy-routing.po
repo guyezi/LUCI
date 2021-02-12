@@ -181,10 +181,6 @@ msgstr ""
 msgid "Force the ICMP protocol interface."
 msgstr "Erzwinge die ICMP-Protokoll-Schnittstelle."
 
-#: applications/luci-app-vpn-policy-routing/root/usr/share/rpcd/acl.d/luci-app-vpn-policy-routing.json:3
-msgid "Grant UCI and file access for luci-app-vpn-policy-routing"
-msgstr ""
-
 #: applications/luci-app-vpn-policy-routing/luasrc/model/cbi/vpn-policy-routing.lua:214
 msgid "IP Rules Support"
 msgstr "IP-Regeln Unterstützung"
@@ -460,30 +456,3 @@ msgstr ""
 #: applications/luci-app-vpn-policy-routing/luasrc/model/cbi/vpn-policy-routing.lua:248
 msgid "Web UI Configuration"
 msgstr ""
-
-#~ msgid ""
-#~ "Checkmark represents the default gateway. See the %sREADME%s for details."
-#~ msgstr ""
-#~ "Ein Haken steht für den Standardgateway. Lies die %sREADME%s für "
-#~ "Einzelheiten."
-
-#~ msgid "Grant UCI access for luci-app-vpn-policy-routing"
-#~ msgstr "Gewähre UCI Zugriff auf luci-app-vpn-policy-routing"
-
-#~ msgid "(strict mode)"
-#~ msgstr "(strikter Modus)"
-
-#~ msgid "Checkmark represents the default gateway. See the"
-#~ msgstr "Häkchen stellt das Standardgateway dar. Siehe die"
-
-#~ msgid "README"
-#~ msgstr "README"
-
-#~ msgid "Reload"
-#~ msgstr "Neu laden"
-
-#~ msgid "for details."
-#~ msgstr "für Einzelheiten."
-
-#~ msgid "is not installed or not found"
-#~ msgstr "ist nicht installiert oder nicht gefunden"

@@ -116,10 +116,6 @@ msgstr "Strefa zapory sieciowej"
 msgid "General Settings"
 msgstr "Ustawienia główne"
 
-#: applications/luci-app-ocserv/root/usr/share/rpcd/acl.d/luci-app-ocserv.json:3
-msgid "Grant UCI access for luci-app-ocserv"
-msgstr "Udziel dostępu UCI do luci-app-ocserv"
-
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/users.lua:23
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/users.lua:67
 #: applications/luci-app-ocserv/luasrc/view/ocserv_status.htm:52
@@ -201,7 +197,7 @@ msgstr ""
 msgid "Routing table"
 msgstr "Tabela trasowania"
 
-#: applications/luci-app-ocserv/luasrc/controller/ocserv.lua:20
+#: applications/luci-app-ocserv/luasrc/controller/ocserv.lua:19
 msgid "Server Settings"
 msgstr "Ustawienia serwera"
 
@@ -310,7 +306,7 @@ msgstr "Użytkownik"
 msgid "User Authentication"
 msgstr "Uwierzytelnianie użytkownika"
 
-#: applications/luci-app-ocserv/luasrc/controller/ocserv.lua:25
+#: applications/luci-app-ocserv/luasrc/controller/ocserv.lua:24
 msgid "User Settings"
 msgstr "Ustawienia użytkownika"
 

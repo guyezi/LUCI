@@ -158,10 +158,6 @@ msgstr "För hjälp använd länk vid relevant alternativ"
 msgid "Forwarding"
 msgstr "Vidarebefordring"
 
-#: applications/luci-app-privoxy/root/usr/share/rpcd/acl.d/luci-app-privoxy.json:3
-msgid "Grant UCI access for luci-app-privoxy"
-msgstr ""
-
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:589
 msgid ""
 "If enabled, Privoxy hides the 'go there anyway' link. The user obviously "
@@ -605,9 +601,3 @@ msgstr "eller högre"
 #: applications/luci-app-privoxy/luasrc/controller/privoxy.lua:89
 msgid "required"
 msgstr "nödvändig"
-
-#~ msgid "Local Set-up"
-#~ msgstr "Lokal installation"
-
-#~ msgid "Software update required"
-#~ msgstr "Uppdatering av mjukvara krävs"

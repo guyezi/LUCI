@@ -38,10 +38,6 @@ msgstr ""
 msgid "Enable"
 msgstr "Ativar"
 
-#: applications/luci-app-vpnbypass/root/usr/share/rpcd/acl.d/luci-app-vpnbypass.json:3
-msgid "Grant UCI and file access for luci-app-vpnbypass"
-msgstr "Conceder acesso a UCI e a ficheiros para luci-app-vpnbypass"
-
 #: applications/luci-app-vpnbypass/luasrc/view/vpnbypass/js.htm:51
 msgid "Loading"
 msgstr "A carregar"
@@ -129,24 +125,3 @@ msgstr "Regras de Bypass VPN"
 #: applications/luci-app-vpnbypass/luasrc/model/cbi/vpnbypass.lua:44
 msgid "VPN Bypass Settings"
 msgstr "Configurações de Bypass VPN"
-
-#~ msgid "Grant UCI access for luci-app-vpnbypass"
-#~ msgstr "Conceder acesso UCI ao luci-app-vpnbypass"
-
-#~ msgid "Domains to be accessed directly (outside of the VPN tunnel), see"
-#~ msgstr "Domínios a serem acessados diretamente (fora do túnel VPN), veja"
-
-#~ msgid "README"
-#~ msgstr "LEIAME"
-
-#~ msgid "disabled"
-#~ msgstr "desativado"
-
-#~ msgid "for syntax"
-#~ msgstr "para sintaxe"
-
-#~ msgid "is not installed or not found"
-#~ msgstr "não está instalado ou não foi encontrado"
-
-#~ msgid "Reload"
-#~ msgstr "Recarregar"

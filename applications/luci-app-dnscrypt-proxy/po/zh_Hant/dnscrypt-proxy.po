@@ -18,7 +18,7 @@ msgstr ""
 msgid "-------"
 msgstr "-------"
 
-#: applications/luci-app-dnscrypt-proxy/luasrc/controller/dnscrypt-proxy.lua:21
+#: applications/luci-app-dnscrypt-proxy/luasrc/controller/dnscrypt-proxy.lua:17
 msgid "Advanced"
 msgstr "進階"
 
@@ -72,16 +72,16 @@ msgstr "建立自訂配置檔案"
 msgid "DNS Query Logfile"
 msgstr "DNS 查詢日誌檔案"
 
-#: applications/luci-app-dnscrypt-proxy/luasrc/controller/dnscrypt-proxy.lua:15
+#: applications/luci-app-dnscrypt-proxy/luasrc/controller/dnscrypt-proxy.lua:14
 #: applications/luci-app-dnscrypt-proxy/luasrc/model/cbi/dnscrypt-proxy/overview_tab.lua:58
 msgid "DNSCrypt-Proxy"
 msgstr "DNSCrypt-Proxy"
 
-#: applications/luci-app-dnscrypt-proxy/luasrc/controller/dnscrypt-proxy.lua:39
+#: applications/luci-app-dnscrypt-proxy/luasrc/controller/dnscrypt-proxy.lua:35
 msgid "DNSCrypt-Proxy Logfile"
 msgstr "DNSCrypt-Proxy 日誌檔案"
 
-#: applications/luci-app-dnscrypt-proxy/luasrc/controller/dnscrypt-proxy.lua:30
+#: applications/luci-app-dnscrypt-proxy/luasrc/controller/dnscrypt-proxy.lua:26
 msgid "DNSCrypt-Proxy Resolver List"
 msgstr "DNSCrypt-Proxy 解析伺服器列表"
 
@@ -102,15 +102,15 @@ msgid ""
 "Download the current resolver list from 'github.com/dyne/dnscrypt-proxy'."
 msgstr "從「github.com/dyne/dnscrypt-proxy」下載目前的解析伺服器清單。"
 
-#: applications/luci-app-dnscrypt-proxy/luasrc/controller/dnscrypt-proxy.lua:22
+#: applications/luci-app-dnscrypt-proxy/luasrc/controller/dnscrypt-proxy.lua:18
 msgid "Edit DNSCrypt-Proxy Configuration"
 msgstr "編輯 DNSCrypt-Proxy 配置"
 
-#: applications/luci-app-dnscrypt-proxy/luasrc/controller/dnscrypt-proxy.lua:23
+#: applications/luci-app-dnscrypt-proxy/luasrc/controller/dnscrypt-proxy.lua:19
 msgid "Edit Dnsmasq Configuration"
 msgstr "編輯 Dnsmasq 配置"
 
-#: applications/luci-app-dnscrypt-proxy/luasrc/controller/dnscrypt-proxy.lua:24
+#: applications/luci-app-dnscrypt-proxy/luasrc/controller/dnscrypt-proxy.lua:20
 msgid "Edit Resolvcrypt Configuration"
 msgstr "編輯 Resolvcrypt 配置"
 
@@ -140,10 +140,6 @@ msgstr "詳細資訊請<a href=\"%s\" target=\"_blank\">檢視線上 wiki</a>"
 #: applications/luci-app-dnscrypt-proxy/luasrc/model/cbi/dnscrypt-proxy/overview_tab.lua:97
 msgid "General Options"
 msgstr "常規選項"
-
-#: applications/luci-app-dnscrypt-proxy/root/usr/share/rpcd/acl.d/luci-app-dnscrypt-proxy.json:3
-msgid "Grant UCI access for luci-app-dnscrypt-proxy"
-msgstr "授予 luci-app-dnscrypt-proxy 擁有 UCI 存取的權限"
 
 #: applications/luci-app-dnscrypt-proxy/luasrc/model/cbi/dnscrypt-proxy/overview_tab.lua:189
 msgid "IP Address"
@@ -192,7 +188,7 @@ msgstr "無 SSL 支援。<br />"
 msgid "No default resolver list and no SSL support available.<br />"
 msgstr "無預設解析伺服器列表，也無 SSL 支援。<br />"
 
-#: applications/luci-app-dnscrypt-proxy/luasrc/controller/dnscrypt-proxy.lua:19
+#: applications/luci-app-dnscrypt-proxy/luasrc/controller/dnscrypt-proxy.lua:15
 msgid "Overview"
 msgstr "概覽"
 
@@ -204,20 +200,25 @@ msgstr "請在「進階」部分中手動編輯檔案。"
 msgid ""
 "Please install a 'libustream-ssl' library to download the current resolver "
 "list from 'github.com/dyne/dnscrypt-proxy'."
-msgstr "要從「github.com/dyne/dnscrypt-proxy」下載目前的解析伺服器清單，請安裝「libustream-ssl」程式庫。"
+msgstr ""
+"要從「github.com/dyne/dnscrypt-proxy」下載目前的解析伺服器清單，請安裝"
+"「libustream-ssl」程式庫。"
 
 #: applications/luci-app-dnscrypt-proxy/luasrc/model/cbi/dnscrypt-proxy/overview_tab.lua:22
 msgid ""
 "Please install a resolver list to '/usr/share/dnscrypt-proxy/dnscrypt-"
 "resolvers.csv' to use this package."
-msgstr "要使用此程式，請將解析伺服器清單放到「/usr/share/dnscrypt-proxy/dnscrypt-resolvers.csv」。"
+msgstr ""
+"要使用此程式，請將解析伺服器清單放到「/usr/share/dnscrypt-proxy/dnscrypt-"
+"resolvers.csv」。"
 
 #: applications/luci-app-dnscrypt-proxy/luasrc/model/cbi/dnscrypt-proxy/overview_tab.lua:259
 msgid ""
 "Please note: This may change the values for 'noresolv', 'resolvfile', "
 "'allservers' and the list 'server' settings."
 msgstr ""
-"請注意：這可能會變更 \"noresolv\"、\"resolvfile\"、\"allservers\" 和 \"server\" 清單的設定值。"
+"請注意：這可能會變更 \"noresolv\"、\"resolvfile\"、\"allservers\" 和 \"server"
+"\" 清單的設定值。"
 
 #: applications/luci-app-dnscrypt-proxy/luasrc/model/cbi/dnscrypt-proxy/overview_tab.lua:194
 msgid "Port"
@@ -269,13 +270,16 @@ msgid ""
 "The value for this property is the blocklist type and path to the file, e."
 "g.'domains:/path/to/dbl.txt' or 'ips:/path/to/ipbl.txt'."
 msgstr ""
-"此屬性的值是攔截清單的類型和檔案的路徑，例如「domains:/path/to/dbl.txt」或「ips:/path/to/ipbl.txt」。"
+"此屬性的值是攔截清單的類型和檔案的路徑，例如「domains:/path/to/dbl.txt」或"
+"「ips:/path/to/ipbl.txt」。"
 
 #: applications/luci-app-dnscrypt-proxy/luasrc/model/cbi/dnscrypt-proxy/configuration_tab.lua:21
 msgid ""
 "This form allows you to modify the content of the main DNSCrypt-Proxy "
 "configuration file (/etc/config/dnscrypt-proxy)."
-msgstr "此表單允許您修改主要 DNSCrypt-Proxy 設定檔案 (/etc/config/dnscrypt-proxy) 的內容。"
+msgstr ""
+"此表單允許您修改主要 DNSCrypt-Proxy 設定檔案 (/etc/config/dnscrypt-proxy) 的"
+"內容。"
 
 #: applications/luci-app-dnscrypt-proxy/luasrc/model/cbi/dnscrypt-proxy/cfg_dnsmasq_tab.lua:21
 msgid ""
@@ -287,7 +291,8 @@ msgstr "此表單允許您修改主要 Dnsmasq 設定檔案 (/etc/config/dhcp) �
 msgid ""
 "This form allows you to modify the content of the resolv-crypt configuration "
 "file (/etc/resolv-crypt.conf)."
-msgstr "此表單允許您修改 resolv-crypt 設定檔案 (/etc/resolv-crypt.conf) 的內容。"
+msgstr ""
+"此表單允許您修改 resolv-crypt 設定檔案 (/etc/resolv-crypt.conf) 的內容。"
 
 #: applications/luci-app-dnscrypt-proxy/luasrc/view/dnscrypt-proxy/view_reslist.htm:10
 msgid "This form shows the content of the current DNSCrypt Resolver List."
@@ -316,10 +321,10 @@ msgstr ""
 msgid "Transfer Options To Dnsmasq"
 msgstr "轉移選項到 Dnsmasq"
 
-#: applications/luci-app-dnscrypt-proxy/luasrc/controller/dnscrypt-proxy.lua:20
+#: applications/luci-app-dnscrypt-proxy/luasrc/controller/dnscrypt-proxy.lua:16
 msgid "View Logfile"
 msgstr "查看記錄檔"
 
-#: applications/luci-app-dnscrypt-proxy/luasrc/controller/dnscrypt-proxy.lua:25
+#: applications/luci-app-dnscrypt-proxy/luasrc/controller/dnscrypt-proxy.lua:21
 msgid "View Resolver List"
 msgstr "檢視解析伺服器列表"

@@ -17,7 +17,9 @@ msgid ""
 "<em>Via proxy</em> routes requests to the given target via the specified "
 "upstream proxy, <em>Reject access</em> disables any upstream proxy for the "
 "target"
-msgstr "<em>通過代理</em>通過指定的上游代理將請求路由到給定目標，<em>拒絕存取</em>為目標禁用任何上游代理"
+msgstr ""
+"<em>通過代理</em>通過指定的上游代理將請求路由到給定目標，<em>拒絕存取</em>為"
+"目標禁用任何上游代理"
 
 #: applications/luci-app-tinyproxy/luasrc/model/cbi/tinyproxy.lua:108
 msgid ""
@@ -67,7 +69,7 @@ msgid ""
 "without domain"
 msgstr "可以是IP地址或範圍，網域名稱或 “.\"對於任何沒有網域的主機"
 
-#: applications/luci-app-tinyproxy/root/usr/share/luci/menu.d/luci-app-tinyproxy.json:23
+#: applications/luci-app-tinyproxy/luasrc/controller/tinyproxy.lua:14
 msgid "Configuration"
 msgstr "組態"
 
@@ -114,10 +116,6 @@ msgstr "過濾和存取過濾清單"
 #: applications/luci-app-tinyproxy/luasrc/model/cbi/tinyproxy.lua:11
 msgid "General settings"
 msgstr "一般設定值"
-
-#: applications/luci-app-tinyproxy/root/usr/share/rpcd/acl.d/luci-app-tinyproxy.json:3
-msgid "Grant UCI access for luci-app-tinyproxy"
-msgstr "授予 luci-app-tinyproxy 擁有 UCI 存取的權限"
 
 #: applications/luci-app-tinyproxy/luasrc/model/cbi/tinyproxy.lua:97
 msgid "Group"
@@ -281,7 +279,7 @@ msgstr "啟動備用伺服器"
 msgid "Statistics page"
 msgstr "統計頁面"
 
-#: applications/luci-app-tinyproxy/root/usr/share/luci/menu.d/luci-app-tinyproxy.json:14
+#: applications/luci-app-tinyproxy/luasrc/controller/tinyproxy.lua:13
 msgid "Status"
 msgstr "狀態"
 
@@ -289,8 +287,8 @@ msgstr "狀態"
 msgid "Target host"
 msgstr "目標主機"
 
+#: applications/luci-app-tinyproxy/luasrc/controller/tinyproxy.lua:12
 #: applications/luci-app-tinyproxy/luasrc/model/cbi/tinyproxy.lua:5
-#: applications/luci-app-tinyproxy/root/usr/share/luci/menu.d/luci-app-tinyproxy.json:3
 msgid "Tinyproxy"
 msgstr "Tinyproxy伺服器"
 

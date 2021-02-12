@@ -22,7 +22,9 @@ msgstr "レガシー(安全でない)プロトコル/認証を許可します。
 msgid ""
 "Allow legacy smb(v1)/Lanman connections, needed for older devices without "
 "smb(v2.1/3) support."
-msgstr "レガシー smb(v1)/Lanman 接続を許可します。smb(v2.1/3) サポートのない古いデバイスに必要です。"
+msgstr ""
+"レガシー smb(v1)/Lanman 接続を許可します。smb(v2.1/3) サポートのない古いデバ"
+"イスに必要です。"
 
 #: applications/luci-app-ksmbd/htdocs/luci-static/resources/view/ksmbd.js:83
 msgid "Allowed users"
@@ -60,10 +62,6 @@ msgstr "強制ルート"
 msgid "General Settings"
 msgstr "一般設定"
 
-#: applications/luci-app-ksmbd/root/usr/share/rpcd/acl.d/luci-app-ksmbd.json:3
-msgid "Grant access to LuCI app ksmbd"
-msgstr "LuCI アプリ ksmbd へのアクセスを許可"
-
 #: applications/luci-app-ksmbd/htdocs/luci-static/resources/view/ksmbd.js:97
 msgid "Hide dot files"
 msgstr "ドット・ファイルを隠す"
@@ -78,14 +76,16 @@ msgstr "インターフェース"
 
 #: applications/luci-app-ksmbd/htdocs/luci-static/resources/view/ksmbd.js:35
 msgid "Listen only on the given interface or, if unspecified, on lan"
-msgstr "指定されたインターフェースでのみリッスンするか、指定されていない場合は lan でリッスンします"
+msgstr ""
+"指定されたインターフェースでのみリッスンするか、指定されていない場合は lan で"
+"リッスンします"
 
 #: applications/luci-app-ksmbd/htdocs/luci-static/resources/view/ksmbd.js:64
 msgid "Name"
 msgstr "名前"
 
 #: applications/luci-app-ksmbd/htdocs/luci-static/resources/view/ksmbd.js:20
-#: applications/luci-app-ksmbd/root/usr/share/luci/menu.d/luci-app-ksmbd.json:3
+#: applications/luci-app-ksmbd/luasrc/controller/ksmbd.lua:10
 msgid "Network Shares"
 msgstr "ネットワーク共有"
 
@@ -97,7 +97,9 @@ msgstr "パス"
 msgid ""
 "Please add directories to share. Each directory refers to a folder on a "
 "mounted device."
-msgstr "共有するディレクトリを追加してください。マウントされたデバイス等のディレクトリを設定し、公開することができます。"
+msgstr ""
+"共有するディレクトリを追加してください。マウントされたデバイス等のディレクト"
+"リを設定し、公開することができます。"
 
 #: applications/luci-app-ksmbd/htdocs/luci-static/resources/view/ksmbd.js:75
 msgid "Read-only"

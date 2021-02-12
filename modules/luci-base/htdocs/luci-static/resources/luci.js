@@ -672,12 +672,12 @@
 		 * if it is an object, it will be converted to JSON, in all other
 		 * cases it is converted to a string.
 		 *
-		 * @property {Object<string, string>} [header]
-		 * Specifies HTTP headers to set for the request.
-		 *
-		 * @property {function} [progress]
-		 * An optional request callback function which receives ProgressEvent
-		 * instances as sole argument during the HTTP request transfer.
+	     * @property {Object<string, string>} [header]
+	     * Specifies HTTP headers to set for the request.
+	     *
+	     * @property {function} [progress]
+	     * An optional request callback function which receives ProgressEvent
+	     * instances as sole argument during the HTTP request transfer.
 		 */
 
 		/**
@@ -982,13 +982,12 @@
 						if (!Poll.active())
 							return;
 
-						var res_json = null;
 						try {
-							res_json = res.json();
+							callback(res, res.json(), res.duration);
 						}
-						catch (err) {}
-
-						callback(res, res_json, res.duration);
+						catch (err) {
+							callback(res, null, res.duration);
+						}
 					});
 				};
 
@@ -2159,23 +2158,7 @@
 		 * methods are overwritten with `null`.
 		 */
 		addFooter: function() {
-			var footer = E([]),
-			    vp = document.getElementById('view'),
-			    hasmap = false,
-			    readonly = true;
-
-			vp.querySelectorAll('.cbi-map').forEach(function(map) {
-				var m = DOM.findClassInstance(map);
-				if (m) {
-					hasmap = true;
-
-					if (!m.readonly)
-						readonly = false;
-				}
-			});
-
-			if (!hasmap)
-				readonly = !LuCI.prototype.hasViewPermission();
+			var footer = E([]);
 
 			var saveApplyBtn = this.handleSaveApply ? new classes.ui.ComboButton('0', {
 				0: [ _('Save & Apply') ],
@@ -2185,8 +2168,7 @@
 					0: 'btn cbi-button cbi-button-apply important',
 					1: 'btn cbi-button cbi-button-negative important'
 				},
-				click: classes.ui.createHandlerFn(this, 'handleSaveApply'),
-				disabled: readonly || null
+				click: classes.ui.createHandlerFn(this, 'handleSaveApply')
 			}).render() : E([]);
 
 			if (this.handleSaveApply || this.handleSave || this.handleReset) {
@@ -2194,13 +2176,11 @@
 					saveApplyBtn, ' ',
 					this.handleSave ? E('button', {
 						'class': 'cbi-button cbi-button-save',
-						'click': classes.ui.createHandlerFn(this, 'handleSave'),
-						'disabled': readonly || null
+						'click': classes.ui.createHandlerFn(this, 'handleSave')
 					}, [ _('Save') ]) : '', ' ',
 					this.handleReset ? E('button', {
 						'class': 'cbi-button cbi-button-reset',
-						'click': classes.ui.createHandlerFn(this, 'handleReset'),
-						'disabled': readonly || null
+						'click': classes.ui.createHandlerFn(this, 'handleReset')
 					}, [ _('Reset') ]) : ''
 				]));
 			}
@@ -2554,16 +2534,10 @@
 				rpcBaseURL = Session.getLocalData('rpcBaseURL');
 
 			if (rpcBaseURL == null) {
-				var msg = {
-					jsonrpc: '2.0',
-					id:      'init',
-					method:  'list',
-					params:  undefined
-				};
 				var rpcFallbackURL = this.url('admin/ubus');
 
-				rpcBaseURL = Request.post(env.ubuspath, msg, { nobatch: true }).then(function(res) {
-					return (rpcBaseURL = res.status == 200 ? env.ubuspath : rpcFallbackURL);
+				rpcBaseURL = Request.get(env.ubuspath).then(function(res) {
+					return (rpcBaseURL = (res.status == 400) ? env.ubuspath : rpcFallbackURL);
 				}, function() {
 					return (rpcBaseURL = rpcFallbackURL);
 				}).then(function(url) {

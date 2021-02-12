@@ -150,13 +150,13 @@ static int nixio_sock_shutdown(lua_State *L) {
 }
 
 /* module table */
-static const luaL_Reg R[] = {
+static const luaL_reg R[] = {
 	{"socket",		nixio_socket},
 	{NULL,			NULL}
 };
 
 /* object table */
-static const luaL_Reg M[] = {
+static const luaL_reg M[] = {
 	{"close",		nixio_sock_close},
 	{"shutdown",	nixio_sock_shutdown},
 	{"__gc",		nixio_sock__gc},

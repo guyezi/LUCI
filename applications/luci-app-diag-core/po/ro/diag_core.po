@@ -12,11 +12,12 @@ msgstr ""
 "20)) ? 1 : 2);;\n"
 "X-Generator: Pootle 2.0.6\n"
 
-#: applications/luci-app-diag-core/root/usr/share/luci/menu.d/luci-app-diag-core.json:3
+#: applications/luci-app-diag-core/luasrc/controller/luci_diag.lua:9
 msgid "Configure Diagnostics"
 msgstr "Configurează diagnozele"
 
 # diagnostic/ diagnostice; suna oricum prea medical. Tehnic se foloseste diagnoza, din cate stiu.
+#: applications/luci-app-diag-core/luasrc/controller/luci_diag.lua:13
 #: applications/luci-app-diag-core/luasrc/view/diag/index.htm:7
 #: applications/luci-app-diag-core/luasrc/view/diag/network_config_index.htm:7
 msgid "Diagnostics"
@@ -47,6 +48,3 @@ msgid ""
 msgstr ""
 "Cu acest meniu poți configura diagnoza în rețea, cum ar fi scanarea unor "
 "dispozitive din rețea sau teste ping."
-
-#~ msgid "l_d_diag"
-#~ msgstr "l_d_diag"

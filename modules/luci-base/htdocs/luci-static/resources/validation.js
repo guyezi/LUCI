@@ -1,10 +1,6 @@
 'use strict';
 'require baseclass';
 
-function bytelen(x) {
-	return new Blob([x]).size;
-}
-
 var Validator = baseclass.extend({
 	__name__: 'Validation',
 
@@ -341,7 +337,7 @@ var ValidatorFactory = baseclass.extend({
 		},
 
 		host: function(ipv4only) {
-			return this.assert(this.apply('hostname') || this.apply(ipv4only == 1 ? 'ip4addr' : 'ipaddr', null, ['nomask']),
+			return this.assert(this.apply('hostname') || this.apply(ipv4only == 1 ? 'ip4addr' : 'ipaddr'),
 				_('valid hostname or IP address'));
 		},
 
@@ -425,23 +421,24 @@ var ValidatorFactory = baseclass.extend({
 		},
 
 		length: function(len) {
-			return this.assert(bytelen(this.value) == +len,
+			var val = '' + this.value;
+			return this.assert(val.length == +len,
 				_('value with %d characters').format(len));
 		},
 
 		rangelength: function(min, max) {
-			var len = bytelen(this.value);
-			return this.assert((len >= +min) && (len <= +max),
+			var val = '' + this.value;
+			return this.assert((val.length >= +min) && (val.length <= +max),
 				_('value between %d and %d characters').format(min, max));
 		},
 
 		minlength: function(min) {
-			return this.assert(bytelen(this.value) >= +min,
+			return this.assert((''+this.value).length >= +min,
 				_('value with at least %d characters').format(min));
 		},
 
 		maxlength: function(max) {
-			return this.assert(bytelen(this.value) <= +max,
+			return this.assert((''+this.value).length <= +max,
 				_('value with at most %d characters').format(max));
 		},
 

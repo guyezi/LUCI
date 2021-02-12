@@ -12,7 +12,8 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 4.4-dev\n"
 
-#: applications/luci-app-vnstat/root/usr/share/luci/menu.d/luci-app-vnstat.json:23
+#: applications/luci-app-vnstat/luasrc/controller/vnstat.lua:6
+#: applications/luci-app-vnstat/luasrc/controller/vnstat.lua:10
 msgid "Configuration"
 msgstr "設定"
 
@@ -20,11 +21,8 @@ msgstr "設定"
 msgid "Daily traffic"
 msgstr "毎日のトラフィック"
 
-#: applications/luci-app-vnstat/root/usr/share/rpcd/acl.d/luci-app-vnstat.json:3
-msgid "Grant UCI access for luci-app-vnstat"
-msgstr "luci-app-vnstatにUCIアクセスを許可"
-
-#: applications/luci-app-vnstat/root/usr/share/luci/menu.d/luci-app-vnstat.json:14
+#: applications/luci-app-vnstat/luasrc/controller/vnstat.lua:5
+#: applications/luci-app-vnstat/luasrc/controller/vnstat.lua:9
 msgid "Graphs"
 msgstr "グラフ"
 
@@ -44,7 +42,9 @@ msgstr "毎月のトラフィック"
 msgid ""
 "No database has been set up yet. Go to the VnStat configuration and enable "
 "monitoring for one or more interfaces."
-msgstr "データベースが設定されていません。VnStat設定ページへ移動し、1つ以上のインターフェースのモニタリングを有効にしてください。"
+msgstr ""
+"データベースが設定されていません。VnStat設定ページへ移動し、1つ以上のインター"
+"フェースのモニタリングを有効にしてください。"
 
 #: applications/luci-app-vnstat/luasrc/model/cbi/vnstat.lua:22
 msgid "Restart VnStat"
@@ -70,7 +70,8 @@ msgstr "VnStat"
 msgid "VnStat Graphs"
 msgstr "VnStatグラフ"
 
-#: applications/luci-app-vnstat/root/usr/share/luci/menu.d/luci-app-vnstat.json:3
+#: applications/luci-app-vnstat/luasrc/controller/vnstat.lua:4
+#: applications/luci-app-vnstat/luasrc/controller/vnstat.lua:8
 msgid "VnStat Traffic Monitor"
 msgstr "VnStatトラフィックモニター"
 
@@ -78,7 +79,6 @@ msgstr "VnStatトラフィックモニター"
 msgid ""
 "VnStat is a network traffic monitor for Linux that keeps a log of network "
 "traffic for the selected interface(s)."
-msgstr "VnStatは選択されたインターフェースのネットワークトラフィックを監視するLinuxのトラフィックモニターです。"
-
-#~ msgid "The VnStat service has been restarted."
-#~ msgstr "VnStatサービスは再起動しました。"
+msgstr ""
+"VnStatは選択されたインターフェースのネットワークトラフィックを監視するLinuxの"
+"トラフィックモニターです。"

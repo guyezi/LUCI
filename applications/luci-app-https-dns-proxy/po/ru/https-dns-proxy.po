@@ -120,10 +120,6 @@ msgstr "Для получения дополнительной информац�
 msgid "Google"
 msgstr "Google"
 
-#: applications/luci-app-https-dns-proxy/root/usr/share/rpcd/acl.d/luci-app-https-dns-proxy.json:3
-msgid "Grant UCI and file access for luci-app-https-dns-proxy"
-msgstr "Предоставить luci-app-https-dns-proxy доступ к UCI и файлам"
-
 #: applications/luci-app-https-dns-proxy/luasrc/model/cbi/https-dns-proxy.lua:126
 msgid ""
 "If update DNSMASQ config is selected, when you add/remove any instances "
@@ -249,30 +245,3 @@ msgstr "отключено"
 #: applications/luci-app-https-dns-proxy/luasrc/https-dns-proxy/providers.disabled/cn.rubyfish.dns.lua:3
 msgid "rubyfish.cn"
 msgstr "rubyfish.cn"
-
-#~ msgid "Alidns"
-#~ msgstr "Alidns"
-
-#~ msgid "EDNS client subnet"
-#~ msgstr "Клиентская подсеть EDNS"
-
-#~ msgid "Grant UCI access for luci-app-https-dns-proxy"
-#~ msgstr "Предоставить UCI доступ для luci-app-https-dns-proxy"
-
-#~ msgid "DNS Over HTTPS Proxy"
-#~ msgstr "DNS Over HTTPS"
-
-#~ msgid "DNS Over HTTPS Proxy Settings"
-#~ msgstr "Настройки DNS Over HTTPS"
-
-#~ msgid "DHCP and DNS"
-#~ msgstr "DHCP и DNS"
-
-#~ msgid "DoH"
-#~ msgstr "DoH"
-
-#~ msgid "Running"
-#~ msgstr "Запущен"
-
-#~ msgid "is not installed or not found"
-#~ msgstr "не установлен или не найден"

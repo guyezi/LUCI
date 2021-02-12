@@ -12,10 +12,11 @@ msgstr ""
 "|| n%100>=20) ? 1 : 2);\n"
 "X-Generator: Pootle 2.0.6\n"
 
-#: applications/luci-app-diag-core/root/usr/share/luci/menu.d/luci-app-diag-core.json:3
+#: applications/luci-app-diag-core/luasrc/controller/luci_diag.lua:9
 msgid "Configure Diagnostics"
 msgstr "Konfiguracja diagnostyki"
 
+#: applications/luci-app-diag-core/luasrc/controller/luci_diag.lua:13
 #: applications/luci-app-diag-core/luasrc/view/diag/index.htm:7
 #: applications/luci-app-diag-core/luasrc/view/diag/network_config_index.htm:7
 msgid "Diagnostics"
@@ -45,6 +46,3 @@ msgid ""
 msgstr ""
 "W tym menu można skonfigurować diagnostykę sieci, jak np. skanowanie "
 "urządzeń sieciowych lub testy ping."
-
-#~ msgid "l_d_diag"
-#~ msgstr "l_d_diag"

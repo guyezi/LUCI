@@ -58,7 +58,7 @@ msgid "Don't initialize dynctrls"
 msgstr "Отключить dynctrls"
 
 #: applications/luci-app-mjpg-streamer/luasrc/model/cbi/mjpg-streamer.lua:74
-msgid "Drop frames smaller than this limit"
+msgid "Drop frames smaller then this limit"
 msgstr "Ограничить кол-во кадров"
 
 #: applications/luci-app-mjpg-streamer/luasrc/model/cbi/mjpg-streamer.lua:12
@@ -79,7 +79,7 @@ msgstr "Превышение"
 
 #: applications/luci-app-mjpg-streamer/luasrc/model/cbi/mjpg-streamer.lua:220
 msgid ""
-"Execute command after saving picture. Mjpg-streamer parses the filename as "
+"Execute command after saving picture. Mjpg-streamer parse the filename as "
 "first parameter to your script."
 msgstr ""
 "Выполнить команду после сохранения изображения.<br />Mjpg-streamer задаст "
@@ -104,10 +104,6 @@ msgstr "Кадров в секунду"
 #: applications/luci-app-mjpg-streamer/luasrc/model/cbi/mjpg-streamer.lua:8
 msgid "General"
 msgstr "Главный"
-
-#: applications/luci-app-mjpg-streamer/root/usr/share/rpcd/acl.d/luci-app-mjpg-streamer.json:3
-msgid "Grant UCI access for luci-app-mjpg-streamer"
-msgstr "Разрешить luci-app-mjpg-streamer доступ к UCI"
 
 #: applications/luci-app-mjpg-streamer/luasrc/model/cbi/mjpg-streamer.lua:33
 msgid "HTTP output"
@@ -137,7 +133,7 @@ msgstr ""
 msgid "Link the last picture in ringbuffer to fixed named file provided."
 msgstr ""
 
-#: applications/luci-app-mjpg-streamer/root/usr/share/luci/menu.d/luci-app-mjpg-streamer.json:3
+#: applications/luci-app-mjpg-streamer/luasrc/controller/mjpg-streamer.lua:12
 msgid "MJPG-streamer"
 msgstr "MJPG-streamer"
 
@@ -224,12 +220,3 @@ msgstr ""
 "Приложение для трансляции потокового видео, для Linux-UVC совместимых веб-"
 "камер.<br />Просмотр в браузере по умолчанию http://192.168.1.1:8080/?"
 "action=stream"
-
-#~ msgid "Check to save the stream to an mjpeg file"
-#~ msgstr "Проверка сохранения потока в mjpeg файл."
-
-#~ msgid "File input"
-#~ msgstr "Файл ввода"
-
-#~ msgid "Mjpeg output"
-#~ msgstr "Mjpeg вывод"

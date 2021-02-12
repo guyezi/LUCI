@@ -14,18 +14,22 @@ PKG_LICENSE:=MIT
 PKG_LICENSE_FILES:=LICENSE
 PKG_MAINTAINER:=chenhw2 <https://github.com/chenhw2/>
 
+LUCI_TITLE:=LuCI Support for aliddns
+LUCI_PKGARCH:=all
+LUCI_DEPENDS:=+openssl-util +curl
+
 #PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
-include $(INCLUDE_DIR)/package.mk
+#include $(INCLUDE_DIR)/package.mk
 
-define Package/luci-app-aliddns
-	SECTION:=luci
-	CATEGORY:=LuCI
-	SUBMENU:=3. Applications
-	TITLE:=LuCI Support for aliddns
-	PKGARCH:=all
-	DEPENDS:=+openssl-util +curl
-endef
+#define Package/luci-app-aliddns
+#	SECTION:=luci
+#	CATEGORY:=LuCI
+#	SUBMENU:=3. Applications
+#	TITLE:=LuCI Support for aliddns
+#	PKGARCH:=all
+#	DEPENDS:=+openssl-util +curl
+#endef
 
 define Package/luci-app-aliddns/description
 	LuCI Support for ALiDDNS.
@@ -82,4 +86,5 @@ endef
 #endef
 #
 #$(eval $(call BuildPackage,luci-app-aliddns))
+
 include ../../luci.mk

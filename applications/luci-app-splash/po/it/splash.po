@@ -14,10 +14,6 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.0-dev\n"
 
-#: applications/luci-app-splash/luasrc/view/splash/splash.htm:53
-msgid "%s with the operator of this access point."
-msgstr ""
-
 #: applications/luci-app-splash/luasrc/view/splash/splash.htm:65
 #: applications/luci-app-splash/luasrc/view/splash_splash/splash.htm:13
 msgid "Accept"
@@ -130,8 +126,9 @@ msgid "Clients upload speed is limited to this value (kbyte/s)"
 msgstr "La velocità di upload dei clienti è limitata a questo valore (kbyte/s)"
 
 #: applications/luci-app-splash/luasrc/view/splash/blocked.htm:15
-msgid "Contact the owner"
-msgstr ""
+#: applications/luci-app-splash/luasrc/view/splash/splash.htm:54
+msgid "Contact"
+msgstr "Contatto"
 
 #: applications/luci-app-splash/luasrc/view/splash_splash/splash.htm:12
 msgid "Decline"
@@ -168,12 +165,8 @@ msgstr "Zona Firewall"
 msgid "General"
 msgstr "Generale"
 
-#: applications/luci-app-splash/luasrc/view/splash/splash.htm:54
-msgid "Get in contact"
-msgstr ""
-
-#: applications/luci-app-splash/root/usr/share/rpcd/acl.d/luci-app-splash.json:3
-msgid "Grant UCI access for luci-app-splash"
+#: applications/luci-app-splash/luasrc/view/splash/splash.htm:53
+msgid "Get in %s with the operator of this access point."
 msgstr ""
 
 #: applications/luci-app-splash/luasrc/view/admin_status/splash.htm:205
@@ -443,27 +436,3 @@ msgstr "sprecate banda con download o flussi inutili"
 #: applications/luci-app-splash/luasrc/view/admin_status/splash.htm:241
 msgid "whitelisted"
 msgstr "Elenco contensiti"
-
-#~ msgid "Contact"
-#~ msgstr "Contatto"
-
-#~ msgid ""
-#~ "Hosts and Networks that are listed here are excluded from splashing, i.e. "
-#~ "they are always allowed."
-#~ msgstr ""
-#~ "Le reti e gli host che sono elencate qui sono esclusi dallo splashing, "
-#~ "cio* sono sempre ammessi."
-
-#~ msgid "By accepting these rules you can use this network for"
-#~ msgstr "Accettando queste regole è possibile utilizzare questa rete per"
-
-#~ msgid "Edit Splash text"
-#~ msgstr "Modifica il testo Splash"
-
-#~ msgid "hour(s). After this time you need to accept these rules again."
-#~ msgstr ""
-#~ "ora(e). Trascorso questo tempo è necessario accettare queste regole di "
-#~ "nuovo."
-
-#~ msgid "the owner of this access point."
-#~ msgstr "il proprietario di questo punto di accesso."

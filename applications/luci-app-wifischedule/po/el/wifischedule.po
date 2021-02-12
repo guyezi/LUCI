@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-02-01 16:02+0000\n"
-"Last-Translator: ChriZathens <c_kan1@hotmail.com>\n"
+"PO-Revision-Date: 2020-04-25 16:36+0000\n"
+"Last-Translator: george k <norhorn@gmail.com>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationswifischedule/el/>\n"
 "Language: el\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.5-dev\n"
+"X-Generator: Weblate 4.0.2-dev\n"
 
 #: applications/luci-app-wifischedule/luasrc/model/cbi/wifischedule/wifi_schedule.lua:81
 msgid "Activate wifi"
@@ -22,7 +22,7 @@ msgstr ""
 msgid "Could not find required program /usr/bin/iwinfo"
 msgstr ""
 
-#: applications/luci-app-wifischedule/luasrc/controller/wifischedule/wifi_schedule.lua:45
+#: applications/luci-app-wifischedule/luasrc/controller/wifischedule/wifi_schedule.lua:41
 msgid "Cron Jobs"
 msgstr ""
 
@@ -56,7 +56,7 @@ msgstr ""
 
 #: applications/luci-app-wifischedule/luasrc/model/cbi/wifischedule/wifi_schedule.lua:74
 msgid "Enable logging"
-msgstr "Ενεργοποίηση καταγραφής"
+msgstr ""
 
 #: applications/luci-app-wifischedule/luasrc/model/cbi/wifischedule/wifi_schedule.lua:235
 msgid "Force disabling wifi even if stations associated"
@@ -70,10 +70,6 @@ msgstr ""
 msgid "Global Settings"
 msgstr ""
 
-#: applications/luci-app-wifischedule/root/usr/share/rpcd/acl.d/luci-app-wifischedule.json:3
-msgid "Grant UCI access for luci-app-wifischedule"
-msgstr ""
-
 #: applications/luci-app-wifischedule/luasrc/model/cbi/wifischedule/wifi_schedule.lua:157
 msgid "Monday"
 msgstr ""
@@ -82,7 +78,7 @@ msgstr ""
 msgid "Saturday"
 msgstr ""
 
-#: applications/luci-app-wifischedule/luasrc/controller/wifischedule/wifi_schedule.lua:31
+#: applications/luci-app-wifischedule/luasrc/controller/wifischedule/wifi_schedule.lua:27
 msgid "Schedule"
 msgstr ""
 
@@ -126,11 +122,11 @@ msgstr ""
 msgid "Unload Modules (experimental; saves more power)"
 msgstr ""
 
-#: applications/luci-app-wifischedule/luasrc/controller/wifischedule/wifi_schedule.lua:33
+#: applications/luci-app-wifischedule/luasrc/controller/wifischedule/wifi_schedule.lua:29
 msgid "View Cron Jobs"
 msgstr ""
 
-#: applications/luci-app-wifischedule/luasrc/controller/wifischedule/wifi_schedule.lua:32
+#: applications/luci-app-wifischedule/luasrc/controller/wifischedule/wifi_schedule.lua:28
 msgid "View Logfile"
 msgstr ""
 
@@ -138,11 +134,11 @@ msgstr ""
 msgid "Wednesday"
 msgstr ""
 
-#: applications/luci-app-wifischedule/luasrc/controller/wifischedule/wifi_schedule.lua:27
+#: applications/luci-app-wifischedule/luasrc/controller/wifischedule/wifi_schedule.lua:26
 #: applications/luci-app-wifischedule/luasrc/model/cbi/wifischedule/wifi_schedule.lua:39
 msgid "Wifi Schedule"
 msgstr ""
 
-#: applications/luci-app-wifischedule/luasrc/controller/wifischedule/wifi_schedule.lua:39
+#: applications/luci-app-wifischedule/luasrc/controller/wifischedule/wifi_schedule.lua:35
 msgid "Wifi Schedule Logfile"
 msgstr ""

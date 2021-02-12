@@ -13,10 +13,6 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 4.3.1\n"
 
-#: applications/luci-app-splash/luasrc/view/splash/splash.htm:53
-msgid "%s with the operator of this access point."
-msgstr "%s avec l’opérateur de ce point d’accès."
-
 #: applications/luci-app-splash/luasrc/view/splash/splash.htm:65
 #: applications/luci-app-splash/luasrc/view/splash_splash/splash.htm:13
 msgid "Accept"
@@ -123,8 +119,9 @@ msgid "Clients upload speed is limited to this value (kbyte/s)"
 msgstr "La vitesse montante des clients sera limitée à cette valeur (en ko/s)"
 
 #: applications/luci-app-splash/luasrc/view/splash/blocked.htm:15
-msgid "Contact the owner"
-msgstr "Contactez le propriétaire"
+#: applications/luci-app-splash/luasrc/view/splash/splash.htm:54
+msgid "Contact"
+msgstr ""
 
 #: applications/luci-app-splash/luasrc/view/splash_splash/splash.htm:12
 msgid "Decline"
@@ -160,12 +157,8 @@ msgstr "Zone du pare-feu"
 msgid "General"
 msgstr "Général"
 
-#: applications/luci-app-splash/luasrc/view/splash/splash.htm:54
-msgid "Get in contact"
-msgstr ""
-
-#: applications/luci-app-splash/root/usr/share/rpcd/acl.d/luci-app-splash.json:3
-msgid "Grant UCI access for luci-app-splash"
+#: applications/luci-app-splash/luasrc/view/splash/splash.htm:53
+msgid "Get in %s with the operator of this access point."
 msgstr ""
 
 #: applications/luci-app-splash/luasrc/view/admin_status/splash.htm:205
@@ -420,25 +413,3 @@ msgstr ""
 #: applications/luci-app-splash/luasrc/view/admin_status/splash.htm:241
 msgid "whitelisted"
 msgstr "autorisés par liste blanche"
-
-#~ msgid ""
-#~ "Hosts and Networks that are listed here are excluded from splashing, i.e. "
-#~ "they are always allowed."
-#~ msgstr ""
-#~ "Les hôtes et réseaux listés ici sont exclus de l'accueil du HotSpot, ils "
-#~ "ne seront jamais autorisés."
-
-#~ msgid "Edit Splash text"
-#~ msgstr "Modifier le texte de la page d'accueil"
-
-#~ msgid ""
-#~ "You can change the text that is displayed to clients here.<br /> It is "
-#~ "possible to use the following markers: ###COMMUNITY###, "
-#~ "###COMMUNITY_URL###, ###LEASETIME### and ###ACCEPT###.<br />Click here to "
-#~ "<a href='/luci/splash/'>test the splash page</a> after you saved it."
-#~ msgstr ""
-#~ "Vous pouvez changer ici le texte qui sera présenté aux clients.<br /> Il "
-#~ "est possible d'y inclure les marqueurs suivants : ###COMMUNITY###, "
-#~ "###COMMUNITY_URL###, ###LEASETIME### et ###ACCEPT###.<br />Cliquez ici <a "
-#~ "href=\\'/luci/splash/\\'>tester la page d'accueil</a> une fois celle-ci "
-#~ "sauvegardée."

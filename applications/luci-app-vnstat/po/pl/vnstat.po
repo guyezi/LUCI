@@ -13,7 +13,8 @@ msgstr ""
 "|| n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.1-dev\n"
 
-#: applications/luci-app-vnstat/root/usr/share/luci/menu.d/luci-app-vnstat.json:23
+#: applications/luci-app-vnstat/luasrc/controller/vnstat.lua:6
+#: applications/luci-app-vnstat/luasrc/controller/vnstat.lua:10
 msgid "Configuration"
 msgstr "Konfiguracja"
 
@@ -21,11 +22,8 @@ msgstr "Konfiguracja"
 msgid "Daily traffic"
 msgstr "Obciążenie dzienne"
 
-#: applications/luci-app-vnstat/root/usr/share/rpcd/acl.d/luci-app-vnstat.json:3
-msgid "Grant UCI access for luci-app-vnstat"
-msgstr "Udziel dostępu UCI do luci-app-vnstat"
-
-#: applications/luci-app-vnstat/root/usr/share/luci/menu.d/luci-app-vnstat.json:14
+#: applications/luci-app-vnstat/luasrc/controller/vnstat.lua:5
+#: applications/luci-app-vnstat/luasrc/controller/vnstat.lua:9
 msgid "Graphs"
 msgstr "Wykresy"
 
@@ -73,7 +71,8 @@ msgstr "VnStat"
 msgid "VnStat Graphs"
 msgstr "Wykresy VnStat"
 
-#: applications/luci-app-vnstat/root/usr/share/luci/menu.d/luci-app-vnstat.json:3
+#: applications/luci-app-vnstat/luasrc/controller/vnstat.lua:4
+#: applications/luci-app-vnstat/luasrc/controller/vnstat.lua:8
 msgid "VnStat Traffic Monitor"
 msgstr "Monitor obciążenia VnStat"
 
@@ -84,6 +83,3 @@ msgid ""
 msgstr ""
 "VnStat to aplikacja monitorująca ruch sieciowy w Linuxie, który utrzymuje "
 "loga ruchu sieciowego dla określonych interfejsów."
-
-#~ msgid "The VnStat service has been restarted."
-#~ msgstr "Usługa VnStat została uruchomiona ponownie."

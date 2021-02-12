@@ -10,8 +10,6 @@
 'require firewall';
 'require tools.widgets as widgets';
 
-var isReadonlyView = !L.hasViewPermission() || null;
-
 function count_changes(section_id) {
 	var changes = ui.changes.changes, n = 0;
 
@@ -283,8 +281,8 @@ return view.extend({
 				]);
 			}
 
-			btn1.disabled = isReadonlyView || btn1.classList.contains('spinning') || btn2.classList.contains('spinning') || dynamic;
-			btn2.disabled = isReadonlyView || btn1.classList.contains('spinning') || btn2.classList.contains('spinning') || dynamic || disabled;
+			btn1.disabled = btn1.classList.contains('spinning') || btn2.classList.contains('spinning') || dynamic;
+			btn2.disabled = btn1.classList.contains('spinning') || btn2.classList.contains('spinning') || dynamic || disabled;
 		}
 
 		return Promise.all([ resolveZone, network.flushCache() ]);
@@ -413,7 +411,7 @@ return view.extend({
 				o.modalonly = true;
 				o.default = o.enabled;
 
-				type = s.taboption('physical', form.Flag, 'type', _('Bridge interfaces'), _('Creates a bridge over specified interface(s)'));
+				type = s.taboption('physical', form.Flag, 'type', _('Bridge interfaces'), _('creates a bridge over specified interface(s)'));
 				type.modalonly = true;
 				type.disabled = '';
 				type.enabled = 'bridge';
@@ -727,7 +725,7 @@ return view.extend({
 			proto = s2.option(form.ListValue, 'proto', _('Protocol'));
 			proto.validate = name.validate;
 
-			bridge = s2.option(form.Flag, 'type', _('Bridge interfaces'), _('Creates a bridge over specified interface(s)'));
+			bridge = s2.option(form.Flag, 'type', _('Bridge interfaces'), _('creates a bridge over specified interface(s)'));
 			bridge.modalonly = true;
 			bridge.disabled = '';
 			bridge.enabled = 'bridge';
@@ -771,31 +769,21 @@ return view.extend({
 								if (nameval == null || protoval == null || nameval == '' || protoval == '')
 									return;
 
-								return protoclass.isCreateable(nameval).then(function(checkval) {
-									if (checkval != null) {
-										ui.addNotification(null,
-												E('p', _('New interface for "%s" can not be created: %s').format(protoclass.getI18n(), checkval)));
-										ui.hideModal();
-										return;
+								return m.save(function() {
+									uci.add('network', 'interface', nameval);
+
+									protoclass.set('proto', protoval);
+
+									if (ifname_single.isActive('_new_')) {
+										protoclass.addDevice(ifname_single.formvalue('_new_'));
 									}
-
-									return m.save(function() {
-										uci.add('network', 'interface', nameval);
-
-										protoclass.set('proto', protoval);
-
-										if (ifname_single.isActive('_new_')) {
-											protoclass.addDevice(ifname_single.formvalue('_new_'));
-										}
-										else if (ifname_multi.isActive('_new_')) {
-											protoclass.set('type', 'bridge');
-											L.toArray(ifname_multi.formvalue('_new_')).map(function(dev) {
-												protoclass.addDevice(dev);
-											});
-										}
-									}).then(L.bind(m.children[0].renderMoreOptionsModal, m.children[0], nameval));
-
-								});
+									else if (ifname_multi.isActive('_new_')) {
+										protoclass.set('type', 'bridge');
+										L.toArray(ifname_multi.formvalue('_new_')).map(function(dev) {
+											protoclass.addDevice(dev);
+										});
+									}
+								}).then(L.bind(m.children[0].renderMoreOptionsModal, m.children[0], nameval));
 							})
 						}, _('Create interface'))
 					])
@@ -880,9 +868,6 @@ return view.extend({
 
 		o = s.option(form.Value, 'ula_prefix', _('IPv6 ULA-Prefix'));
 		o.datatype = 'cidr6';
-
-		o = s.option(form.Flag, 'packet_steering', _('Packet Steering'), _('Enable packet steering across all CPUs. May help or hinder network speed.'));
-		o.optional = true;
 
 
 		if (dslModemType != null) {

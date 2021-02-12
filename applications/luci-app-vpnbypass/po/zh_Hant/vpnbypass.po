@@ -39,10 +39,6 @@ msgstr "要直接存取的網域名稱（不使用 VPN 隧道），請參閱 %sR
 msgid "Enable"
 msgstr "啟用"
 
-#: applications/luci-app-vpnbypass/root/usr/share/rpcd/acl.d/luci-app-vpnbypass.json:3
-msgid "Grant UCI and file access for luci-app-vpnbypass"
-msgstr "授予 luci-app-vpnbypass 擁有 UCI 和檔案存取的權限"
-
 #: applications/luci-app-vpnbypass/luasrc/view/vpnbypass/js.htm:51
 msgid "Loading"
 msgstr "正在載入中"
@@ -126,18 +122,3 @@ msgstr "VPN繞道規則"
 #: applications/luci-app-vpnbypass/luasrc/model/cbi/vpnbypass.lua:44
 msgid "VPN Bypass Settings"
 msgstr "VPN 繞過設定"
-
-#~ msgid "Domains to be accessed directly (outside of the VPN tunnel), see"
-#~ msgstr "要直接訪問的域（不使用 VPN 隧道），請參見"
-
-#~ msgid "README"
-#~ msgstr "README"
-
-#~ msgid "for syntax"
-#~ msgstr "對於語法"
-
-#~ msgid "Reload"
-#~ msgstr "重新載入"
-
-#~ msgid "Enable/start service"
-#~ msgstr "啟用/啟動服務"

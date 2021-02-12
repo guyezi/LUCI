@@ -181,10 +181,6 @@ msgstr ""
 msgid "Force the ICMP protocol interface."
 msgstr "Impor o protocolo ICMP na interface."
 
-#: applications/luci-app-vpn-policy-routing/root/usr/share/rpcd/acl.d/luci-app-vpn-policy-routing.json:3
-msgid "Grant UCI and file access for luci-app-vpn-policy-routing"
-msgstr "Conceder acesso a UCI e a ficheiros para luci-app-vpn-policy-routing"
-
 #: applications/luci-app-vpn-policy-routing/luasrc/model/cbi/vpn-policy-routing.lua:214
 msgid "IP Rules Support"
 msgstr "Suporte as Regras de IP"
@@ -423,7 +419,8 @@ msgstr "Suprimir/Nenhuma saída"
 
 #: applications/luci-app-vpn-policy-routing/luasrc/view/vpn-policy-routing/status-gateways.htm:15
 msgid "The %s represents the default gateway. See the %sREADME%s for details."
-msgstr "O %s representa o gateway padrão. Veja a %sREADME%s para mais detalhes."
+msgstr ""
+"O %s representa o gateway padrão. Veja a %sREADME%s para mais detalhes."
 
 #: applications/luci-app-vpn-policy-routing/luasrc/model/cbi/vpn-policy-routing.lua:186
 msgid "The ipset option for local policies"
@@ -481,27 +478,3 @@ msgstr "ID da Tabela WAN"
 #: applications/luci-app-vpn-policy-routing/luasrc/model/cbi/vpn-policy-routing.lua:248
 msgid "Web UI Configuration"
 msgstr "Configuração da Interface Web do Utilizador"
-
-#~ msgid ""
-#~ "Checkmark represents the default gateway. See the %sREADME%s for details."
-#~ msgstr ""
-#~ "A marca de seleção representa o gateway predefinido. Consulte o %sREADME"
-#~ "%s para mais informações."
-
-#~ msgid "Grant UCI access for luci-app-vpn-policy-routing"
-#~ msgstr "Conceder acesso UCI ao luci-app-vpn-policy-routing"
-
-#~ msgid "(strict mode)"
-#~ msgstr "(modo estrito)"
-
-#~ msgid "README"
-#~ msgstr "LEIAME"
-
-#~ msgid "Reload"
-#~ msgstr "Recarregar"
-
-#~ msgid "for details."
-#~ msgstr "para detalhes."
-
-#~ msgid "is not installed or not found"
-#~ msgstr "não está instalado ou não foi encontrado"

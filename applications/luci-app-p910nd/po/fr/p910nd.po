@@ -30,10 +30,6 @@ msgstr ""
 "Vous devez d'abord installer les paquets pour gérer des imprimantes USB "
 "(kmod-usb-printer) ou sur port parallèle (kmod-lp)."
 
-#: applications/luci-app-p910nd/root/usr/share/rpcd/acl.d/luci-app-p910nd.json:3
-msgid "Grant UCI access for luci-app-p910nd"
-msgstr "Accorder l’accès à l’UCI pour luci-app-p910nd"
-
 #: applications/luci-app-p910nd/luasrc/model/cbi/p910nd.lua:22
 msgid "Interface"
 msgstr "Interface"
@@ -58,15 +54,7 @@ msgstr "Port d'écoute TCP."
 msgid "enable"
 msgstr "activer"
 
+#: applications/luci-app-p910nd/luasrc/controller/p910nd.lua:13
 #: applications/luci-app-p910nd/luasrc/model/cbi/p910nd.lua:9
-#: applications/luci-app-p910nd/root/usr/share/luci/menu.d/luci-app-p910nd.json:3
 msgid "p910nd - Printer server"
 msgstr "p910nd - Serveur d'impression"
-
-#~ msgid "port_help"
-#~ msgstr "aide_port"
-
-#~ msgid "p910nd listens on port 910+N. E.g. 9100 for the first printer."
-#~ msgstr ""
-#~ "p910nd écoute sur le port 910+N, par exemple 9100 pour la première "
-#~ "imprimante."

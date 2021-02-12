@@ -15,7 +15,8 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 4.4.1-dev\n"
 
-#: applications/luci-app-vnstat/root/usr/share/luci/menu.d/luci-app-vnstat.json:23
+#: applications/luci-app-vnstat/luasrc/controller/vnstat.lua:6
+#: applications/luci-app-vnstat/luasrc/controller/vnstat.lua:10
 msgid "Configuration"
 msgstr "組態"
 
@@ -23,11 +24,8 @@ msgstr "組態"
 msgid "Daily traffic"
 msgstr "每日流量"
 
-#: applications/luci-app-vnstat/root/usr/share/rpcd/acl.d/luci-app-vnstat.json:3
-msgid "Grant UCI access for luci-app-vnstat"
-msgstr "授予 luci-app-vnstat 擁有 UCI 存取的權限"
-
-#: applications/luci-app-vnstat/root/usr/share/luci/menu.d/luci-app-vnstat.json:14
+#: applications/luci-app-vnstat/luasrc/controller/vnstat.lua:5
+#: applications/luci-app-vnstat/luasrc/controller/vnstat.lua:9
 msgid "Graphs"
 msgstr "圖表"
 
@@ -47,7 +45,8 @@ msgstr "每月流量"
 msgid ""
 "No database has been set up yet. Go to the VnStat configuration and enable "
 "monitoring for one or more interfaces."
-msgstr "尚未設定任何資料庫；請在 vnStat 組態中設定並啟用對一個或多個介面的監視。"
+msgstr ""
+"尚未設定任何資料庫；請在 vnStat 組態中設定並啟用對一個或多個介面的監視。"
 
 #: applications/luci-app-vnstat/luasrc/model/cbi/vnstat.lua:22
 msgid "Restart VnStat"
@@ -73,7 +72,8 @@ msgstr "vnStat"
 msgid "VnStat Graphs"
 msgstr "vnStat 圖表"
 
-#: applications/luci-app-vnstat/root/usr/share/luci/menu.d/luci-app-vnstat.json:3
+#: applications/luci-app-vnstat/luasrc/controller/vnstat.lua:4
+#: applications/luci-app-vnstat/luasrc/controller/vnstat.lua:8
 msgid "VnStat Traffic Monitor"
 msgstr "vnStat 流量監視"
 
@@ -81,4 +81,6 @@ msgstr "vnStat 流量監視"
 msgid ""
 "VnStat is a network traffic monitor for Linux that keeps a log of network "
 "traffic for the selected interface(s)."
-msgstr "vnStat 是一個在 Linux 上工作的網路流量監視器，它會記錄已選擇介面的網路流量日誌。"
+msgstr ""
+"vnStat 是一個在 Linux 上工作的網路流量監視器，它會記錄已選擇介面的網路流量日"
+"誌。"

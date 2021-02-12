@@ -37,10 +37,6 @@ msgstr ""
 msgid "Enable"
 msgstr "Aktivera"
 
-#: applications/luci-app-vpnbypass/root/usr/share/rpcd/acl.d/luci-app-vpnbypass.json:3
-msgid "Grant UCI and file access for luci-app-vpnbypass"
-msgstr "Bevilja UCI och filåtkomst för luci-app-vpnbypass"
-
 #: applications/luci-app-vpnbypass/luasrc/view/vpnbypass/js.htm:51
 msgid "Loading"
 msgstr "Laddar"
@@ -127,6 +123,3 @@ msgstr "Regler för VPN-förbikoppling"
 #: applications/luci-app-vpnbypass/luasrc/model/cbi/vpnbypass.lua:44
 msgid "VPN Bypass Settings"
 msgstr "Inställningar för VPN-förbikoppling"
-
-#~ msgid "Reload"
-#~ msgstr "Ladda om"

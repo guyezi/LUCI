@@ -11,7 +11,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.0.6\n"
 
-#: applications/luci-app-vnstat/root/usr/share/luci/menu.d/luci-app-vnstat.json:23
+#: applications/luci-app-vnstat/luasrc/controller/vnstat.lua:6
+#: applications/luci-app-vnstat/luasrc/controller/vnstat.lua:10
 msgid "Configuration"
 msgstr "Configuració"
 
@@ -19,11 +20,8 @@ msgstr "Configuració"
 msgid "Daily traffic"
 msgstr "Trànsit diari"
 
-#: applications/luci-app-vnstat/root/usr/share/rpcd/acl.d/luci-app-vnstat.json:3
-msgid "Grant UCI access for luci-app-vnstat"
-msgstr ""
-
-#: applications/luci-app-vnstat/root/usr/share/luci/menu.d/luci-app-vnstat.json:14
+#: applications/luci-app-vnstat/luasrc/controller/vnstat.lua:5
+#: applications/luci-app-vnstat/luasrc/controller/vnstat.lua:9
 msgid "Graphs"
 msgstr "Gràfics"
 
@@ -71,7 +69,8 @@ msgstr "VnStat"
 msgid "VnStat Graphs"
 msgstr "Gràfics de VnStat"
 
-#: applications/luci-app-vnstat/root/usr/share/luci/menu.d/luci-app-vnstat.json:3
+#: applications/luci-app-vnstat/luasrc/controller/vnstat.lua:4
+#: applications/luci-app-vnstat/luasrc/controller/vnstat.lua:8
 msgid "VnStat Traffic Monitor"
 msgstr "Monitor de trànsit VnStat"
 

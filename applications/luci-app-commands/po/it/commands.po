@@ -29,7 +29,7 @@ msgid "Allow the user to provide additional command line arguments"
 msgstr ""
 "Consente all'utente di fornire ulteriori argomenti della riga di comando"
 
-#: applications/luci-app-commands/luasrc/view/commands.htm:156
+#: applications/luci-app-commands/luasrc/view/commands.htm:146
 msgid "Arguments:"
 msgstr "Argomenti:"
 
@@ -41,7 +41,7 @@ msgstr "I dati binari non vengono visualizzati, ma possono essere scaricati."
 msgid "Code:"
 msgstr "Codice:"
 
-#: applications/luci-app-commands/luasrc/view/commands.htm:176
+#: applications/luci-app-commands/luasrc/view/commands.htm:164
 msgid "Collecting data..."
 msgstr "Raccolta dati..."
 
@@ -69,7 +69,7 @@ msgstr "Riga di comando da eseguire"
 msgid "Command successful"
 msgstr "Comando riuscito"
 
-#: applications/luci-app-commands/luasrc/view/commands.htm:154
+#: applications/luci-app-commands/luasrc/view/commands.htm:144
 msgid "Command:"
 msgstr "Comando:"
 
@@ -95,7 +95,7 @@ msgstr "Dashboard"
 msgid "Description"
 msgstr "Descrizione"
 
-#: applications/luci-app-commands/luasrc/view/commands.htm:160
+#: applications/luci-app-commands/luasrc/view/commands.htm:150
 msgid "Download"
 msgstr "Download"
 
@@ -107,11 +107,7 @@ msgstr ""
 msgid "Failed to execute command!"
 msgstr "Impossibile eseguire il comando!"
 
-#: applications/luci-app-commands/root/usr/share/rpcd/acl.d/luci-app-commands.json:3
-msgid "Grant UCI access for luci-app-commands"
-msgstr ""
-
-#: applications/luci-app-commands/luasrc/view/commands.htm:162
+#: applications/luci-app-commands/luasrc/view/commands.htm:152
 msgid "Link"
 msgstr "Collegamento"
 
@@ -127,7 +123,7 @@ msgstr ""
 msgid "Public access"
 msgstr "Accesso Pubblico"
 
-#: applications/luci-app-commands/luasrc/view/commands.htm:159
+#: applications/luci-app-commands/luasrc/view/commands.htm:149
 msgid "Run"
 msgstr "Esegui"
 
@@ -147,13 +143,6 @@ msgstr ""
 "Questa pagina consente di configurare i comandi della shell personalizzate "
 "che possono essere facilmente richiamati dall'interfaccia web."
 
-#: applications/luci-app-commands/luasrc/view/commands.htm:144
-msgid "This section contains no values yet"
-msgstr "Questa sezione non contiene ancora valori"
-
 #: applications/luci-app-commands/luasrc/view/commands.htm:54
 msgid "Waiting for command to complete..."
 msgstr "In attesa del comando da completare..."
-
-#~ msgid "Access command with"
-#~ msgstr "Accesso comando con"

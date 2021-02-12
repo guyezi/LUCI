@@ -20,10 +20,6 @@ msgstr ""
 msgid "Forced reboot delay"
 msgstr "Задержка<br />принудительной<br />перезагрузки"
 
-#: applications/luci-app-watchcat/root/usr/share/rpcd/acl.d/luci-app-watchcat.json:3
-msgid "Grant UCI access for luci-app-watchcat"
-msgstr "Предоставить UCI доступ для luci-app-watchcat"
-
 #: applications/luci-app-watchcat/luasrc/model/cbi/watchcat/watchcat.lua:40
 msgid "Host address to ping"
 msgstr "Адрес хоста для пинг-запроса"
@@ -66,8 +62,8 @@ msgstr "Хост пинг-запроса"
 msgid "Ping period"
 msgstr "Период пинг-запроса"
 
+#: applications/luci-app-watchcat/luasrc/controller/watchcat.lua:10
 #: applications/luci-app-watchcat/luasrc/model/cbi/watchcat/watchcat.lua:5
-#: applications/luci-app-watchcat/root/usr/share/luci/menu.d/luci-app-watchcat.json:3
 msgid "Watchcat"
 msgstr "Watchcat"
 

@@ -14,10 +14,6 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 4.1-dev\n"
 
-#: applications/luci-app-splash/luasrc/view/splash/splash.htm:53
-msgid "%s with the operator of this access point."
-msgstr "%s com o operador deste ponto de acesso."
-
 #: applications/luci-app-splash/luasrc/view/splash/splash.htm:65
 #: applications/luci-app-splash/luasrc/view/splash_splash/splash.htm:13
 msgid "Accept"
@@ -141,8 +137,9 @@ msgstr ""
 "A velocidade para subir dos clientes é limitada por este valor (kbytes/s)"
 
 #: applications/luci-app-splash/luasrc/view/splash/blocked.htm:15
-msgid "Contact the owner"
-msgstr "Entre em contato com o proprietário"
+#: applications/luci-app-splash/luasrc/view/splash/splash.htm:54
+msgid "Contact"
+msgstr "Contato"
 
 #: applications/luci-app-splash/luasrc/view/splash_splash/splash.htm:12
 msgid "Decline"
@@ -181,13 +178,10 @@ msgstr "Zona do Firewall"
 msgid "General"
 msgstr "Geral"
 
-#: applications/luci-app-splash/luasrc/view/splash/splash.htm:54
-msgid "Get in contact"
-msgstr "Entre em contato"
-
-#: applications/luci-app-splash/root/usr/share/rpcd/acl.d/luci-app-splash.json:3
-msgid "Grant UCI access for luci-app-splash"
-msgstr "Conceder acesso UCI ao luci-app-splash"
+# Very strange text... Used at http://luci.subsignal.org/trac/browser/luci/trunk/applications/luci-splash/luasrc/view/splash/splash.htm:58
+#: applications/luci-app-splash/luasrc/view/splash/splash.htm:53
+msgid "Get in %s with the operator of this access point."
+msgstr "Entre em %s com o operador deste ponto de acesso."
 
 #: applications/luci-app-splash/luasrc/view/admin_status/splash.htm:205
 msgid "Hostname"
@@ -472,42 +466,3 @@ msgstr "usar banda com fluxos ou arquivos baixados não necessários"
 #: applications/luci-app-splash/luasrc/view/admin_status/splash.htm:241
 msgid "whitelisted"
 msgstr "na lista branca"
-
-#~ msgid "Contact"
-#~ msgstr "Contato"
-
-# Very strange text... Used at http://luci.subsignal.org/trac/browser/luci/trunk/applications/luci-splash/luasrc/view/splash/splash.htm:58
-#~ msgid "Get in %s with the operator of this access point."
-#~ msgstr "Entre em %s com o operador deste ponto de acesso."
-
-#~ msgid ""
-#~ "Hosts and Networks that are listed here are excluded from splashing, i.e. "
-#~ "they are always allowed."
-#~ msgstr ""
-#~ "Equipamentos ou Redes listadas aqui estarão excluídas do termo de uso. "
-#~ "Eles estarão sempre autorizados."
-
-#~ msgid "By accepting these rules you can use this network for"
-#~ msgstr "Aceitando estas regras, você pode usar esta rede para"
-
-#~ msgid "Edit Splash text"
-#~ msgstr "Editar texto do termo de uso"
-
-#~ msgid "hour(s). After this time you need to accept these rules again."
-#~ msgstr ""
-#~ "horas(s). Depois deste tempo, você terá que aceitar as regras novamente."
-
-#~ msgid "the owner of this access point."
-#~ msgstr "o dono deste ponto de acesso."
-
-#~ msgid ""
-#~ "You can change the text that is displayed to clients here.<br /> It is "
-#~ "possible to use the following markers: ###COMMUNITY###, "
-#~ "###COMMUNITY_URL###, ###LEASETIME### and ###ACCEPT###.<br />Click here to "
-#~ "<a href='/luci/splash/'>test the splash page</a> after you saved it."
-#~ msgstr ""
-#~ "Aqui você pode mudar o texto do termo de uso que é mostrado aos clientes."
-#~ "<br /> É possível usar as seguintes marcações: ###COMMUNITY###, "
-#~ "###COMMUNITY_URL###, ###LEASETIME### e ###ACCEPT###.<br />Clique aqui "
-#~ "para <a href='/luci/splash/'>testar a página de termo de uso</a> depois "
-#~ "que você salvá-la."

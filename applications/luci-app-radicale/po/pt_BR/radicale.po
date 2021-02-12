@@ -31,6 +31,22 @@ msgstr ""
 msgid "AUTO"
 msgstr "AUTO"
 
+#: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:734
+msgid "Access-Control-Allow-Headers"
+msgstr "Access-Control-Allow-Headers"
+
+#: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:726
+msgid "Access-Control-Allow-Methods"
+msgstr "Métodos de controle e permissão de acesso"
+
+#: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:718
+msgid "Access-Control-Allow-Origin"
+msgstr "Controle de Acesso - Permitir Origem"
+
+#: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:742
+msgid "Access-Control-Expose-Headers"
+msgstr "Controle de Acesso - Expor Cabeçalhos"
+
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:706
 msgid "Additional HTTP headers"
 msgstr "Cabeçalhos HTTP Adicionais"
@@ -226,10 +242,6 @@ msgstr "Caminho completo e nome do arquivo do certificado"
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:310
 msgid "Full path and file name of private key"
 msgstr "Caminho e arquivo nome completo da chave privada"
-
-#: applications/luci-app-radicale/root/usr/share/rpcd/acl.d/luci-app-radicale.json:3
-msgid "Grant UCI access for luci-app-radicale"
-msgstr "Conceder acesso UCI ao luci-app-radicale"
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:549
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:571
@@ -565,31 +577,3 @@ msgstr "necessário"
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:393
 msgid "salted SHA-1"
 msgstr "SHA-1 com salto"
-
-#~ msgid "Ciphers"
-#~ msgstr "Cifras"
-
-#~ msgid "Custom"
-#~ msgstr "Personalizadas"
-
-#~ msgid "Database"
-#~ msgstr "Banco de Dados"
-
-#~ msgid "OPTIONAL: See python's ssl module for available ciphers"
-#~ msgstr ""
-#~ "Opcional: veja o módulo SSL do python para conhecer as cifras disponíveis"
-
-#~ msgid "custom"
-#~ msgstr "personalizado"
-
-#~ msgid "Access-Control-Allow-Headers"
-#~ msgstr "Access-Control-Allow-Headers"
-
-#~ msgid "Access-Control-Allow-Methods"
-#~ msgstr "Métodos de controle e permissão de acesso"
-
-#~ msgid "Access-Control-Allow-Origin"
-#~ msgstr "Controle de Acesso - Permitir Origem"
-
-#~ msgid "Access-Control-Expose-Headers"
-#~ msgstr "Controle de Acesso - Expor Cabeçalhos"

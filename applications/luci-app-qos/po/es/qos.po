@@ -42,10 +42,6 @@ msgstr "Velocidad de descarga (kbit/s)"
 msgid "Enable"
 msgstr "Activar"
 
-#: applications/luci-app-qos/root/usr/share/rpcd/acl.d/luci-app-qos.json:3
-msgid "Grant UCI access for luci-app-qos"
-msgstr "Conceder acceso UCI para luci-app-qos"
-
 #: applications/luci-app-qos/luasrc/model/cbi/qos/qos.lua:25
 msgid "Half-duplex"
 msgstr "Semi dúplex"
@@ -66,7 +62,7 @@ msgstr "Puertos"
 msgid "Protocol"
 msgstr "Protocolo"
 
-#: applications/luci-app-qos/root/usr/share/luci/menu.d/luci-app-qos.json:3
+#: applications/luci-app-qos/luasrc/controller/qos.lua:13
 msgid "QoS"
 msgstr "QoS"
 
@@ -120,36 +116,3 @@ msgstr "normal"
 #: applications/luci-app-qos/luasrc/model/cbi/qos/qos.lua:40
 msgid "priority"
 msgstr "prioridad"
-
-#~ msgid "Service"
-#~ msgstr "Servicio"
-
-#~ msgid "Downlink"
-#~ msgstr "Enlace de bajada"
-
-#~ msgid "Internet Connection"
-#~ msgstr "Conexión a Internet"
-
-#~ msgid "Uplink"
-#~ msgstr "Enlace de subida"
-
-#~ msgid "allf"
-#~ msgstr "-- ¿allf? --"
-
-#~ msgid "qos_connbytes"
-#~ msgstr "-- ¿qos_connbytes? --"
-
-#~ msgid "Prioritization"
-#~ msgstr "Priorización"
-
-#~ msgid "source network / source host"
-#~ msgstr "red de origen / host de origen"
-
-#~ msgid "target network / target host"
-#~ msgstr "red de destino / host de destino"
-
-#~ msgid "portrange"
-#~ msgstr "rango de puerto"
-
-#~ msgid "Bytes sent"
-#~ msgstr "Bytes enviados"

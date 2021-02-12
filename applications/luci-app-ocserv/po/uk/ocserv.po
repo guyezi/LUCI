@@ -114,10 +114,6 @@ msgstr ""
 msgid "General Settings"
 msgstr "Головні налаштування"
 
-#: applications/luci-app-ocserv/root/usr/share/rpcd/acl.d/luci-app-ocserv.json:3
-msgid "Grant UCI access for luci-app-ocserv"
-msgstr ""
-
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/users.lua:23
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/users.lua:67
 #: applications/luci-app-ocserv/luasrc/view/ocserv_status.htm:52
@@ -194,7 +190,7 @@ msgstr ""
 msgid "Routing table"
 msgstr ""
 
-#: applications/luci-app-ocserv/luasrc/controller/ocserv.lua:20
+#: applications/luci-app-ocserv/luasrc/controller/ocserv.lua:19
 msgid "Server Settings"
 msgstr "Налаштування сервера"
 
@@ -288,7 +284,7 @@ msgstr "Користувач"
 msgid "User Authentication"
 msgstr ""
 
-#: applications/luci-app-ocserv/luasrc/controller/ocserv.lua:25
+#: applications/luci-app-ocserv/luasrc/controller/ocserv.lua:24
 msgid "User Settings"
 msgstr ""
 

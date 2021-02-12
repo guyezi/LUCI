@@ -19,7 +19,7 @@ msgid "BMX7 revision"
 msgstr "Revisão do BMX7"
 
 #: applications/luci-app-bmx7/root/usr/lib/lua/luci/view/bmx7/tunnels_j.htm:41
-msgid "Bandwidth"
+msgid "Bandwith"
 msgstr "Largura de banda"
 
 #: applications/luci-app-bmx7/root/usr/lib/lua/luci/view/admin_status/index/bmx7_nodes.htm:3
@@ -53,8 +53,8 @@ msgid "Link key"
 msgstr "Chave do link"
 
 #: applications/luci-app-bmx7/root/usr/lib/lua/luci/view/bmx7/status_j.htm:61
-msgid "Link-local IPv6"
-msgstr "Link-local IPv6"
+msgid "LinkLocal Ipv6"
+msgstr "LinkLocal Ipv6"
 
 #: applications/luci-app-bmx7/root/usr/lib/lua/luci/view/bmx7/status_j.htm:71
 msgid "Links"
@@ -150,8 +150,8 @@ msgid "Rating"
 msgstr "Classificação"
 
 #: applications/luci-app-bmx7/root/usr/lib/lua/luci/view/bmx7/status_j.htm:78
-msgid "Remote link-local IPv6"
-msgstr "Link-local IPv6 remoto"
+msgid "Remote linklocal IPv6"
+msgstr "linklocal IPv6 remoto"
 
 #: applications/luci-app-bmx7/root/usr/lib/lua/luci/view/bmx7/status_j.htm:82
 msgid "Routes"
@@ -217,18 +217,3 @@ msgstr "Tempo de atividade"
 #: applications/luci-app-bmx7/root/usr/lib/lua/luci/view/bmx7/nodes_j.htm:79
 msgid "Via Neighbour"
 msgstr "Através de Vizinho"
-
-#~ msgid "+ d.x +"
-#~ msgstr "+ d.x +"
-
-#~ msgid "+ d3.event.translate +"
-#~ msgstr "+ d3.event.translate +"
-
-#~ msgid "Bandwith"
-#~ msgstr "Largura de banda"
-
-#~ msgid "LinkLocal Ipv6"
-#~ msgstr "LinkLocal Ipv6"
-
-#~ msgid "Remote linklocal IPv6"
-#~ msgstr "linklocal IPv6 remoto"

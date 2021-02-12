@@ -27,6 +27,22 @@ msgstr ""
 msgid "AUTO"
 msgstr "AUTO"
 
+#: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:734
+msgid "Access-Control-Allow-Headers"
+msgstr ""
+
+#: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:726
+msgid "Access-Control-Allow-Methods"
+msgstr ""
+
+#: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:718
+msgid "Access-Control-Allow-Origin"
+msgstr ""
+
+#: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:742
+msgid "Access-Control-Expose-Headers"
+msgstr ""
+
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:706
 msgid "Additional HTTP headers"
 msgstr ""
@@ -207,10 +223,6 @@ msgstr ""
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:310
 msgid "Full path and file name of private key"
-msgstr ""
-
-#: applications/luci-app-radicale/root/usr/share/rpcd/acl.d/luci-app-radicale.json:3
-msgid "Grant UCI access for luci-app-radicale"
 msgstr ""
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:549
@@ -535,27 +547,3 @@ msgstr "nödvändig"
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:393
 msgid "salted SHA-1"
 msgstr "saltad SHA-1"
-
-#~ msgid "Ciphers"
-#~ msgstr "Chiffer"
-
-#~ msgid "Custom"
-#~ msgstr "Anpassad"
-
-#~ msgid "Database"
-#~ msgstr "Databas"
-
-#~ msgid "OPTIONAL: See python's ssl module for available ciphers"
-#~ msgstr "VALFRITT: Kolla in python's ssl-modul för tillgängliga chiffer"
-
-#~ msgid "custom"
-#~ msgstr "anpassad"
-
-#~ msgid "-- Please choose --"
-#~ msgstr "-- Vänligen välj --"
-
-#~ msgid "-- custom --"
-#~ msgstr "-- anpassad --"
-
-#~ msgid "Reveal/hide password"
-#~ msgstr "Visa/göm lösenordet"

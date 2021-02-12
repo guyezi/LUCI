@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-02-01 16:02+0000\n"
-"Last-Translator: ChriZathens <c_kan1@hotmail.com>\n"
+"PO-Revision-Date: 2021-01-23 03:57+0000\n"
+"Last-Translator: Savvas Sfantos <savvassfa@gmail.com>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsaria2/el/>\n"
 "Language: el\n"
@@ -12,7 +12,7 @@ msgstr ""
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:296
 msgid "<abbr title=\"Local Peer Discovery\">LPD</abbr> enabled"
-msgstr "<abbr title=\"Local Peer Discovery\">LPD</abbr> ενεργό"
+msgstr ""
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:414
 msgid "Additional BT tracker"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:419
 msgid "Advanced Options"
-msgstr "Επιλογές για Προχωρημένους"
+msgstr ""
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:169
 msgid "All proxy"
@@ -30,12 +30,12 @@ msgstr ""
 msgid "Append HEADERs to HTTP request header."
 msgstr ""
 
-#: applications/luci-app-aria2/luasrc/controller/aria2.lua:17
+#: applications/luci-app-aria2/luasrc/controller/aria2.lua:18
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:35
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/files.lua:14
 #: applications/luci-app-aria2/luasrc/view/aria2/log_template.htm:45
 msgid "Aria2"
-msgstr "Aria2"
+msgstr ""
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:37
 msgid ""
@@ -45,15 +45,15 @@ msgstr ""
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:428
 msgid "Auto save interval"
-msgstr "Μεσοδιάστημα αυτόματης αποθήκευσης"
+msgstr ""
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:56
 msgid "Basic Options"
-msgstr "Βασικές Επιλογές"
+msgstr ""
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:276
 msgid "BitTorrent Options"
-msgstr "Επιλογές BitTorrent"
+msgstr ""
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:335
 msgid "BitTorrent listen port"
@@ -61,24 +61,21 @@ msgstr ""
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:189
 msgid "CA certificate"
-msgstr "Πιστοποιητικό CA"
+msgstr ""
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:195
 msgid "Certificate"
-msgstr "Πιστοποιητικό"
+msgstr ""
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:182
 msgid "Check certificate"
-msgstr "Έλεγχος πιστοποιητικού"
+msgstr ""
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:242
 msgid ""
-"Close connection if download speed is lower than or equal to this value "
-"(bytes per sec). 0 means has no lowest speed limit."
+"Close connection if download speed is lower than or equal to this "
+"value(bytes per sec). 0 means has no lowest speed limit."
 msgstr ""
-"Κλείσιμο της σύνδεσης όταν η ταχύτητα κατεβάσματος είναι χαμηλότερη ή ίση με "
-"αυτή την τιμή (bytes ανά sec). Το 0 σημαίνει ότι δεν υπάρχει χαμηλότερο όριο "
-"ταχύτητας."
 
 #: applications/luci-app-aria2/luasrc/view/aria2/log_template.htm:49
 #: applications/luci-app-aria2/luasrc/view/aria2/settings_header.htm:29
@@ -87,9 +84,9 @@ msgstr "Συλλογή δεδομένων..."
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:73
 msgid "Config file directory"
-msgstr "Φάκελος αρχείου διαμόρφωσης"
+msgstr ""
 
-#: applications/luci-app-aria2/luasrc/controller/aria2.lua:22
+#: applications/luci-app-aria2/luasrc/controller/aria2.lua:21
 msgid "Configuration"
 msgstr "Διαμόρφωση"
 
@@ -99,7 +96,7 @@ msgstr ""
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/files.lua:19
 msgid "Content of config file: <code>%s</code>"
-msgstr "Περιεχόμενο του αρχείου διαμόφωσης: <code>%s</code>"
+msgstr ""
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/files.lua:29
 msgid "Content of session file: <code>%s</code>"
@@ -111,7 +108,7 @@ msgstr ""
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:87
 msgid "Debug"
-msgstr "Αποσφαλμάτωση"
+msgstr ""
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:422
 msgid ""
@@ -121,7 +118,7 @@ msgstr ""
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:440
 msgid "Disk cache"
-msgstr "Κρυφή μνήμη δίσκου"
+msgstr ""
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:259
 msgid "Don't split less than 2*SIZE byte range. Possible values: 1M-1024M."
@@ -129,16 +126,16 @@ msgstr ""
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:254
 msgid "Download a file using N connections."
-msgstr "Λήψη ενός αρχείου με χρήση Ν συνδέσεων."
+msgstr ""
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:69
 msgid "Download directory"
-msgstr "Φάκελος λήψης"
+msgstr ""
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/files.lua:26
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/files.lua:36
 msgid "Empty file."
-msgstr "Άδειο αρχείο."
+msgstr ""
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:280
 msgid "Enable IPv4 DHT functionality. It also enables UDP tracker support."
@@ -162,7 +159,7 @@ msgstr ""
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:77
 msgid "Enable logging"
-msgstr "Ενεργοποίηση καταγραφής"
+msgstr ""
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:305
 msgid "Enable peer exchange"
@@ -178,13 +175,11 @@ msgstr "Ενεργοποιήθηκε"
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:91
 msgid "Error"
-msgstr "Σφάλμα"
+msgstr ""
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:44
 msgid "Error: Can't find aria2c in PATH, please reinstall aria2."
 msgstr ""
-"Σφάλμα: Αδυναμία εύρεσης του aria2c στο PATH, παρακαλώ επανεγκαταστήστε το "
-"aria2."
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:482
 msgid "Extra Settings"
@@ -192,7 +187,7 @@ msgstr ""
 
 #: applications/luci-app-aria2/luasrc/view/aria2/log_template.htm:39
 msgid "Failed to load log data."
-msgstr "Αδυναμία φόρτωσης δεδομένων καταγραφής."
+msgstr ""
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:350
 msgid "False"
@@ -205,12 +200,12 @@ msgstr ""
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/files.lua:25
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/files.lua:35
 msgid "File does not exist."
-msgstr "Το αρχείο δεν υπάρχει."
+msgstr ""
 
-#: applications/luci-app-aria2/luasrc/controller/aria2.lua:25
+#: applications/luci-app-aria2/luasrc/controller/aria2.lua:24
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/files.lua:14
 msgid "Files"
-msgstr "Αρχεία"
+msgstr ""
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:348
 msgid "Follow torrent"
@@ -226,10 +221,6 @@ msgstr ""
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:129
 msgid "Generate Randomly"
-msgstr ""
-
-#: applications/luci-app-aria2/root/usr/share/rpcd/acl.d/luci-app-aria2.json:3
-msgid "Grant UCI access for luci-app-aria2"
 msgstr ""
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:210
@@ -314,7 +305,7 @@ msgstr ""
 msgid "Loading"
 msgstr "Φόρτωση"
 
-#: applications/luci-app-aria2/luasrc/controller/aria2.lua:28
+#: applications/luci-app-aria2/luasrc/controller/aria2.lua:27
 msgid "Log"
 msgstr ""
 
@@ -500,9 +491,13 @@ msgstr ""
 msgid "Run daemon as user"
 msgstr ""
 
+#: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:315
+msgid "Sava metadata"
+msgstr ""
+
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:429
 msgid ""
-"Save a control file (*.aria2) every N seconds. If 0 is given, a control file "
+"Save a control file(*.aria2) every N seconds. If 0 is given, a control file "
 "is not saved during download."
 msgstr ""
 
@@ -524,10 +519,6 @@ msgid ""
 "Save meta data as \".torrent\" file. This option has effect only when "
 "BitTorrent Magnet URI is used. The file name is hex encoded info hash with "
 "suffix \".torrent\"."
-msgstr ""
-
-#: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:315
-msgid "Save metadata"
 msgstr ""
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:434
@@ -574,7 +565,7 @@ msgstr ""
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:342
 msgid ""
-"Set UDP listening port used by DHT (IPv4, IPv6) and UDP tracker. Make sure "
+"Set UDP listening port used by DHT(IPv4, IPv6) and UDP tracker. Make sure "
 "that the specified ports are open for incoming UDP traffic."
 msgstr ""
 
@@ -630,7 +621,7 @@ msgstr ""
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:448
 msgid ""
 "Specify file allocation method. If you are using newer file systems such as "
-"ext4 (with extents support), btrfs, xfs or NTFS (MinGW build only), \"falloc"
+"ext4 (with extents support), btrfs, xfs or NTFS(MinGW build only), \"falloc"
 "\" is your best choice. It allocates large(few GiB) files almost instantly, "
 "but it may not be available if your system doesn't have posix_fallocate(3) "
 "function. Don't use \"falloc\" with legacy file systems such as ext3 and "
@@ -693,9 +684,7 @@ msgid "The directory to store the config file, session file and DHT file."
 msgstr ""
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:70
-msgid ""
-"The directory to store the downloaded file. For example <code>/mnt/sda1</"
-"code>."
+msgid "The directory to store the downloaded file. eg. <code>/mnt/sda1</code>"
 msgstr ""
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:81

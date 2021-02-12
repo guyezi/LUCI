@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2021-02-01 16:02+0000\n"
-"Last-Translator: Mete <selimmeteozdogan@gmail.com>\n"
+"PO-Revision-Date: 2021-01-03 17:29+0000\n"
+"Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsuhttpd/tr/>\n"
 "Language: tr\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.5-dev\n"
+"X-Generator: Weblate 4.4.1-dev\n"
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:135
 msgid ""
@@ -19,11 +19,11 @@ msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:145
 msgid "404 Error"
-msgstr "404 Hatası"
+msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:7
 msgid "A lightweight single-threaded HTTP(S) server"
-msgstr "Hafif bir tek iş parçacıklı HTTP(S) sunucusu"
+msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:20
 msgid "Advanced Settings"
@@ -31,7 +31,7 @@ msgstr "Gelişmiş Ayarlar"
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:135
 msgid "Aliases"
-msgstr "Diğer isimler"
+msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:149
 msgid "Base directory for files to be served"
@@ -56,7 +56,7 @@ msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:187
 msgid "Connection reuse"
-msgstr "Bağlantının yeniden kullanımı"
+msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:221
 msgid "Country"
@@ -76,15 +76,15 @@ msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:148
 msgid "Document root"
-msgstr "Belgenin tutulduğu yer"
+msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:122
 msgid "E.g specify with index.html and index.php when using PHP"
-msgstr "Örneğin PHP kullanırken index.html ve index.php ile belirtin"
+msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:160
 msgid "Embedded Lua interpreter is disabled if not present."
-msgstr "Gömülü Lua yorumlayıcı program mevcut değilse devre dışı bırakılır."
+msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:169
 msgid "Enable JSON-RPC Cross-Origin Resource Support"
@@ -96,7 +96,7 @@ msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:19
 msgid "Full Web Server Settings"
-msgstr "Tam Web Sunucusu Ayarları"
+msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:160
 msgid "Full real path to handler for Lua scripts"
@@ -106,33 +106,29 @@ msgstr ""
 msgid "General Settings"
 msgstr "Genel Ayarlar"
 
-#: applications/luci-app-uhttpd/root/usr/share/rpcd/acl.d/luci-app-uhttpd.json:3
-msgid "Grant UCI access for luci-app-uhttpd"
-msgstr "luci-app-uhttpd için UCI erişimi verin"
-
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:22
 msgid "HTTP listeners (address:port)"
-msgstr "HTTP dinleyicileri (address:port)"
+msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:94
-msgid "HTTPS Certificate (DER or PEM format)"
-msgstr "HTTPS Sertifikası (DER ya da PEM formatı)"
+msgid "HTTPS Certificate (DER Encoded)"
+msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:96
-msgid "HTTPS Private Key (DER or PEM format)"
-msgstr "HTTPS Özel Anahtar (DER ya da PEM formatı)"
+msgid "HTTPS Private Key (DER Encoded)"
+msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:50
 msgid "HTTPS listener (address:port)"
-msgstr "HTTPS dinleyicisi (address:port)"
+msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:90
 msgid "Ignore private IPs on public interface"
-msgstr "Ortak arayüzde gizli IP'leri yok say"
+msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:122
 msgid "Index page(s)"
-msgstr "İndeks Sayfası / Sayfaları"
+msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:126
 msgid ""
@@ -146,15 +142,15 @@ msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:227
 msgid "Location"
-msgstr "Konum"
+msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:197
 msgid "Maximum number of connections"
-msgstr "Maksimum bağlantı sayısı"
+msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:201
 msgid "Maximum number of script requests"
-msgstr "Maksimum betik sayısı"
+msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:177
 msgid "Maximum wait time for Lua, CGI, or ubus execution"
@@ -184,19 +180,19 @@ msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:86
 msgid "Redirect all HTTP to HTTPS"
-msgstr "Tüm HTTP'leri HTTPS'ye yönlendir"
+msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:109
 msgid "Remove configuration for certificate and key"
-msgstr "Sertifika ve anahtar konfigürasyonunu kaldır"
+msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:98
 msgid "Remove old certificate and key"
-msgstr "Eski sertifika ve anahtarı kaldır"
+msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:218
 msgid "Server Hostname"
-msgstr "Sunucu Ana Makina Adı"
+msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:20
 msgid ""
@@ -205,7 +201,7 @@ msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:224
 msgid "State"
-msgstr "Bölge"
+msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:192
 msgid "TCP Keepalive"
@@ -217,7 +213,7 @@ msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:210
 msgid "Valid for # of Days"
-msgstr "# gün geçerlilik süresi"
+msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:145
 msgid ""
@@ -239,16 +235,16 @@ msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:218
 msgid "a.k.a CommonName"
-msgstr "diğer adıyla Ortak Ad"
+msgstr ""
 
+#: applications/luci-app-uhttpd/luasrc/controller/uhttpd/uhttpd.lua:13
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:6
-#: applications/luci-app-uhttpd/root/usr/share/luci/menu.d/luci-app-uhttpd.json:3
 msgid "uHTTPd"
 msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:205
 msgid "uHTTPd Self-signed Certificate Parameters"
-msgstr "uHTTPd kendinden imzalı sertifika değişkenleri"
+msgstr ""
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:99
 msgid ""

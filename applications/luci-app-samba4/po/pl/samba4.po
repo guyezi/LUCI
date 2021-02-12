@@ -13,15 +13,15 @@ msgstr ""
 "|| n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.2-dev\n"
 
-#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:105
+#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:101
 msgid "Allow guests"
 msgstr "Zezwól gościom"
 
-#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:52
+#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:48
 msgid "Allow legacy (insecure) protocols/authentication."
 msgstr "Zezwalaj na starsze (niepewne) protokoły/uwierzytelnianie."
 
-#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:53
+#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:49
 msgid ""
 "Allow legacy smb(v1)/Lanman connections, needed for older devices without "
 "smb(v2.1/3) support."
@@ -29,19 +29,19 @@ msgstr ""
 "Zezwalaj na starsze połączenia smb (v1)/Lanman, potrzebne dla starszych "
 "urządzeń bez obsługi smb (v2.1/3)."
 
-#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:102
+#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:98
 msgid "Allowed users"
 msgstr "Użytkownicy z prawem dostępu"
 
-#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:136
+#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:132
 msgid "Apple Time-machine share"
 msgstr "Udział Apple Time-machine"
 
-#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:89
+#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:85
 msgid "Browse-able"
 msgstr "Możliwe do przeglądania"
 
-#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:121
+#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:117
 msgid "Create mask"
 msgstr "Utwórz maskę"
 
@@ -49,19 +49,19 @@ msgstr "Utwórz maskę"
 msgid "Description"
 msgstr "Opis"
 
-#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:127
+#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:123
 msgid "Directory mask"
 msgstr "Katalog maski"
 
-#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:59
+#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:55
 msgid "Disable Active Directory Domain Controller"
 msgstr "Wyłącz kontroler domeny Active Directory"
 
-#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:56
+#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:52
 msgid "Disable Netbios"
 msgstr "Wyłącz Netbios"
 
-#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:62
+#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:58
 msgid "Disable Winbind"
 msgstr "Wyłącz Winbind"
 
@@ -69,29 +69,15 @@ msgstr "Wyłącz Winbind"
 msgid "Edit Template"
 msgstr "Edytuj szablon"
 
-#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:66
+#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:62
 msgid "Edit the template that is used for generating the samba configuration."
 msgstr "Edytuj szablon, który jest używany do generowania konfiguracji samby."
 
-#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:42
-msgid "Enable extra Tuning"
-msgstr "Włącz dodatkowe strojenie"
-
-#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:49
+#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:45
 msgid "Enable macOS compatible shares"
 msgstr "Włącz udziały zgodne z macOS"
 
-#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:43
-msgid ""
-"Enable some community driven tuning parameters, that may improve write "
-"speeds and better operation via WiFi. Not recommend if multiple clients "
-"write to the same files, at the same time!"
-msgstr ""
-"Włącz niektóre parametry strojenia sterowane przez społeczność, które mogą "
-"poprawić szybkość zapisu i lepszą obsługę przez WiFi. Nie zaleca się, jeśli "
-"wielu klientów pisze do tych samych plików jednocześnie!"
-
-#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:50
+#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:46
 msgid ""
 "Enables Apple's AAPL extension globally and adds macOS compatibility options "
 "to all shares."
@@ -99,11 +85,11 @@ msgstr ""
 "Zapewnia globalne rozszerzenie AAPL firmy Apple i dodaje opcje zgodności z "
 "systemem MacOS do wszystkich akcji."
 
-#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:100
+#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:96
 msgid "Force Root"
 msgstr "Wymuszanie Roota"
 
-#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:46
+#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:42
 msgid "Force synchronous I/O"
 msgstr "Wymuś synchroniczne I/O"
 
@@ -111,15 +97,11 @@ msgstr "Wymuś synchroniczne I/O"
 msgid "General Settings"
 msgstr "Ustawienia główne"
 
-#: applications/luci-app-samba4/root/usr/share/rpcd/acl.d/luci-app-samba4.json:3
-msgid "Grant access to LuCI app samba4"
-msgstr "Udziel dostępu LuCI do aplikacji samba4"
-
-#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:111
+#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:107
 msgid "Guests only"
 msgstr "Tylko dla gości"
 
-#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:116
+#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:112
 msgid "Inherit owner"
 msgstr "Właściciel spadku"
 
@@ -131,16 +113,16 @@ msgstr "Interfejs"
 msgid "Listen only on the given interface or, if unspecified, on lan"
 msgstr "Słuchaj tylko na podanym interfejsie, lub jeśli nie podano na LANie"
 
-#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:83
+#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:79
 msgid "Name"
 msgstr "Nazwa"
 
 #: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:22
-#: applications/luci-app-samba4/root/usr/share/luci/menu.d/luci-app-samba4.json:3
+#: applications/luci-app-samba4/luasrc/controller/samba4.lua:10
 msgid "Network Shares"
 msgstr "Udziały sieciowe"
 
-#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:47
+#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:43
 msgid ""
 "On lower-end devices may increase speeds, by forceing synchronous I/O "
 "instead of the default asynchronous."
@@ -148,11 +130,11 @@ msgstr ""
 "Na urządzeniach budżetowych może zwiększyć szybkość, przez forceing "
 "synchroniczne I/O zamiast domyślnego asynchronicznego."
 
-#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:84
+#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:80
 msgid "Path"
 msgstr "Ścieżka"
 
-#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:79
+#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:75
 msgid ""
 "Please add directories to share. Each directory refers to a folder on a "
 "mounted device."
@@ -160,15 +142,15 @@ msgstr ""
 "Proszę dodać katalogi do udostępnienia. Każdy katalog odnosi się do folderu "
 "w zamontowanym urządzeniu."
 
-#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:94
+#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:90
 msgid "Read-only"
 msgstr "Tylko do odczytu"
 
-#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:78
+#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:74
 msgid "Shared Directories"
 msgstr "Udostępniane katalogi"
 
-#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:67
+#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:63
 msgid ""
 "This is the content of the file '/etc/samba/smb.conf.template' from which "
 "your samba configuration will be generated. Values enclosed by pipe symbols "
@@ -180,32 +162,14 @@ msgstr ""
 "kreski pionowej ('|') nie powinny być zmieniane. Wartości ich zostaną "
 "pobrane z zakładki \"Ustawienia ogólne\"."
 
-#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:138
+#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:134
 msgid "Time-machine size in GB"
 msgstr "Time-machine rozmiar w GB"
 
-#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:133
+#: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:129
 msgid "Vfs objects"
 msgstr "Obiekty Vfs"
 
 #: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:36
 msgid "Workgroup"
 msgstr "Grupa robocza"
-
-#~ msgid ""
-#~ "Allow system users to reach their home directories via network shares"
-#~ msgstr ""
-#~ "Użytkownicy systemu mogą dostać się do swoich katalogów domowych za "
-#~ "pośrednictwem udziałów sieciowych"
-
-#~ msgid "Hostname"
-#~ msgstr "Nazwa hosta"
-
-#~ msgid "Share home-directories"
-#~ msgstr "Udostępniaj katalogi domowe"
-
-#~ msgid "Mask for new directories"
-#~ msgstr "Maska dla nowych katalogów"
-
-#~ msgid "Mask for new files"
-#~ msgstr "Maska dla nowych plików"

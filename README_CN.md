@@ -2,7 +2,7 @@
 
 [![译文](https://hosted.weblate.org/widgets/openwrt/-/svg-badge.svg)](https://hosted.weblate.org/engage/openwrt/?utm_source=widget)
 
-<br> [English](README.md) | [简体中文](README_CN.md)
+<br> [English](README.md) | [简体中文](README_ZH.md)
 
 ## 描述
 

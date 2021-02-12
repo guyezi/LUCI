@@ -27,8 +27,8 @@ msgid ""
 "networks where it is difficult or impossible to configure a server within "
 "every link-layer broadcast domain, for example mobile ad-hoc networks."
 msgstr ""
-"AHCP是一种用于IPv6和双栈IPv6/IPv4网络的自动配置协议，它被用来在很难或不可能在每个链路层广播域中配置服务器的网络中代替路由发现或DHCP，"
-" 比如移动自组网。"
+"AHCP是一种用于IPv6和双栈IPv6/IPv4网络的自动配置协议，它被用来在很难或不可能在"
+"每个链路层广播域中配置服务器的网络中代替路由发现或DHCP， 比如移动自组网。"
 
 #: applications/luci-app-ahcp/luasrc/view/ahcp_status.htm:34
 msgid "Active AHCP Leases"
@@ -73,10 +73,6 @@ msgstr "转发器"
 #: applications/luci-app-ahcp/luasrc/model/cbi/ahcp.lua:13
 msgid "General Setup"
 msgstr "通用设置"
-
-#: applications/luci-app-ahcp/root/usr/share/rpcd/acl.d/luci-app-ahcp.json:3
-msgid "Grant UCI access for luci-app-ahcp"
-msgstr "授予UCI访问luci-app-ahcp的权限"
 
 #: applications/luci-app-ahcp/luasrc/model/cbi/admin_network/proto_ahcp.lua:24
 #: applications/luci-app-ahcp/luasrc/model/cbi/ahcp.lua:61

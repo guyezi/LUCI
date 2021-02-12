@@ -34,7 +34,7 @@ msgstr ""
 "Basic認証をサポートしています。\"ユーザー名:パスワード\"の形式で入力してくだ"
 "さい。"
 
-#: applications/luci-app-polipo/root/usr/share/luci/menu.d/luci-app-polipo.json:24
+#: applications/luci-app-polipo/luasrc/controller/polipo.lua:13
 msgid "Configuration"
 msgstr "設定"
 
@@ -70,10 +70,6 @@ msgstr "ファーストPMM セグメントサイズ (単位:バイト)"
 #: applications/luci-app-polipo/luasrc/model/cbi/polipo.lua:120
 msgid "General Settings"
 msgstr "一般設定"
-
-#: applications/luci-app-polipo/root/usr/share/rpcd/acl.d/luci-app-polipo.json:3
-msgid "Grant UCI access for luci-app-polipo"
-msgstr "luci-app-polipoにUCIアクセスを許可"
 
 #: applications/luci-app-polipo/luasrc/model/cbi/polipo.lua:113
 msgid "How much RAM should Polipo use for its cache."
@@ -145,8 +141,8 @@ msgstr ""
 msgid "Parent proxy authentication"
 msgstr "親プロキシの認証"
 
+#: applications/luci-app-polipo/luasrc/controller/polipo.lua:11
 #: applications/luci-app-polipo/luasrc/model/cbi/polipo.lua:4
-#: applications/luci-app-polipo/root/usr/share/luci/menu.d/luci-app-polipo.json:3
 msgid "Polipo"
 msgstr "Polipo"
 
@@ -234,7 +230,7 @@ msgstr ""
 msgid "Size to which cached files should be truncated"
 msgstr ""
 
-#: applications/luci-app-polipo/root/usr/share/luci/menu.d/luci-app-polipo.json:15
+#: applications/luci-app-polipo/luasrc/controller/polipo.lua:12
 msgid "Status"
 msgstr "ステータス"
 
@@ -247,7 +243,8 @@ msgid ""
 "The interface on which Polipo will listen. To listen on all interfaces use "
 "0.0.0.0 or :: (IPv6)."
 msgstr ""
-"Polipoがリッスンを行うインターフェースです。0.0.0.0または:: (IPv6)を設定した場合、すべてのインターフェースでリッスンを行います。"
+"Polipoがリッスンを行うインターフェースです。0.0.0.0または:: (IPv6)を設定した"
+"場合、すべてのインターフェースでリッスンを行います。"
 
 #: applications/luci-app-polipo/luasrc/model/cbi/polipo.lua:155
 msgid "Time after which cached files will be deleted"
@@ -283,9 +280,9 @@ msgid ""
 "that are allowed to connect. The format is IP address or network address "
 "(192.168.1.123, 192.168.1.0/24, 2001:660:116::/48 (IPv6))"
 msgstr ""
-"リッスンアドレスを0.0.0.0 または :: (IPv6) "
-"に設定した場合、アクセスを許可するクライアントアドレスを設定してください。形式はIPアドレスかネットワークアドレスです。(例:"
-"192.168.1.123, 192.168.1.0/24, 2001:660:116::/48 (IPv6))"
+"リッスンアドレスを0.0.0.0 または :: (IPv6) に設定した場合、アクセスを許可する"
+"クライアントアドレスを設定してください。形式はIPアドレスかネットワークアドレ"
+"スです。(例:192.168.1.123, 192.168.1.0/24, 2001:660:116::/48 (IPv6))"
 
 #: applications/luci-app-polipo/luasrc/model/cbi/polipo.lua:16
 msgid "enable"

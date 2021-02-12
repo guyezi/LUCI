@@ -29,7 +29,7 @@ msgstr ""
 msgid "Allow the user to provide additional command line arguments"
 msgstr "Permitir ao usuário inserir argumentos de linha de comando adicionais"
 
-#: applications/luci-app-commands/luasrc/view/commands.htm:156
+#: applications/luci-app-commands/luasrc/view/commands.htm:146
 msgid "Arguments:"
 msgstr "Argumentos:"
 
@@ -41,7 +41,7 @@ msgstr "Dados binários não mostrados, mas podem ser baixados."
 msgid "Code:"
 msgstr "Código:"
 
-#: applications/luci-app-commands/luasrc/view/commands.htm:176
+#: applications/luci-app-commands/luasrc/view/commands.htm:164
 msgid "Collecting data..."
 msgstr "Coletando dados..."
 
@@ -69,7 +69,7 @@ msgstr "Linha de comandos a executar"
 msgid "Command successful"
 msgstr "Comando executado com sucesso"
 
-#: applications/luci-app-commands/luasrc/view/commands.htm:154
+#: applications/luci-app-commands/luasrc/view/commands.htm:144
 msgid "Command:"
 msgstr "Comando:"
 
@@ -95,7 +95,7 @@ msgstr "Painel de Controle"
 msgid "Description"
 msgstr "Descrição"
 
-#: applications/luci-app-commands/luasrc/view/commands.htm:160
+#: applications/luci-app-commands/luasrc/view/commands.htm:150
 msgid "Download"
 msgstr "Download"
 
@@ -107,11 +107,7 @@ msgstr "Baixar os resultados da execução"
 msgid "Failed to execute command!"
 msgstr "Falha ao executar comando!"
 
-#: applications/luci-app-commands/root/usr/share/rpcd/acl.d/luci-app-commands.json:3
-msgid "Grant UCI access for luci-app-commands"
-msgstr "Conceda acesso UCI ao luci-app-commands"
-
-#: applications/luci-app-commands/luasrc/view/commands.htm:162
+#: applications/luci-app-commands/luasrc/view/commands.htm:152
 msgid "Link"
 msgstr "Endereço"
 
@@ -127,7 +123,7 @@ msgstr "Ou mostre o resultado"
 msgid "Public access"
 msgstr "Acesso público"
 
-#: applications/luci-app-commands/luasrc/view/commands.htm:159
+#: applications/luci-app-commands/luasrc/view/commands.htm:149
 msgid "Run"
 msgstr "Executar"
 
@@ -147,13 +143,6 @@ msgstr ""
 "Esta página permite a configuração de comandos personalizados que podem ser "
 "facilmente executados através da interface web."
 
-#: applications/luci-app-commands/luasrc/view/commands.htm:144
-msgid "This section contains no values yet"
-msgstr "Esta seção ainda não possui nenhum valor"
-
 #: applications/luci-app-commands/luasrc/view/commands.htm:54
 msgid "Waiting for command to complete..."
 msgstr "Aguardando a conclusão do comando..."
-
-#~ msgid "Access command with"
-#~ msgstr "Acessar o comando com"

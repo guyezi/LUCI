@@ -121,10 +121,6 @@ msgstr "Zona de Firewall"
 msgid "General Settings"
 msgstr "Configuración general"
 
-#: applications/luci-app-ocserv/root/usr/share/rpcd/acl.d/luci-app-ocserv.json:3
-msgid "Grant UCI access for luci-app-ocserv"
-msgstr "Conceder acceso UCI para luci-app-ocserv"
-
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/users.lua:23
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/users.lua:67
 #: applications/luci-app-ocserv/luasrc/view/ocserv_status.htm:52
@@ -206,7 +202,7 @@ msgstr ""
 msgid "Routing table"
 msgstr "Tabla de ruteo"
 
-#: applications/luci-app-ocserv/luasrc/controller/ocserv.lua:20
+#: applications/luci-app-ocserv/luasrc/controller/ocserv.lua:19
 msgid "Server Settings"
 msgstr "Configuración del servidor"
 
@@ -317,7 +313,7 @@ msgstr "Usuario"
 msgid "User Authentication"
 msgstr "Autenticacion de usuario"
 
-#: applications/luci-app-ocserv/luasrc/controller/ocserv.lua:25
+#: applications/luci-app-ocserv/luasrc/controller/ocserv.lua:24
 msgid "User Settings"
 msgstr "Configuración de usuario"
 
@@ -361,20 +357,3 @@ msgid ""
 msgstr ""
 "Ver el certificado de CA utilizado por este servidor. Deberá guardarlo como "
 "'ca.pem' e importarlo a los clientes."
-
-#~ msgid ""
-#~ "An alternative value to be communicated to the client to verify the "
-#~ "server's certificate; this value only depends on the public key"
-#~ msgstr ""
-#~ "Un valor alternativo que se comunicará al cliente para verificar el "
-#~ "certificado del servidor; este valor solo depende de la clave pública"
-
-#~ msgid "Server's certificate SHA1 hash"
-#~ msgstr "Certificado de servidor SHA1 hash"
-
-#~ msgid ""
-#~ "That value should be communicated to the client to verify the server's "
-#~ "certificate"
-#~ msgstr ""
-#~ "Ese valor debe comunicarse al cliente para verificar el certificado del "
-#~ "servidor"

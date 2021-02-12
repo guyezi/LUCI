@@ -165,10 +165,6 @@ msgstr ""
 msgid "Force the ICMP protocol interface."
 msgstr ""
 
-#: applications/luci-app-vpn-policy-routing/root/usr/share/rpcd/acl.d/luci-app-vpn-policy-routing.json:3
-msgid "Grant UCI and file access for luci-app-vpn-policy-routing"
-msgstr ""
-
 #: applications/luci-app-vpn-policy-routing/luasrc/model/cbi/vpn-policy-routing.lua:214
 msgid "IP Rules Support"
 msgstr ""
@@ -444,9 +440,3 @@ msgstr ""
 #: applications/luci-app-vpn-policy-routing/luasrc/model/cbi/vpn-policy-routing.lua:248
 msgid "Web UI Configuration"
 msgstr ""
-
-#~ msgid "Reload"
-#~ msgstr "रीलोड करा"
-
-#~ msgid "is not installed or not found"
-#~ msgstr "स्थापित केलेले नाही किंवा सापडले नाही"

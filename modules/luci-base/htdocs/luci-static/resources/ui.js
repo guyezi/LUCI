@@ -102,47 +102,6 @@ var UIElement = baseclass.extend(/** @lends LuCI.ui.AbstractElement.prototype */
 	},
 
 	/**
-	 * Set the current placeholder value of the input widget.
-	 *
-	 * @instance
-	 * @memberof LuCI.ui.AbstractElement
-	 * @param {string|string[]|null} value
-	 * The placeholder to set for the input element. Only applicable to text
-	 * inputs, not to radio buttons, selects or similar.
-	 */
-	setPlaceholder: function(value) {
-		var node = this.node ? this.node.querySelector('input,textarea') : null;
-		if (node) {
-			switch (node.getAttribute('type') || 'text') {
-			case 'password':
-			case 'search':
-			case 'tel':
-			case 'text':
-			case 'url':
-				if (value != null && value != '')
-					node.setAttribute('placeholder', value);
-				else
-					node.removeAttribute('placeholder');
-			}
-		}
-	},
-
-	/**
-	 * Check whether the input value was altered by the user.
-	 *
-	 * @instance
-	 * @memberof LuCI.ui.AbstractElement
-	 * @returns {boolean}
-	 * Returns `true` if the input value has been altered by the user or
-	 * `false` if it is unchaged. Note that if the user modifies the initial
-	 * value and changes it back to the original state, it is still reported
-	 * as changed.
-	 */
-	isChanged: function() {
-		return (this.node ? this.node.getAttribute('data-changed') : null) == 'true';
-	},
-
-	/**
 	 * Check whether the current input value is valid.
 	 *
 	 * @instance
@@ -351,45 +310,48 @@ var UITextfield = UIElement.extend(/** @lends LuCI.ui.Textfield.prototype */ {
 	/** @override */
 	render: function() {
 		var frameEl = E('div', { 'id': this.options.id });
-		var inputEl = E('input', {
+
+		if (this.options.password) {
+			frameEl.classList.add('nowrap');
+			frameEl.appendChild(E('input', {
+				'type': 'password',
+				'style': 'position:absolute; left:-100000px',
+				'aria-hidden': true,
+				'tabindex': -1,
+				'name': this.options.name ? 'password.%s'.format(this.options.name) : null
+			}));
+		}
+
+		frameEl.appendChild(E('input', {
 			'id': this.options.id ? 'widget.' + this.options.id : null,
 			'name': this.options.name,
-			'type': 'text',
+			'type': this.options.password ? 'password' : 'text',
 			'class': this.options.password ? 'cbi-input-password' : 'cbi-input-text',
 			'readonly': this.options.readonly ? '' : null,
 			'disabled': this.options.disabled ? '' : null,
 			'maxlength': this.options.maxlength,
 			'placeholder': this.options.placeholder,
 			'value': this.value,
-		});
+		}));
 
-		if (this.options.password) {
-			frameEl.appendChild(E('div', { 'class': 'control-group' }, [
-				inputEl,
-				E('button', {
-					'class': 'cbi-button cbi-button-neutral',
-					'title': _('Reveal/hide password'),
-					'aria-label': _('Reveal/hide password'),
-					'click': function(ev) {
-						var e = this.previousElementSibling;
-						e.type = (e.type === 'password') ? 'text' : 'password';
-						ev.preventDefault();
-					}
-				}, '∗')
-			]));
-
-			window.requestAnimationFrame(function() { inputEl.type = 'password' });
-		}
-		else {
-			frameEl.appendChild(inputEl);
-		}
+		if (this.options.password)
+			frameEl.appendChild(E('button', {
+				'class': 'cbi-button cbi-button-neutral',
+				'title': _('Reveal/hide password'),
+				'aria-label': _('Reveal/hide password'),
+				'click': function(ev) {
+					var e = this.previousElementSibling;
+					e.type = (e.type === 'password') ? 'text' : 'password';
+					ev.preventDefault();
+				}
+			}, '∗'));
 
 		return this.bind(frameEl);
 	},
 
 	/** @private */
 	bind: function(frameEl) {
-		var inputEl = frameEl.querySelector('input');
+		var inputEl = frameEl.childNodes[+!!this.options.password];
 
 		this.node = frameEl;
 
@@ -403,13 +365,13 @@ var UITextfield = UIElement.extend(/** @lends LuCI.ui.Textfield.prototype */ {
 
 	/** @override */
 	getValue: function() {
-		var inputEl = this.node.querySelector('input');
+		var inputEl = this.node.childNodes[+!!this.options.password];
 		return inputEl.value;
 	},
 
 	/** @override */
 	setValue: function(value) {
-		var inputEl = this.node.querySelector('input');
+		var inputEl = this.node.childNodes[+!!this.options.password];
 		inputEl.value = value;
 	}
 });
@@ -609,22 +571,6 @@ var UICheckbox = UIElement.extend(/** @lends LuCI.ui.Checkbox.prototype */ {
 		}));
 
 		frameEl.appendChild(E('label', { 'for': id }));
-
-		if (this.options.tooltip != null) {
-			var icon = "⚠️";
-
-			if (this.options.tooltipicon != null)
-				icon = this.options.tooltipicon;
-
-			frameEl.appendChild(
-				E('label', { 'class': 'cbi-tooltip-container' },[
-					icon,
-					E('div', { 'class': 'cbi-tooltip' },
-						this.options.tooltip
-					)
-				])
-			);
-		}
 
 		return this.bind(frameEl);
 	},
@@ -3613,11 +3559,9 @@ var UI = baseclass.extend(/** @lends LuCI.ui.prototype */ {
 				this.setActiveTabId(panes[selected], selected);
 			}
 
-			requestAnimationFrame(L.bind(function(pane) {
-				pane.dispatchEvent(new CustomEvent('cbi-tab-active', {
-					detail: { tab: pane.getAttribute('data-tab') }
-				}));
-			}, this, panes[selected]));
+			panes[selected].dispatchEvent(new CustomEvent('cbi-tab-active', {
+				detail: { tab: panes[selected].getAttribute('data-tab') }
+			}));
 
 			this.updateTabs(group);
 		},

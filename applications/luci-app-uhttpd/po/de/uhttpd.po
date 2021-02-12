@@ -107,21 +107,17 @@ msgstr "Vollständiger Pfad für handler von LUA Scripten"
 msgid "General Settings"
 msgstr "Allgemeine Einstellungen"
 
-#: applications/luci-app-uhttpd/root/usr/share/rpcd/acl.d/luci-app-uhttpd.json:3
-msgid "Grant UCI access for luci-app-uhttpd"
-msgstr "Gewähre UCI Zugriff auf luci-app-uhttpd"
-
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:22
 msgid "HTTP listeners (address:port)"
 msgstr "HTTP listener (Adresse:Port)"
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:94
-msgid "HTTPS Certificate (DER or PEM format)"
-msgstr ""
+msgid "HTTPS Certificate (DER Encoded)"
+msgstr "HTTPS Zertifikat (DER kodiert)"
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:96
-msgid "HTTPS Private Key (DER or PEM format)"
-msgstr ""
+msgid "HTTPS Private Key (DER Encoded)"
+msgstr "HTTPS Private Key (DER kodiert)"
 
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:50
 msgid "HTTPS listener (address:port)"
@@ -250,8 +246,8 @@ msgstr "Nutzt keine HTTP Authentifizierung falls nicht vorhanden"
 msgid "a.k.a CommonName"
 msgstr "a.k.a CommonName"
 
+#: applications/luci-app-uhttpd/luasrc/controller/uhttpd/uhttpd.lua:13
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:6
-#: applications/luci-app-uhttpd/root/usr/share/luci/menu.d/luci-app-uhttpd.json:3
 msgid "uHTTPd"
 msgstr "uHTTPd"
 
@@ -270,9 +266,3 @@ msgstr ""
 #: applications/luci-app-uhttpd/luasrc/model/cbi/uhttpd/uhttpd.lua:163
 msgid "ubus integration is disabled if not present"
 msgstr "ubus Integration ist deaktiviert falls nicht vorhanden"
-
-#~ msgid "HTTPS Certificate (DER Encoded)"
-#~ msgstr "HTTPS Zertifikat (DER kodiert)"
-
-#~ msgid "HTTPS Private Key (DER Encoded)"
-#~ msgstr "HTTPS Private Key (DER kodiert)"

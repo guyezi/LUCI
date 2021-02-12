@@ -41,10 +41,6 @@ msgstr ""
 msgid "Enable"
 msgstr "Activar"
 
-#: applications/luci-app-vpnbypass/root/usr/share/rpcd/acl.d/luci-app-vpnbypass.json:3
-msgid "Grant UCI and file access for luci-app-vpnbypass"
-msgstr "Otorgar acceso a archivos y UCI para luci-app-vpnbypass"
-
 #: applications/luci-app-vpnbypass/luasrc/view/vpnbypass/js.htm:51
 msgid "Loading"
 msgstr "Cargando"
@@ -132,41 +128,3 @@ msgstr "Reglas de VPN Bypass"
 #: applications/luci-app-vpnbypass/luasrc/model/cbi/vpnbypass.lua:44
 msgid "VPN Bypass Settings"
 msgstr "Configuración de VPN Bypass"
-
-#~ msgid "Grant UCI access for luci-app-vpnbypass"
-#~ msgstr "Conceder acceso UCI para luci-app-vpnbypass"
-
-#~ msgid "Domains to be accessed directly (outside of the VPN tunnel), see"
-#~ msgstr ""
-#~ "Dominios a los que se puede acceder directamente (fuera del túnel VPN), "
-#~ "consulte"
-
-#~ msgid "README"
-#~ msgstr "LÉEME"
-
-#~ msgid "disabled"
-#~ msgstr "desactivado"
-
-#~ msgid "for syntax"
-#~ msgstr "para la sintaxis"
-
-#~ msgid "is not installed or not found"
-#~ msgstr "no está instalado o no se encuentra"
-
-#~ msgid "Reload"
-#~ msgstr "Recargar"
-
-#~ msgid "Enable/Start"
-#~ msgstr "Activar/Iniciar"
-
-#~ msgid "Service is disabled/stopped"
-#~ msgstr "El servicio está desactivado/detenido"
-
-#~ msgid "Service is enabled/started"
-#~ msgstr "El servicio está activado/iniciado"
-
-#~ msgid "Stop/Disable"
-#~ msgstr "Detener/Desactivar"
-
-#~ msgid "Start VPNBypass service"
-#~ msgstr "Iniciar el servicio VPNBypass"

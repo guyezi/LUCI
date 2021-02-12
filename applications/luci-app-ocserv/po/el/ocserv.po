@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-02-01 16:02+0000\n"
-"Last-Translator: ChriZathens <c_kan1@hotmail.com>\n"
+"PO-Revision-Date: 2021-01-23 03:57+0000\n"
+"Last-Translator: Savvas Sfantos <savvassfa@gmail.com>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsocserv/el/>\n"
 "Language: el\n"
@@ -37,7 +37,7 @@ msgstr ""
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/main.lua:13
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/user-config.lua:13
 msgid "CA certificate"
-msgstr "Πιστοποιητικό CA"
+msgstr ""
 
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/users.lua:72
 #: applications/luci-app-ocserv/luasrc/view/ocserv_status.htm:57
@@ -112,10 +112,6 @@ msgstr ""
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/user-config.lua:12
 msgid "General Settings"
 msgstr "Γενικές ρυθμίσεις"
-
-#: applications/luci-app-ocserv/root/usr/share/rpcd/acl.d/luci-app-ocserv.json:3
-msgid "Grant UCI access for luci-app-ocserv"
-msgstr ""
 
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/users.lua:23
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/users.lua:67
@@ -193,7 +189,7 @@ msgstr ""
 msgid "Routing table"
 msgstr ""
 
-#: applications/luci-app-ocserv/luasrc/controller/ocserv.lua:20
+#: applications/luci-app-ocserv/luasrc/controller/ocserv.lua:19
 msgid "Server Settings"
 msgstr ""
 
@@ -287,7 +283,7 @@ msgstr ""
 msgid "User Authentication"
 msgstr ""
 
-#: applications/luci-app-ocserv/luasrc/controller/ocserv.lua:25
+#: applications/luci-app-ocserv/luasrc/controller/ocserv.lua:24
 msgid "User Settings"
 msgstr ""
 
