@@ -1,0 +1,22 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Gtranslator 2.91.7\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "Zerotier is an open source, cross-platform and easy to use virtual LAN"
+msgstr ""
+
+msgid "Auto NAT Clients"
+msgstr ""
+
+msgid "Allow zerotier clients access your LAN network"
+msgstr ""
+
+msgid "Create or manage your zerotier network, and auth clients who could access"
+msgstr ""
+
+msgid "Interface Info"
+msgstr ""

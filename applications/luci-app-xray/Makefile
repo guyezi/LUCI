@@ -8,7 +8,7 @@ PKG_LICENSE:=MPLv2
 PKG_LICENSE_FILES:=LICENSE
 PKG_MAINTAINER:=yichya <mail@yichya.dev>
 
-include $(INCLUDE_DIR)/package.mk
+#include $(INCLUDE_DIR)/package.mk
 
 LUCI_TITLE:=LuCI Support for Xray
 LUCI_DEPENDS:=+xray +iptables +iptables-mod-tproxy +ca-bundle

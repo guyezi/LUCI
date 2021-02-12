@@ -1,0 +1,35 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "SSR Python Server"
+msgstr ""
+
+msgid "ShadowSocksR Server Config"
+msgstr ""
+
+msgid "Global Setting"
+msgstr ""
+
+msgid "Encrypt Method"
+msgstr ""
+
+msgid "Protocol_param"
+msgstr ""
+
+msgid "Obfs"
+msgstr ""
+
+msgid "Obfs_param"
+msgstr ""
+
+msgid "redirect"
+msgstr ""
+
+msgid "Connection Timeout"
+msgstr ""
+
+msgid "ShadowsocksR Python Server is a fork of the Shadowsocks project, claimed to be superior in terms of security and stability"
+msgstr ""
+
+msgid "ShadowsocksR Python Server"
+msgstr ""

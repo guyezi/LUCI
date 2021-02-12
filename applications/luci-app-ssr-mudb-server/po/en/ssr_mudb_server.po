@@ -1,0 +1,152 @@
+msgid "ShadowsocksR MuDB Server"
+msgstr ""
+
+msgid "SSR MuDB Server"
+msgstr ""
+
+msgid "Global Settings"
+msgstr ""
+
+msgid "Server Config"
+msgstr ""
+
+msgid "Users Manager"
+msgstr ""
+
+msgid "Remarks"
+msgstr ""
+
+msgid "Port"
+msgstr ""
+
+msgid "Password"
+msgstr ""
+
+msgid "Encrypt Method"
+msgstr ""
+
+msgid "Protocol"
+msgstr ""
+
+msgid "Protocol Param"
+msgstr ""
+
+msgid "Obfs"
+msgstr ""
+
+msgid "Obfs Param"
+msgstr ""
+
+msgid "Connection Timeout"
+msgstr ""
+
+msgid "redirect"
+msgstr ""
+
+msgid "Fast Open"
+msgstr ""
+
+msgid "UDP Forward"
+msgstr ""
+
+msgid "Null"
+msgstr ""
+
+msgid "No Speed Limit"
+msgstr ""
+
+msgid "Forbidden Port"
+msgstr ""
+
+msgid "Device Limit"
+msgstr ""
+
+msgid "Speed Limit Per Con"
+msgstr ""
+
+msgid "Speed Limit Per User"
+msgstr ""
+
+msgid "Available Total Flow"
+msgstr ""
+
+msgid "Infinite"
+msgstr ""
+
+msgid "Used Upload Traffic"
+msgstr ""
+
+msgid "Used Download Traffic"
+msgstr ""
+
+msgid "Used Total Traffic"
+msgstr ""
+
+msgid "SSR Link"
+msgstr ""
+
+msgid "GET"
+msgstr ""
+
+msgid "Clear Traffic"
+msgstr ""
+
+msgid "Clear All Users Traffic"
+msgstr ""
+
+msgid "Enable Auto Clear Traffic"
+msgstr ""
+
+msgid "Clear Traffic Time Interval"
+msgstr ""
+
+msgid "*,*,*,*,* is Min Hour Day Mon Week"
+msgstr ""
+
+msgid "Number of clients that can be linked at the same time (multi-port mode, each port is calculated independently), a minimum of 2 is recommended."
+msgstr ""
+
+msgid "Single thread speed limit upper limit, multithreading is invalid. Zero means no speed limit. (unit: KB/S)"
+msgstr ""
+
+msgid "Total speed limit upper limit, single port overall speed limit. Zero means no speed limit. (unit: KB/S)"
+msgstr ""
+
+msgid "For example, if port 25 is not allowed, the user will not be able to access the mail port 25 through the SSR agent. If 80,443 is disabled, the user will not be able to access the HTTP/HTTPS website normally. <br>blocked single port format: 25<br>blocked multiple port format: 23,465<br>blocked port format: 233-266<br>blocked multiple port format: 25,465,233-666"
+msgstr ""
+
+msgid "Maximum amount of total traffic available (GB, 1-838868), Zero means infinite."
+msgstr ""
+
+msgid "Alter ID"
+msgstr ""
+
+msgid "User Level"
+msgstr ""
+
+msgid "Transport"
+msgstr ""
+
+msgid "Camouflage Type"
+msgstr ""
+
+msgid "Enabled"
+msgstr ""
+
+msgid "Status"
+msgstr ""
+
+msgid "Current Condition"
+msgstr ""
+
+msgid "please Install the python3"
+msgstr ""
+
+msgid "NOT INSTALLED"
+msgstr ""
+
+msgid "NOT RUNNING"
+msgstr ""
+
+msgid "RUNNING"
+msgstr ""
