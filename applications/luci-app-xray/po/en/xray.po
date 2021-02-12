@@ -1,0 +1,116 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "General Settings"
+msgstr "General Settings"
+
+msgid "Xray Executable Path"
+msgstr "Xray Executable Path"
+
+msgid "Main Server"
+msgstr "Main Server"
+
+msgid "Enable Xray API Service"
+msgstr "Enable Xray API Service"
+
+msgid "Enable Transparent Proxy"
+msgstr "Enable Transparent Proxy"
+
+msgid "TProxy UDP Server"
+msgstr "TProxy UDP Server"
+
+msgid "Proxy Settings"
+msgstr "Proxy Settings"
+
+msgid "Transparent Proxy Port (TCP)"
+msgstr "Transparent Proxy Port (TCP)"
+
+msgid "Transparent Proxy Port (UDP)"
+msgstr "Transparent Proxy Port (UDP)"
+
+msgid "Socks5 Proxy Port"
+msgstr "Socks5 Proxy Port"
+
+msgid "HTTP Proxy Port"
+msgstr "HTTP Proxy Port"
+
+msgid "Xray DNS Server Port"
+msgstr "Xray DNS Server Port"
+
+msgid "Socket Mark Number"
+msgstr "Socket Mark Number"
+
+msgid "Avoid proxy loopback problems with local (gateway) traffic"
+msgstr "Avoid proxy loopback problems with local (gateway) traffic"
+
+msgid "DNS Settings"
+msgstr "DNS Settings"
+
+msgid "Fast DNS"
+msgstr "Fast DNS"
+
+msgid "DNS for resolving geosite:cn sites"
+msgstr "DNS for resolving geosite:cn sites"
+
+msgid "Secure DNS"
+msgstr "Secure DNS"
+
+msgid "DNS for resolving geosite:geolocation-!cn sites"
+msgstr "DNS for resolving geosite:geolocation-!cn sites"
+
+msgid "Default DNS"
+msgstr "Default DNS"
+
+msgid "DNS for resolving other sites (and Dokodemo outbound)"
+msgstr "DNS for resolving other sites (and Dokodemo outbound)"
+
+msgid "Transparent Proxy Rules"
+msgstr "Transparent Proxy Rules"
+
+msgid "Bypassed IP"
+msgstr "Bypassed IP"
+
+msgid "Won't redirect for these IPs. Make sure that your remote proxy server IP added here."
+msgstr "Won't redirect for these IPs. Make sure that your remote proxy server IP added here."
+
+msgid "Forwarded IP"
+msgstr "Forwarded IP"
+
+msgid "Xray Servers"
+msgstr "Xray Servers"
+
+msgid "Alias (optional)"
+msgstr "Alias (optional)"
+
+msgid "Server Hostname"
+msgstr "Server Hostname"
+
+msgid "Server Port"
+msgstr "Server Port"
+
+msgid "Protocol"
+msgstr "Protocol"
+
+msgid "Transport"
+msgstr "Transport"
+
+msgid "Edit"
+msgstr "Edit"
+
+msgid "Delete"
+msgstr "Delete"
+
+msgid "Add"
+msgstr "Add"
+
+msgid "Save & Apply"
+msgstr "Save & Apply"
+
+msgid "Save"
+msgstr "Save"
+
+msgid "Reset"
+msgstr "Reset"
+
+msgid "Apply unchecked"
+msgstr "Apply unchecked"

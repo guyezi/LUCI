@@ -1,0 +1,101 @@
+msgid "V2ray Server"
+msgstr ""
+
+msgid "Global Settings"
+msgstr ""
+
+msgid "Server Config"
+msgstr ""
+
+msgid "Users Manager"
+msgstr ""
+
+msgid "Remarks"
+msgstr ""
+
+msgid "Bind Local"
+msgstr ""
+
+msgid "When selected, it can only be accessed locally,It is recommended to turn on when using reverse proxies."
+msgstr ""
+
+msgid "Port"
+msgstr ""
+
+msgid "User name"
+msgstr ""
+
+msgid "Password"
+msgstr ""
+
+msgid "Protocol"
+msgstr ""
+
+msgid "Null"
+msgstr ""
+
+msgid "Alter ID"
+msgstr ""
+
+msgid "User Level"
+msgstr ""
+
+msgid "When OTA is enabled, V2Ray will reject connections that are not OTA enabled. This option is invalid when using AEAD encryption."
+msgstr ""
+
+msgid "Transport"
+msgstr ""
+
+msgid "Camouflage Type"
+msgstr ""
+
+msgid "Camouflage Domain,you can not fill in"
+msgstr ""
+
+msgid "can not has conflict"
+msgstr ""
+
+msgid "Use HTTPS"
+msgstr ""
+
+msgid "TLS Settings"
+msgstr ""
+
+msgid "as:"
+msgstr ""
+
+msgid "Public key absolute path"
+msgstr ""
+
+msgid "Private key absolute path"
+msgstr ""
+
+msgid "<br>none: default, no masquerade, data sent is packets with no characteristics.<br>srtp: disguised as an SRTP packet, it will be recognized as video call data (such as FaceTime).<br>utp: packets disguised as uTP will be recognized as bittorrent downloaded data.<br>wechat-video: packets disguised as WeChat video calls.<br>dtls: disguised as DTLS 1.2 packet.<br>wireguard: disguised as a WireGuard packet. (not really WireGuard protocol)"
+msgstr ""
+
+msgid "Accept LAN Access"
+msgstr ""
+
+msgid "When selected, it can accessed lan , this will not be safe!"
+msgstr ""
+
+msgid "Logs"
+msgstr ""
+
+msgid "Clear logs"
+msgstr ""
+
+msgid "Enabled"
+msgstr ""
+
+msgid "Status"
+msgstr ""
+
+msgid "Current Condition"
+msgstr ""
+
+msgid "NOT RUNNING"
+msgstr ""
+
+msgid "RUNNING"
+msgstr ""
