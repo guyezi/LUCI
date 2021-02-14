@@ -1,0 +1,26 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+msgid "Apply"
+msgstr ""
+
+msgid "Filter messages with a regexp"
+msgstr ""
+
+msgid "Kernel Log"
+msgstr ""
+
+msgid "Message filter"
+msgstr ""
+
+msgid "No matches..."
+msgstr ""
+
+msgid "Show only the last messages"
+msgstr ""
+
+msgid "Unable to load log data:"
+msgstr ""
+
+msgid "Wrong regular expression"
+msgstr ""
