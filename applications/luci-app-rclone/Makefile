@@ -14,7 +14,6 @@ LUCI_DEPENDS:=+rclone \
               +PACKAGE_luci-app-rclone_INCLUDE_rclone-webui:rclone-webui-react \
               +PACKAGE_luci-app-rclone_INCLUDE_rclone-ng:rclone-ng \
               +PACKAGE_luci-app-rclone_INCLUDE_fuse-utils:fuse-utils
-LUCI_PKGARCH:=all
 PKG_NAME:=luci-app-rclone
 PKG_VERSION:=1.4.1
 PKG_RELEASE:=1
