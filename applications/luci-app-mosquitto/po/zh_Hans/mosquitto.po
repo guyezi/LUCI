@@ -6,30 +6,32 @@ msgid ""
 "Attempt to notify the local and remote broker of connection status, defaults "
 "to $SYS/broker/connections/<clientid>/state"
 msgstr ""
+"尝试将连接状态通知本地和远程代理, 默认"
+"为 $SYS/broker/connections/<clientid>/state"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:176
 msgid "Automatic, but no restarts"
-msgstr ""
+msgstr "自动, 但不重新启动"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:175
 msgid "Automatic, but stopped when not used"
-msgstr ""
+msgstr "自动, 但不使用时停止"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:174
 msgid "Automatic, includes restarts"
-msgstr ""
+msgstr "自动, 包括重启"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:81
 msgid "Autosave interval"
-msgstr ""
+msgstr "自动保存间隔"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:79
 msgid "Autosave interval applies to change counts instead of time"
-msgstr ""
+msgstr "自动保存间隔适用于更改计数而不是时间"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:79
 msgid "Autosave on changes"
-msgstr ""
+msgstr "自动保存的更改"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:204
 msgid "Bridge PSK"
@@ -37,83 +39,83 @@ msgstr ""
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:164
 msgid "Bridge connection states should only be published locally"
-msgstr ""
+msgstr "网桥连接状态应该只在本地发布"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:131
 msgid "Bridges"
-msgstr ""
+msgstr "桥接"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:103
 msgid "CA file path"
-msgstr ""
+msgstr "CA 文件路径"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:106
 msgid "CA path to search"
-msgstr ""
+msgstr "CA 搜索路径"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:126
 msgid "CRL to use if require_certificate is enabled"
-msgstr ""
+msgstr "启用 require_certificate 后使用的CRL"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:127
 msgid "Ciphers control. Should match 'openssl ciphers' format"
-msgstr ""
+msgstr "Ciphers控制. 应该符合 'openssl ciphers' 的格式"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:160
 msgid "Clean session"
-msgstr ""
+msgstr "清理会话"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:76
 msgid "Client expiration"
-msgstr ""
+msgstr "客户端过期"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:167
 msgid "Client id to use locally. Important when bridging to yourself"
-msgstr ""
+msgstr "本地使用的客户端id. 桥接至自己时很重要"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:166
 msgid "Client id to use on remote end of this bridge connection"
-msgstr ""
+msgstr "在此网桥连接的远端使用的客户端ID"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:136
 msgid "Connection name"
-msgstr ""
+msgstr "连接名称"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:117
 msgid "Depends on your openssl version, empty to support all"
-msgstr ""
+msgstr "取决于您的openssl版本, 为空以支持所有"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:221
 msgid "Directory to search for CA files"
-msgstr ""
+msgstr "搜索CA文件的目录"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:52
 msgid "Disallow remote access to this broker"
-msgstr ""
+msgstr "禁止远程访问此代理"
 
 #: applications/luci-app-mosquitto/root/usr/share/rpcd/acl.d/luci-app-mosquitto.json:3
 msgid "Grant UCI access for luci-app-mosquitto"
-msgstr ""
+msgstr "授予UCI访问luci-app-mosquitto的权限"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:180
 msgid "How long to wait before disconnecting"
-msgstr ""
+msgstr "断开连接前要等待多长时间"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:177
 msgid "How long to wait before reconnecting"
-msgstr ""
+msgstr "重新连接之前要等待多长时间"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:183
 msgid "How many messages to queue before restarting lazy bridge"
-msgstr ""
+msgstr "重新启动缓慢桥接之前要排队多少条消息"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:171
 msgid "How should this bridge be started"
-msgstr ""
+msgstr "这桥接应该如何开始"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:194
 msgid "Identity for TLS-PSK"
-msgstr ""
+msgstr "TLS-PSK的身份"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:36
 msgid ""
@@ -121,34 +123,38 @@ msgid ""
 "UCI directly) If unchecked, mosquitto runs with the config in /etc/mosquitto/"
 "mosquitto.conf (and this page is ignored)"
 msgstr ""
+"如果选中, mosquitto将使用此页面生成的配置运行. (或直接从"
+"UCI) 如果未选中, mosquitto将使用 /etc/mosquitto/"
+"mosquitto.conf 中的配置运行(此页面将被忽略)"
+
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:168
 msgid "Keepalive interval for this bridge"
-msgstr ""
+msgstr "该网桥的Keepalive间隔"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:204
 msgid "Key for TLS-PSK"
-msgstr ""
+msgstr "TLS-PSK的密钥"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:61
 msgid "Limit for message allowed inflight"
-msgstr ""
+msgstr "允许机上消息的限制"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:64
 msgid "Limit for message queue when offline"
-msgstr ""
+msgstr "脱机时消息队列的限制"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:67
 msgid "Limit for message queue when offline, zero to disable)"
-msgstr ""
+msgstr "离线时对消息队列进行限制, zero表示禁用)"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:91
 msgid "Listeners"
-msgstr ""
+msgstr "监听"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:44
 msgid "Log destination"
-msgstr ""
+msgstr "日志终点"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:98
 msgid "MQTT"
@@ -156,15 +162,15 @@ msgstr ""
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:61
 msgid "Max Inflight Messages"
-msgstr ""
+msgstr "最大的机上消息"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:64
 msgid "Max Queued Messages"
-msgstr ""
+msgstr "最大的队列消息"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:67
 msgid "Max Queued bytes"
-msgstr ""
+msgstr "最大的队列字节"
 
 #: applications/luci-app-mosquitto/root/usr/share/luci/menu.d/luci-app-mosquitto.json:3
 msgid "Mosquitto"
@@ -172,85 +178,87 @@ msgstr ""
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:26
 msgid "Mosquitto MQTT Broker"
-msgstr ""
+msgstr "Mosquitto MQTT 代理"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:164
 msgid "Notifications local only"
-msgstr ""
+msgstr "仅本地通知"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:201
 msgid "Only hex numbers are allowed (use A-F characters and 0-9 digits)"
-msgstr ""
+msgstr "只允许使用十六进制数字 (使用 A-F 字符和 0-9 数字"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:53
 msgid ""
 "Outbound bridges will still work, but this will make the primary listener "
 "only available from localhost"
 msgstr ""
+"出站网桥仍将起作用, 但这将使主侦听器"
+"仅可从localhost访问"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:194
 msgid "PSK Bridge Identity"
-msgstr ""
+msgstr "PSK桥身份"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:128
 msgid "PSK Hint to provide to connecting clients"
-msgstr ""
+msgstr "提供给连接客户的PSK提示"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:218
 msgid "Path to CA file"
-msgstr ""
+msgstr "CA文件的路径"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:227
 msgid "Path to PEM encoded keyfile"
-msgstr ""
+msgstr "PEM编码的密钥文件的路径"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:224
 msgid "Path to PEM encoded server certificate file"
-msgstr ""
+msgstr "PEM编码的服务器证书文件的路径"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:87
 msgid "Path to persistent file"
-msgstr ""
+msgstr "持久性文件的路径"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:72
 msgid "Persistence"
-msgstr ""
+msgstr "持久性"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:75
 msgid "Persistence enabled"
-msgstr ""
+msgstr "启用持久性"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:84
 msgid "Persistent file name"
-msgstr ""
+msgstr "持久性的文件名"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:87
 msgid "Persistent file path (with trailing/)"
-msgstr ""
+msgstr "持久性文件路径 (尾随 /)"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:149
 msgid "Please enter a hostname or an IP address"
-msgstr ""
+msgstr "请输入主机名或IP地址"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:144
 msgid "Please enter a valid port after the :"
-msgstr ""
+msgstr "请在入站后输入有效的端口 :"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:94
 msgid "Port"
-msgstr ""
+msgstr "端口"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:96
 msgid "Protocol to use when listening"
-msgstr ""
+msgstr "侦听时使用的协议"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:190
 msgid "Remote password"
-msgstr ""
+msgstr "远程密码"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:189
 msgid "Remote username"
-msgstr ""
+msgstr "远程用户名"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:76
 msgid ""
@@ -260,24 +268,24 @@ msgstr ""
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:124
 msgid "Require clients to present a certificate"
-msgstr ""
+msgstr "要求客户出示证书"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:81
 msgid "Save persistence file after this many seconds or changes"
-msgstr ""
+msgstr "在这几秒钟或更改之后保存持久性文件"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:57
 msgid "Set to zero to disable"
-msgstr ""
+msgstr "设置为zero可禁用"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:75
 msgid "Should persistence to disk be enabled at all"
-msgstr ""
+msgstr "应该完全启用对磁盘的持久性"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:116
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:210
 msgid "TLS Version"
-msgstr ""
+msgstr "TLS 版本"
 
 #: applications/luci-app-mosquitto/luasrc/model/cbi/mosquitto.lua:211
 msgid ""
