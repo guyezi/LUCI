@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: luci-app-radicale 2\n"
-"PO-Revision-Date: 2021-01-13 00:56+0000\n"
-"Last-Translator: 孤爺仔 <7312140@qq.com>\n"
+"PO-Revision-Date: 2021-03-06 14:44+0000\n"
+"Last-Translator: Meano Lee <meanocat@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "openwrt/luciapplicationsradicale2/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.4.1-dev\n"
+"X-Generator: Weblate 4.5.1\n"
 
 #: applications/luci-app-radicale2/luasrc/model/cbi/radicale2/auth.lua:8
 #: applications/luci-app-radicale2/luasrc/model/cbi/radicale2/logging.lua:4
@@ -199,7 +199,8 @@ msgid ""
 "the existing hash (you can also put your own hash value for the type of hash "
 "listed above)."
 msgstr ""
-"如果填写了“纯文本密码”并与“确认纯文本密码”匹配，则此字段将成为该密码的哈希，否则此字段将保留现有哈希（您也可以为上面列出的哈希类型放置自己的哈希值）。"
+"如果填写了“纯文本密码”并与“确认纯文本密码”匹配，则此字段将成为该密码的哈希，"
+"否则此字段将保留现有哈希（您也可以为上面列出的哈希类型放置自己的哈希值）。"
 
 #: applications/luci-app-radicale2/luasrc/model/cbi/radicale2/logging.lua:30
 msgid "Include full environment in logs"

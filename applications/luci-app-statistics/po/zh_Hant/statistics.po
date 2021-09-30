@@ -6,8 +6,8 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-06-10 03:40+0200\n"
-"PO-Revision-Date: 2021-01-17 20:54+0000\n"
-"Last-Translator: akibou <jinwenxin1997@icloud.com>\n"
+"PO-Revision-Date: 2021-08-18 10:44+0000\n"
+"Last-Translator: Hulen <shift0106@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
 "openwrt/luciapplicationsstatistics/zh_Hant/>\n"
 "Language: zh_Hant\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.5-dev\n"
+"X-Generator: Weblate 4.8-dev\n"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/apcups.js:7
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/apcups.json:2
@@ -160,7 +160,7 @@ msgstr "註解／規則號碼"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/collectd.js:174
 msgid "Configure…"
-msgstr "配置…"
+msgstr "設定…"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/conntrack.js:7
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/conntrack.json:2
@@ -472,6 +472,19 @@ msgstr "主機名稱"
 msgid "IP or hostname where to get the txtinfo output from"
 msgstr "獲取 txtinfo 輸出的 IP 位址或主機名稱"
 
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/ipstatistics.js:7
+#: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/ipstatistics.json:2
+msgid "IP-Statistics"
+msgstr "IP-Statistics"
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/ipstatistics.js:7
+msgid "IP-Statistics Plugin Configuration"
+msgstr "IP-Statistics 外掛設定"
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/ipstatistics.js:11
+msgid "IPv4/IPv6 Statistics monitoring enabled"
+msgstr "IPv4/IPv6 統計資料已啟用"
+
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/irq.js:7
 msgid "IRQ Plugin Configuration"
 msgstr "IRQ 插件設定"
@@ -657,10 +670,9 @@ msgstr "監視 ％s 和 ％s"
 msgid "Monitoring %s, %s, %s"
 msgstr "監視 %s, %s, %s"
 
-#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/apcups.js:29
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/apcups.js:26
 msgid "Monitoring APC UPS at host %s, port %d"
-msgid_plural "Monitoring APC UPS at hosts %s, port %d"
-msgstr[0] "正在主機位置 %s 阜號 %d 的位置上監測 APC UPS"
+msgstr "正在主機位置 %s 連接埠 %d 的位置上監測 APC UPS"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/dhcpleases.js:19
 msgid "Monitoring DHCP leases enabled"
@@ -915,7 +927,7 @@ msgstr "可能是已收集的錯誤。只有127.0.0.1和localhost可以工作"
 #: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/processes.js:7
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/processes.json:2
 msgid "Processes"
-msgstr "程序組"
+msgstr "處理程序"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/processes.js:6
 msgid "Processes Plugin Configuration"
@@ -1283,6 +1295,11 @@ msgid ""
 "The interface plugin collects traffic statistics on selected interfaces."
 msgstr "Interface 插件用於統計選定介面的封包資訊。"
 
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/ipstatistics.js:8
+msgid ""
+"The ipstatistics plugin collects IPv4 and IPv6 statistics to compare them."
+msgstr "Ipstatistics 外掛收集 IPv4 和 IPv6 統計資料來比較它們。"
+
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/iptables.js:9
 msgid ""
 "The iptables plugin will monitor selected firewall rules and collect "
@@ -1573,85 +1590,3 @@ msgstr[0] "%d 遠端阜"
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/rrdtool.js:29
 msgid "reduces rrd size"
 msgstr "減少 rrd 大小"
-
-#~ msgid "Cache flush interval"
-#~ msgstr "快取清空間隙"
-
-#~ msgid ""
-#~ "The statistics package uses <a href=\"https://collectd.org/\">Collectd</"
-#~ "a> to gather data and <a href=\"http://oss.oetiker.ch/rrdtool/\">RRDtool</"
-#~ "a> to render diagram images."
-#~ msgstr ""
-#~ "Statistics 軟體包使用 <a href=\"https://collectd.org/\">Collectd</a> 來收"
-#~ "集數據，並用 <a href=\"http://oss.oetiker.ch/rrdtool/\">RRDtool</a> 生成統"
-#~ "計圖表。"
-
-#~ msgid ""
-#~ "You can install additional collectd-mod-* plugins to enable more "
-#~ "statistics."
-#~ msgstr "您可以安裝更多的 collectd-mod-* 外掛以獲得更多的統計資料。"
-
-#~ msgid "Action (target)"
-#~ msgstr "動作（目標）"
-
-#~ msgid "Add matching rule"
-#~ msgstr "新增匹配規則"
-
-#~ msgid "Add multiple hosts separated by space."
-#~ msgstr "使用空格分隔多個主機"
-
-#~ msgid ""
-#~ "Collectd is a small daemon for collecting data from various sources "
-#~ "through different plugins. On this page you can change general settings "
-#~ "for the collectd daemon."
-#~ msgstr ""
-#~ "Collectd 是一個通過不同外掛用於收集各種源資料的小型守護程式。在此頁面中，"
-#~ "您可以更改 Collectd 守護程序常規設定。"
-
-#~ msgid "Destination ip range"
-#~ msgstr "目標 IP 區間"
-
-#~ msgid "Hold Ctrl to select multiple items or to deselect entries."
-#~ msgstr "按住 Ctrl 鍵來選擇或取消選擇多個專案。"
-
-#~ msgid "Incoming interface"
-#~ msgstr "入介面"
-
-#~ msgid "Monitor all sensors"
-#~ msgstr "監控所有感測器"
-
-#~ msgid "Name of the rule"
-#~ msgstr "規則名"
-
-#~ msgid "Network protocol"
-#~ msgstr "Network 協議"
-
-#~ msgid "Options"
-#~ msgstr "選項"
-
-#~ msgid "Outgoing interface"
-#~ msgstr "出介面"
-
-#~ msgid "Processes to monitor separated by space"
-#~ msgstr "過程監控，用空格隔開"
-
-#~ msgid "Source ip range"
-#~ msgstr "源 IP 區間"
-
-#~ msgid "e.g. br-ff"
-#~ msgstr "例如：br-ff"
-
-#~ msgid "e.g. br-lan"
-#~ msgstr "例如：br-lan"
-
-#~ msgid "e.g. reject-with tcp-reset"
-#~ msgstr "例如：eject-with tcp-reset"
-
-#~ msgid "max. 16 chars"
-#~ msgstr "最長 16 個字元"
-
-#~ msgid "seconds; multiple separated by space"
-#~ msgstr "秒數；多個使用空格分隔"
-
-#~ msgid "server interfaces"
-#~ msgstr "伺服器介面"

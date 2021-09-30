@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-12-13 05:29+0000\n"
+"PO-Revision-Date: 2021-04-04 07:26+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsstatistics/nb_NO/>\n"
@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4-dev\n"
+"X-Generator: Weblate 4.6-dev\n"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/apcups.js:7
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/apcups.json:2
@@ -106,8 +106,9 @@ msgid "Cache collected data for"
 msgstr "Hurtigbufre innsamlede data for"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/iptables.js:99
+#, fuzzy
 msgid "Chain"
-msgstr "Lenke"
+msgstr "Kjede"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/unixsock.js:19
 msgid "Change the ownership of the socket file to the specified group."
@@ -274,7 +275,7 @@ msgstr ""
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/curl.js:21
 msgid "Enable"
-msgstr ""
+msgstr "Skru på"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/network.js:25
 msgid "Enable forwarding"
@@ -320,7 +321,7 @@ msgstr "Aktiver denne plugin"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/collectd.js:113
 msgid "Enabled"
-msgstr ""
+msgstr "Påskrudd"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/entropy.js:10
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/entropy.json:2
@@ -464,6 +465,19 @@ msgstr "Vertsnavn"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/olsrd.js:15
 msgid "IP or hostname where to get the txtinfo output from"
+msgstr ""
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/ipstatistics.js:7
+#: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/ipstatistics.json:2
+msgid "IP-Statistics"
+msgstr ""
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/ipstatistics.js:7
+msgid "IP-Statistics Plugin Configuration"
+msgstr ""
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/ipstatistics.js:11
+msgid "IPv4/IPv6 Statistics monitoring enabled"
 msgstr ""
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/irq.js:7
@@ -649,11 +663,9 @@ msgstr ""
 msgid "Monitoring %s, %s, %s"
 msgstr ""
 
-#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/apcups.js:29
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/apcups.js:26
 msgid "Monitoring APC UPS at host %s, port %d"
-msgid_plural "Monitoring APC UPS at hosts %s, port %d"
-msgstr[0] ""
-msgstr[1] ""
+msgstr ""
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/dhcpleases.js:19
 msgid "Monitoring DHCP leases enabled"
@@ -902,7 +914,7 @@ msgstr ""
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/olsrd.js:18
 msgid "Port"
-msgstr ""
+msgstr "Port"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/apcups.js:19
 msgid "Port for apcupsd communication"
@@ -1297,6 +1309,11 @@ msgid ""
 "The interface plugin collects traffic statistics on selected interfaces."
 msgstr "Grensesnitt plugin samler trafikk statistikk på utvalgte grensesnitt."
 
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/ipstatistics.js:8
+msgid ""
+"The ipstatistics plugin collects IPv4 and IPv6 statistics to compare them."
+msgstr ""
+
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/iptables.js:9
 msgid ""
 "The iptables plugin will monitor selected firewall rules and collect "
@@ -1541,8 +1558,9 @@ msgstr ""
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/iwinfo.js:7
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/iwinfo.json:2
+#, fuzzy
 msgid "Wireless"
-msgstr "Trådløs"
+msgstr "Trådløst"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/iwinfo.js:7
 msgid "Wireless iwinfo Plugin Configuration"
@@ -1608,63 +1626,3 @@ msgstr[1] ""
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/rrdtool.js:29
 msgid "reduces rrd size"
 msgstr "reduserer RRD størrelse"
-
-#~ msgid "Cache flush interval"
-#~ msgstr "Intervall for tømming av hurtigbuffer"
-
-#~ msgid "Action (target)"
-#~ msgstr "Handling (mål)"
-
-#~ msgid "Add matching rule"
-#~ msgstr "Legg til matchende regel"
-
-#~ msgid "Add multiple hosts separated by space."
-#~ msgstr "Legg til flere verter adskilt med mellomrom."
-
-#~ msgid ""
-#~ "Collectd is a small daemon for collecting data from various sources "
-#~ "through different plugins. On this page you can change general settings "
-#~ "for the collectd daemon."
-#~ msgstr ""
-#~ "Collectd er en liten daemon for innsamling av data fra ulike kilder "
-#~ "gjennom ulike plugins. På denne siden kan du endre generelle "
-#~ "innstillinger for collectd daemon."
-
-#~ msgid "Destination ip range"
-#~ msgstr "Destinasjon ip område"
-
-#~ msgid "Incoming interface"
-#~ msgstr "Innkommende grensesnitt"
-
-#~ msgid "Name of the rule"
-#~ msgstr "Navnet på regelen"
-
-#~ msgid "Network protocol"
-#~ msgstr "Nettverks protokoll"
-
-#~ msgid "Options"
-#~ msgstr "Alternativer"
-
-#~ msgid "Outgoing interface"
-#~ msgstr "Utgående grensesnitt"
-
-#~ msgid "Source ip range"
-#~ msgstr "Kilde ip område"
-
-#~ msgid "e.g. br-ff"
-#~ msgstr "f.eks. br-ff"
-
-#~ msgid "e.g. br-lan"
-#~ msgstr "f.eks. br-lan"
-
-#~ msgid "e.g. reject-with tcp-reset"
-#~ msgstr "f.eks. forkast med tcp-reset"
-
-#~ msgid "max. 16 chars"
-#~ msgstr "maks. 16 tegn"
-
-#~ msgid "seconds; multiple separated by space"
-#~ msgstr "sekunder; flere adskilt med mellomrom"
-
-#~ msgid "server interfaces"
-#~ msgstr "Server grensesnitt"

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: luci-app-radicale 2\n"
-"PO-Revision-Date: 2021-01-28 10:32+0000\n"
-"Last-Translator: akibou <jinwenxin1997@icloud.com>\n"
+"PO-Revision-Date: 2021-05-02 20:06+0000\n"
+"Last-Translator: Trevor <wowpapa3232@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
 "openwrt/luciapplicationsradicale2/zh_Hant/>\n"
 "Language: zh_Hant\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.5-dev\n"
+"X-Generator: Weblate 4.7-dev\n"
 
 #: applications/luci-app-radicale2/luasrc/model/cbi/radicale2/auth.lua:8
 #: applications/luci-app-radicale2/luasrc/model/cbi/radicale2/logging.lua:4
@@ -152,8 +152,9 @@ msgid ""
 "plaintext in a field that will appear on this page if python3-passlib is "
 "installed."
 msgstr ""
-"使用Apache htpasswd樣式的身份驗證文件的生成器（針對您在上面選擇的hash格式）生成此字段，或者安裝python3-passlib以通過在將"
-"出現在此頁面上的字段中輸入純文本來啟用創建哈希的功能如果已安裝python3-passlib。"
+"使用Apache htpasswd樣式的身份驗證文件的生成器（針對您在上面選擇的hash格式）生"
+"成此字段，或者安裝python3-passlib以通過在將出現在此頁面上的字段中輸入純文本來"
+"啟用創建哈希的功能如果已安裝python3-passlib。"
 
 #: applications/luci-app-radicale2/luasrc/view/cbi/raduigo.htm:24
 msgid "Go to Radicale 2.x Web UI"
@@ -198,8 +199,9 @@ msgid ""
 "the existing hash (you can also put your own hash value for the type of hash "
 "listed above)."
 msgstr ""
-"如果填寫了“純文本密碼”並與“確認純文本密碼”匹配，則此字段將成為該密碼的雜湊值，否則此字段將保留現有雜湊值（您也可以為上面列出的雜湊類型輸入自己的雜湊值"
-"）。"
+"如果填寫了“純文本密碼”並與“確認純文本密碼”匹配，則此字段將成為該密碼的雜湊"
+"值，否則此字段將保留現有雜湊值（您也可以為上面列出的雜湊類型輸入自己的雜湊"
+"值）。"
 
 #: applications/luci-app-radicale2/luasrc/model/cbi/radicale2/logging.lua:30
 msgid "Include full environment in logs"
@@ -226,7 +228,7 @@ msgstr "日誌組態檔（如未上傳檔案，則預設將 procd 的日誌寫�
 #: applications/luci-app-radicale2/luasrc/controller/radicale2.lua:29
 #: applications/luci-app-radicale2/luasrc/model/cbi/radicale2/logging.lua:6
 msgid "Logging"
-msgstr "記錄中"
+msgstr "日誌"
 
 #: applications/luci-app-radicale2/luasrc/model/cbi/radicale2/logging.lua:12
 msgid "Logging File"

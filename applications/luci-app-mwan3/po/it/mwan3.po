@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-01-13 00:56+0000\n"
-"Last-Translator: Francesco Grosso <tregemmelli@gmail.com>\n"
+"PO-Revision-Date: 2021-05-07 11:32+0000\n"
+"Last-Translator: Omar Destefani <omar.destefani@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsmwan3/it/>\n"
 "Language: it\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.1-dev\n"
+"X-Generator: Weblate 4.7-dev\n"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interfaceconfig.lua:176
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interfaceconfig.lua:192
@@ -41,6 +41,7 @@ msgstr "%d minuti"
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interfaceconfig.lua:165
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interfaceconfig.lua:181
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interfaceconfig.lua:201
+#, fuzzy
 msgid "%d second"
 msgstr "%d secondo"
 
@@ -73,7 +74,7 @@ msgstr "%d secondi"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/ruleconfig.lua:67
 msgid "-- Please choose --"
-msgstr "-- Per favore scegli --"
+msgstr "-- Scegli --"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interfaceconfig.lua:66
 msgid ""
@@ -113,7 +114,7 @@ msgstr ""
 msgid "Check routing table"
 msgstr ""
 
-#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:98
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:112
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_detail.htm:34
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_troubleshooting.htm:34
 msgid "Collecting data..."
@@ -151,13 +152,17 @@ msgstr ""
 msgid "Diagnostics"
 msgstr "Diagnostica"
 
-#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:50
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:64
 msgid "Disabled"
 msgstr "Disabilitato"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interfaceconfig.lua:229
 msgid ""
 "Downed interface will be deemed up after this many successful ping tests"
+msgstr ""
+
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:44
+msgid "Downtime"
 msgstr ""
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/globalsconfig.lua:26
@@ -262,11 +267,11 @@ msgstr "IPv4"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/ruleconfig.lua:23
 msgid "IPv4 and IPv6"
-msgstr ""
+msgstr "IPv4 e IPv6"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/ruleconfig.lua:24
 msgid "IPv4 only"
-msgstr ""
+msgstr "Solo IPv4"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interfaceconfig.lua:35
 msgid "IPv6"
@@ -274,7 +279,7 @@ msgstr "IPv6"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/ruleconfig.lua:25
 msgid "IPv6 only"
-msgstr ""
+msgstr "Solo IPv6"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/globalsconfig.lua:32
 msgid "Info"
@@ -287,6 +292,7 @@ msgstr ""
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interface.lua:149
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/member.lua:27
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/memberconfig.lua:18
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:74
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_detail.htm:10
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_diagnostics.htm:10
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_diagnostics.htm:61
@@ -336,7 +342,7 @@ msgstr ""
 msgid "Load Balancing"
 msgstr ""
 
-#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:97
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:111
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_detail.htm:33
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_diagnostics.htm:36
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_troubleshooting.htm:33
@@ -380,7 +386,7 @@ msgstr ""
 msgid "MWAN Interface Configuration - %s"
 msgstr ""
 
-#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:95
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:109
 msgid "MWAN Interfaces"
 msgstr ""
 
@@ -464,8 +470,12 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:77
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:91
 msgid "No MWAN interfaces found"
+msgstr ""
+
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:50
+msgid "No Tracking"
 msgstr ""
 
 #: applications/luci-app-mwan3/luasrc/controller/mwan3.lua:159
@@ -624,6 +634,10 @@ msgstr ""
 msgid "Source port"
 msgstr ""
 
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:78
+msgid "Status"
+msgstr ""
+
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/ruleconfig.lua:55
 msgid "Sticky"
 msgstr ""
@@ -702,6 +716,11 @@ msgstr ""
 msgid "Troubleshooting"
 msgstr ""
 
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:36
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:53
+msgid "Uptime"
+msgstr ""
+
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/ruleconfig.lua:46
 msgid "View the content of /etc/protocols for protocol description"
 msgstr ""
@@ -740,7 +759,7 @@ msgstr ""
 
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_diagnostics.htm:37
 msgid "Waiting for command to complete..."
-msgstr ""
+msgstr "In attesa del comando da completare..."
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/globalsconfig.lua:30
 msgid "Warning"
@@ -759,7 +778,7 @@ msgstr ""
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interface.lua:163
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/ruleconfig.lua:58
 msgid "Yes"
-msgstr ""
+msgstr "Sì"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/policy.lua:84
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/policyconfig.lua:29

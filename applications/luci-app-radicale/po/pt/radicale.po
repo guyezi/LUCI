@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-07-20 11:41+0000\n"
+"PO-Revision-Date: 2021-05-10 09:32+0000\n"
 "Last-Translator: ssantos <ssantos@web.de>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsradicale/pt/>\n"
@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.2-dev\n"
+"X-Generator: Weblate 4.7-dev\n"
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:268
 msgid ""
@@ -118,7 +118,7 @@ msgstr ""
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:570
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:592
 msgid "Debug"
-msgstr "Depurar"
+msgstr "Depuração"
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:191
 msgid "Delay (in seconds) during system boot before Radicale start"
@@ -459,7 +459,7 @@ msgid ""
 "phones or computers."
 msgstr ""
 "Eles podem ser visualizados e editados pelos clientes de agenda e de "
-"contatos em telefones celulares ou computadores."
+"contactos em telemóveis ou computadores."
 
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:408
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:463
@@ -563,31 +563,3 @@ msgstr "necessário"
 #: applications/luci-app-radicale/luasrc/model/cbi/radicale.lua:393
 msgid "salted SHA-1"
 msgstr "SHA-1 com salto"
-
-#~ msgid "Ciphers"
-#~ msgstr "Cifras"
-
-#~ msgid "Custom"
-#~ msgstr "Personalizado"
-
-#~ msgid "Database"
-#~ msgstr "Banco de Dados"
-
-#~ msgid "OPTIONAL: See python's ssl module for available ciphers"
-#~ msgstr ""
-#~ "Opcional: veja o módulo SSL do python para conhecer as cifras disponíveis"
-
-#~ msgid "custom"
-#~ msgstr "personalizado"
-
-#~ msgid "Access-Control-Allow-Headers"
-#~ msgstr "Access-Control-Allow-Headers"
-
-#~ msgid "Access-Control-Allow-Methods"
-#~ msgstr "Access-Control-Allow-Methods"
-
-#~ msgid "Access-Control-Allow-Origin"
-#~ msgstr "Access-Control-Allow-Origin"
-
-#~ msgid "Access-Control-Expose-Headers"
-#~ msgstr "Access-Control-Expose-Headers"

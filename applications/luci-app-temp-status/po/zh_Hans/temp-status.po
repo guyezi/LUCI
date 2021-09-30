@@ -1,8 +1,0 @@
-msgid ""
-msgstr "Content-Type: text/plain; charset=UTF-8"
-
-msgid "Temperature"
-msgstr "温度"
-
-msgid "Thermal zone"
-msgstr "热量区域"

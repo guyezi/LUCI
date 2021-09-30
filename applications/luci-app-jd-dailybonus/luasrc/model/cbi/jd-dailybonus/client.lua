@@ -8,15 +8,18 @@ m = Map(jd)
 s = m:section(TypedSection, 'global', translate('基本设置'))
 s.anonymous = true
 
+o = s:option(DynamicList, "Cookies", translate("账号 Cookie 列表"))
+o.rmempty = false
+o.description = translate('双击输入框可调出二维码，扫码后自动填入。')
+
 o = s:option(DummyValue, '', '')
 o.rawhtml = true
 o.template = 'jd-dailybonus/cookie_tools'
 
-o = s:option(Value, 'cookie', translate('第一账号Cookie'))
+o = s:option(DynamicList, "jrBody", translate('金融 POST Body'))
 o.rmempty = false
-
-o = s:option(Value, 'cookie2', translate('第二账号Cookie'))
-o.rmempty = true
+o.default = ''
+o.description = translate('京东金融签到 POST Body（以reqData=开头），与上方的Cookies列表一一对应，没有可不填（可能导致京东金融签到失败）')
 
 o = s:option(Value, 'stop', translate('延迟签到'))
 o.rmempty = false
@@ -41,6 +44,12 @@ o.description = translate('选择Server酱的推送接口')
 o = s:option(Value, 'serverchan', translate('Server酱 SCKEY'))
 o.rmempty = true
 o.description = translate('微信推送，基于Server酱服务，请自行登录 http://sc.ftqq.com/ 绑定并获取 SCKEY。')
+
+-- Dingding
+
+o = s:option(Value, 'dd_token', translate('Dingding Bot Token'))
+o.rmempty = true
+o.description = translate('创建一个群机器人并获取API Token，设置安全关键字为:京东')
 
 -- telegram
 
@@ -87,8 +96,9 @@ o:depends('auto_update', '1')
 
 o = s:option(Value, 'remote_url', translate('更新源地址'))
 o:value('https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js', translate('GitHub'))
-o:value('https://cdn.jsdelivr.net/gh/NobyDa/Script/JD-DailyBonus/JD_DailyBonus.js', translate('GitHub CDN'))
-o:value('https://gitee.com/jerrykuku/staff/raw/master/JD_DailyBonus.js', translate('Gitee'))
+o:value('https://raw.sevencdn.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js', translate('GitHub CDN 01'))
+o:value('https://cdn.jsdelivr.net/gh/NobyDa/Script/JD-DailyBonus/JD_DailyBonus.js', translate('GitHub CDN 02'))
+o:value('https://ghproxy.com/https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js', translate('韩国首尔'))
 o.default = 'nil'
 o.rmempty = false
 o.description = translate('当GitHub源无法更新时,可以选择使用国内Gitee源,GitHub CDN可能比原地址更晚更新，但速度快')

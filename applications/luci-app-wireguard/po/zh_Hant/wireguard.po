@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2021-01-19 21:13+0000\n"
-"Last-Translator: akibou <jinwenxin1997@icloud.com>\n"
+"PO-Revision-Date: 2021-08-14 14:43+0000\n"
+"Last-Translator: Hulen <shift0106@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
 "openwrt/luciapplicationswireguard/zh_Hant/>\n"
 "Language: zh_Hant\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.5-dev\n"
+"X-Generator: Weblate 4.8-dev\n"
 
 #: applications/luci-app-wireguard/luasrc/view/wireguard.htm:149
 msgid "Allowed IPs"
@@ -59,11 +59,11 @@ msgstr "上次握手"
 
 #: applications/luci-app-wireguard/luasrc/view/wireguard.htm:125
 msgid "Listen Port"
-msgstr "監聽埠號"
+msgstr "監聽連接埠"
 
 #: applications/luci-app-wireguard/luasrc/view/wireguard.htm:81
 msgid "Never"
-msgstr "從不"
+msgstr "永不"
 
 #: applications/luci-app-wireguard/luasrc/view/wireguard.htm:262
 msgid "Peer"
@@ -86,7 +86,9 @@ msgstr "顯示/隱藏 QR 碼"
 msgid ""
 "The QR-Code works per wg interface, it will be refreshed with every manual "
 "page reload and transfers the following information:"
-msgstr "QR二維碼在每個wg界面上均有效，每次重新加載手動頁面時都會刷新該QR二維碼，並傳輸以下信息："
+msgstr ""
+"QR二維碼在每個wg界面上均有效，每次重新加載手動頁面時都會刷新該QR二維碼，並傳"
+"輸以下信息："
 
 #: applications/luci-app-wireguard/luasrc/view/wireguard.htm:190
 msgid "This section contains no values yet"
@@ -112,8 +114,8 @@ msgid ""
 "default of '0.0.0.0/0, ::/0' to allow sending traffic to any IPv4 and IPv6 "
 "address"
 msgstr ""
-"[對等節點] 該wg接口的'PublicKey'和默認值為'0.0.0.0/0，:: / "
-"0'的'AllowedIPs'，以允許將流量發送到任何IPv4和IPv6位址"
+"[對等節點] 該wg接口的'PublicKey'和默認值為'0.0.0.0/0，:: / 0'的'AllowedIPs'，"
+"以允許將流量發送到任何IPv4和IPv6位址"
 
 #: applications/luci-app-wireguard/luasrc/view/wireguard.htm:91
 msgid "h ago"

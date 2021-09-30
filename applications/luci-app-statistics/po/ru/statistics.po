@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LuCI: statistics\n"
 "POT-Creation-Date: 2017-10-17 22:00+0300\n"
-"PO-Revision-Date: 2021-01-12 22:25+0000\n"
+"PO-Revision-Date: 2021-06-22 17:33+0000\n"
 "Last-Translator: Anton Kikin <a.a.kikin@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsstatistics/ru/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.4.1-dev\n"
+"X-Generator: Weblate 4.7.1-dev\n"
 "Project-Info: Это технический перевод, не дословный. Главное-удобный русский "
 "интерфейс, все проверялось в графическом режиме, совместим с другими apps\n"
 
@@ -478,6 +478,19 @@ msgstr "Имя хоста"
 msgid "IP or hostname where to get the txtinfo output from"
 msgstr "IP-адрес или имя хоста, с которых получать текстовый вывод"
 
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/ipstatistics.js:7
+#: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/ipstatistics.json:2
+msgid "IP-Statistics"
+msgstr "IP-Статистика"
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/ipstatistics.js:7
+msgid "IP-Statistics Plugin Configuration"
+msgstr "Конфигурация плагина IP-Статистика"
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/ipstatistics.js:11
+msgid "IPv4/IPv6 Statistics monitoring enabled"
+msgstr "Мониторинг статистики IPv4/IPv6 включен"
+
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/irq.js:7
 msgid "IRQ Plugin Configuration"
 msgstr "Настройка плагина «IRQ»"
@@ -668,12 +681,9 @@ msgstr "Мониторинг %s и %s"
 msgid "Monitoring %s, %s, %s"
 msgstr "Мониторинг %s, %s, %s"
 
-#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/apcups.js:29
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/apcups.js:26
 msgid "Monitoring APC UPS at host %s, port %d"
-msgid_plural "Monitoring APC UPS at hosts %s, port %d"
-msgstr[0] "Мониторинг APC UPS на узле %s, порт %s"
-msgstr[1] "Мониторинг APC UPS на узлах %s, порт %s"
-msgstr[2] "Мониторинг APC UPS на узлах %s, порт %s"
+msgstr "Мониторинг APC UPS на узле %s, порт %d"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/dhcpleases.js:19
 msgid "Monitoring DHCP leases enabled"
@@ -1339,6 +1349,11 @@ msgid ""
 msgstr ""
 "Плагин «Интерфейсы» собирает статистику на выбранных сетевых интерфейсах."
 
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/ipstatistics.js:8
+msgid ""
+"The ipstatistics plugin collects IPv4 and IPv6 statistics to compare them."
+msgstr "Плагин ipstatistics собирает статистику IPv4 и IPv6 для их сравнения."
+
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/iptables.js:9
 msgid ""
 "The iptables plugin will monitor selected firewall rules and collect "
@@ -1592,7 +1607,7 @@ msgstr "При включении, отображаются значения в 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/iwinfo.js:7
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/iwinfo.json:2
 msgid "Wireless"
-msgstr "Wi-Fi"
+msgstr "Беспроводная"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/iwinfo.js:7
 msgid "Wireless iwinfo Plugin Configuration"
@@ -1665,89 +1680,3 @@ msgstr[2] "%d удалённых портов"
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/rrdtool.js:29
 msgid "reduces rrd size"
 msgstr "позволяет уменьшить размер RRD"
-
-#~ msgid "Cache flush interval"
-#~ msgstr "Интервал сброса кэша"
-
-#~ msgid ""
-#~ "The statistics package uses <a href=\"https://collectd.org/\">Collectd</"
-#~ "a> to gather data and <a href=\"http://oss.oetiker.ch/rrdtool/\">RRDtool</"
-#~ "a> to render diagram images."
-#~ msgstr ""
-#~ "Приложение статистики использует <a href=\"https://collectd.org/"
-#~ "\">collectd</a> для сбора данных и <a href=\"http://oss.oetiker.ch/"
-#~ "rrdtool/\">RRDtool</a> для представления их в виде графиков."
-
-#~ msgid ""
-#~ "You can install additional collectd-mod-* plugins to enable more "
-#~ "statistics."
-#~ msgstr ""
-#~ "Вы можете установить плагины collectd-mod-* для включения дополнительной "
-#~ "статистики."
-
-#~ msgid "Action (target)"
-#~ msgstr "Действие (цель)"
-
-#~ msgid "Add matching rule"
-#~ msgstr "Добавить правило выборки"
-
-#~ msgid "Add multiple hosts separated by space."
-#~ msgstr "Добавить несколько хостов, разделённых пробелом"
-
-#~ msgid ""
-#~ "Collectd is a small daemon for collecting data from various sources "
-#~ "through different plugins. On this page you can change general settings "
-#~ "for the collectd daemon."
-#~ msgstr ""
-#~ "Collectd — это сервис для сбора данных из разных источников при помощи "
-#~ "плагинов. На этой странице вы можете изменить настройки collectd."
-
-#~ msgid "Destination ip range"
-#~ msgstr "Диапазон IP-адресов назначения"
-
-#~ msgid "Hold Ctrl to select multiple items or to deselect entries."
-#~ msgstr ""
-#~ "Удерживая нажатой клавишу Ctrl, выберите несколько элементов или отмените "
-#~ "выбор записей."
-
-#~ msgid "Incoming interface"
-#~ msgstr "Входящий интерфейс"
-
-#~ msgid "Monitor all sensors"
-#~ msgstr "Мониторить все сенсоры"
-
-#~ msgid "Name of the rule"
-#~ msgstr "Имя правила"
-
-#~ msgid "Network protocol"
-#~ msgstr "Сетевой протокол"
-
-#~ msgid "Options"
-#~ msgstr "Опции"
-
-#~ msgid "Outgoing interface"
-#~ msgstr "Исходящий интерфейс"
-
-#~ msgid "Processes to monitor separated by space"
-#~ msgstr "Процессы для мониторинга (разделённые пробелом)"
-
-#~ msgid "Source ip range"
-#~ msgstr "Диапазон IP-адресов источника"
-
-#~ msgid "e.g. br-ff"
-#~ msgstr "напр. br-ff"
-
-#~ msgid "e.g. br-lan"
-#~ msgstr "напр. br-lan"
-
-#~ msgid "e.g. reject-with tcp-reset"
-#~ msgstr "напр. reject-with tcp-reset"
-
-#~ msgid "max. 16 chars"
-#~ msgstr "не более 16 символов"
-
-#~ msgid "seconds; multiple separated by space"
-#~ msgstr "секунд; значения разделенные пробелом"
-
-#~ msgid "server interfaces"
-#~ msgstr "Интерфейсы сервера"

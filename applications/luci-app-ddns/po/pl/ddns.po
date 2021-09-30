@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: luci-app-ddns 2.4.0-1\n"
 "POT-Creation-Date: 2016-01-30 11:07+0100\n"
-"PO-Revision-Date: 2020-10-17 15:26+0000\n"
-"Last-Translator: Marcin Net <marcin.net@linux.pl>\n"
+"PO-Revision-Date: 2021-05-27 16:32+0000\n"
+"Last-Translator: Matthaiks <kitynska@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsddns/pl/>\n"
 "Language: pl\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.3.1-dev\n"
+"X-Generator: Weblate 4.7-dev\n"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:430
 msgid "\"../\" not allowed in path for Security Reason."
@@ -48,7 +48,7 @@ msgid ""
 "BusyBox's nslookup and Wget do not support to specify the IP version to use "
 "for communication with DDNS Provider!"
 msgstr ""
-"BusyBox nslookup i Wget nie obsługują określenia wersji IP, która ma być "
+"nslookup i Wget BusyBox nie obsługują określenia wersji IP, która ma być "
 "używana do komunikacji z dostawcą DDNS!"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:368
@@ -56,8 +56,8 @@ msgid ""
 "BusyBox's nslookup and hostip do not support to specify to use TCP instead "
 "of default UDP when requesting DNS server!"
 msgstr ""
-"Nslookup i hostip BusyBox nie obsługują określania, czy podczas żądania "
-"serwera DNS należy używać TCP zamiast domyślnego UDP!"
+"nslookup i hostip BusyBox nie obsługują określenia, czy używać TCP zamiast "
+"domyślnego UDP podczas żądania serwera DNS!"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:379
 msgid ""
@@ -76,8 +76,8 @@ msgid ""
 "Ca Certs path that will be used to download services data. Set IGNORE to "
 "skip certificate validation."
 msgstr ""
-"Ścieżka Ca Certs, która będzie używana do pobierania danych usług. Ustaw "
-"IGNORE, aby pominąć weryfikację certyfikatu."
+"Ścieżka Ca Certs, używana do pobierania danych usług. Ustaw IGNORE, aby "
+"pominąć weryfikację certyfikatu."
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:537
 msgid "Cancel"
@@ -361,7 +361,7 @@ msgid ""
 "If Wget and cURL package are installed, Wget is used for communication by "
 "default."
 msgstr ""
-"Jeśli pakiet Wget i Curl są zainstalowane, Wget jest domyślnie używany do "
+"Jeśli pakiety Wget i Curl są zainstalowane, Wget jest domyślnie używany do "
 "komunikacji."
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:611
@@ -857,7 +857,7 @@ msgid ""
 "You should install 'bind-host' or 'knot-host' or 'drill' package for DNS "
 "requests."
 msgstr ""
-"Powinieneś zainstalować pakiet „bind-host”, „knot-host” lub „drill” dla "
+"Powinieneś zainstalować pakiet 'bind-host' lub 'knot-host' lub 'drill' dla "
 "żądań DNS."
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:359
@@ -933,121 +933,3 @@ msgstr "sekundy"
 msgid "to run HTTPS without verification of server certificates (insecure)"
 msgstr ""
 "uruchomić HTTPS bez weryfikacji certyfikatów serwera (niezabezpieczony)"
-
-#~ msgid ""
-#~ "Configure here the details for all Dynamic DNS services including this "
-#~ "LuCI application."
-#~ msgstr ""
-#~ "Skonfiguruj tutaj szczegóły dotyczące wszystkich usług dynamicznego DNS, "
-#~ "w tym aplikacji LuCI."
-
-#~ msgid "Defines the Web page to read systems IP-Address from<br />"
-#~ msgstr "Definiuje stronę sieci Web do odczytu adresów IP systemów z<br />"
-
-#~ msgid "Example for IPv4: http://checkip.dyndns.com"
-#~ msgstr "Np. dla IPv4: http://checkip.dyndns.com"
-
-#~ msgid "Example for IPv6: http://checkipv6.dyndns.com"
-#~ msgstr "Np. dla IPv6: http://checkipv6.dyndns.com"
-
-#~ msgid "For detailed information about parameter settings look here."
-#~ msgstr ""
-#~ "Szczegółowe informacje na temat ustawień parametrów znajdują się tutaj."
-
-#~ msgid "Global Configuration"
-#~ msgstr "Konfiguracja globalna"
-
-#~ msgid ""
-#~ "If this service section is disabled it could not be started.<br />Neither "
-#~ "from LuCI interface nor from console"
-#~ msgstr ""
-#~ "Jeśli ta sekcja usługi jest wyłączona, nie można jej uruchomić. <br /> "
-#~ "Ani z interfejsu LuCI, ani z konsoli"
-
-#~ msgid ""
-#~ "Interval to force updates send to DDNS Provider<br />Setting this "
-#~ "parameter to 0 will force the script to only run once"
-#~ msgstr ""
-#~ "Interwał wymuszający wysyłanie aktualizacji do dostawcy DDNS <br /> "
-#~ "Ustawienie tego parametru na 0 wymusi uruchomienie skryptu tylko raz"
-
-#~ msgid ""
-#~ "It is NOT recommended for casual users to change settings on this page."
-#~ msgstr ""
-#~ "NIE jest zalecane, aby zwykli użytkownicy zmieniali ustawienia na tej "
-#~ "stronie."
-
-#~ msgid ""
-#~ "Update URL to be used for updating your DDNS Provider.<br />Follow "
-#~ "instructions you will find on their WEB page."
-#~ msgstr ""
-#~ "Zaktualizuj adres URL, który będzie używany do aktualizacji dostawcy "
-#~ "DDNS. <br/> Postępuj zgodnie z instrukcjami, które znajdziesz na ich "
-#~ "stronie internetowej."
-
-#~ msgid "Defines the Web page to read systems IP-Address from<br>"
-#~ msgstr "Definiuje stronę internetową do odczytu adresu IP systemu z <br>"
-
-#~ msgid "BusyBox's nslookup and Wget do not support to specify"
-#~ msgstr "BusyBox nslookup i Wget nie obsługują określania"
-
-#~ msgid "BusyBox's nslookup and hostip do not support to specify to use TCP"
-#~ msgstr ""
-#~ "Nslookup, hostip i BusyBox nie obsługują określania używanego przez TCP"
-
-#~ msgid "BusyBox's nslookup in the current compiled version"
-#~ msgstr "BusyBox's nslookup w bieżącej skompilowanej wersji"
-
-#~ msgid "Defines the Web page to read systems IP-Address from"
-#~ msgstr "Definiuje stronę internetową do odczytu systemów od IP-Address"
-
-#~ msgid "Install 'ca-certificates' package or needed certificates"
-#~ msgstr ""
-#~ "Zainstaluj pakiet 'ca-certificates' lub potrzebne certyfikaty ręcznie do "
-#~ "katalogu domyślnego /etc/ssl/certs"
-
-#~ msgid ""
-#~ "You should install 'bind-host' or 'knot-host' or 'drill' or 'hostip' "
-#~ "package,"
-#~ msgstr ""
-#~ "Powinieneś zainstalować pakiet „bind-host” lub „knot-host” lub „drill” "
-#~ "lub „hostip”,"
-
-#~ msgid "File not found"
-#~ msgstr "Nie znaleziono pliku"
-
-#~ msgid "If both cURL and GNU Wget are installed, Wget is used by default."
-#~ msgstr ""
-#~ "Jeśli zainstalowano jednocześnie cURL i GNU Wget, Wget jest używany "
-#~ "domyślnie."
-
-#~ msgid "NOT installed"
-#~ msgstr "Nie zainstalowany"
-
-#~ msgid "-- custom --"
-#~ msgstr "-- własne --"
-
-#~ msgid "Collecting data..."
-#~ msgstr "Trwa zbieranie danych..."
-
-#~ msgid ""
-#~ "Dynamic DNS allows that your router can be reached with a fixed hostname "
-#~ "while having a dynamically changing IP address."
-#~ msgstr ""
-#~ "Dynamiczny DNS umożliwia dostęp do routera z użyciem stałej nazwy hosta, "
-#~ "pomimo posiadania dynamicznie zmieniającego się adresu IP."
-
-#~ msgid "Loading"
-#~ msgstr "Ładowanie"
-
-#~ msgid "Overview"
-#~ msgstr "Przegląd"
-
-#~ msgid "Start"
-#~ msgstr "Uruchomienie"
-
-#~ msgid "Version"
-#~ msgstr "Wersja"
-
-#~ msgid "Waiting for changes to be applied..."
-#~ msgstr "Oczekiwanie na zastosowanie zmian..."

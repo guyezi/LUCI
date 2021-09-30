@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-01-20 10:36+0000\n"
+"PO-Revision-Date: 2021-08-18 10:44+0000\n"
 "Last-Translator: Matthaiks <kitynska@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsyggdrasil/pl/>\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.5-dev\n"
+"X-Generator: Weblate 4.8-dev\n"
 
 #: applications/luci-app-yggdrasil/htdocs/luci-static/resources/view/yggdrasil/status.js:33
 msgid "Active peers"
@@ -387,46 +387,3 @@ msgstr "Nazwa interfejsu sieciowego Yggdrasil'a"
 #: applications/luci-app-yggdrasil/htdocs/luci-static/resources/view/yggdrasil/settings.js:58
 msgid "e.g. tcp://0.0.0.0:0 or tcp://[::]:0"
 msgstr "np. tcp://0.0.0.0:0 or tcp://[::]:0"
-
-#~ msgid "Enable tap mode"
-#~ msgstr "Włącz tryb dotykowy"
-
-#~ msgid ""
-#~ "Allow tunneling non-Yggdrasil traffic over Yggdrasil. This effectively"
-#~ msgstr ""
-#~ "Zezwól na tunelowanie ruchu innego niż Yggdrasil nad Yggdrasil. To "
-#~ "skutecznie"
-
-#~ msgid "By default, nodeinfo contains some defaults including the platform,"
-#~ msgstr ""
-#~ "Domyślnie, nodeinfo zawiera kilka domyślnych ustawień, w tym platformę,"
-
-#~ msgid ""
-#~ "IPv4 subnets belonging to this node's end of the tunnels. Only traffic"
-#~ msgstr "Podsieci IPv6 należące do końca tunelu tego węzła. Tylko ruch"
-
-#~ msgid ""
-#~ "IPv6 subnets belonging to this node's end of the tunnels. Only traffic"
-#~ msgstr "Podsieci IPv6 należące do końca tunelu tego węzła. Tylko ruch"
-
-#~ msgid ""
-#~ "List of connection strings for outbound peer connections in URI format,"
-#~ msgstr ""
-#~ "Lista ciągów połączeń dla wychodzących połączeń równorzędnych w formacie "
-#~ "URI,"
-
-#~ msgid "Listen addresses for incoming connections. You will need to add"
-#~ msgstr ""
-#~ "Nasłuchiwanie adresów dla połączeń przychodzących. Trzeba będzie dodać"
-
-#~ msgid "Optional node info. This must be a { \"key\": \"value\", ... } map"
-#~ msgstr ""
-#~ "Opcjonalne informacje o węźle. Musi to być mapa { \"key\": \"value"
-#~ "\", ... }"
-
-#~ msgid "Regular expressions for which interfaces multicast peer discovery"
-#~ msgstr ""
-#~ "Wyrażenia regularne, dla których interfejs odnajduje peera multicast"
-
-#~ msgid "The port number to be used for the link-local TCP listeners for the"
-#~ msgstr "Numer portu, który ma być użyty dla odbiorców Link-local TCP dla"

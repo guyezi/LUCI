@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2021-01-17 20:54+0000\n"
-"Last-Translator: akibou <jinwenxin1997@icloud.com>\n"
+"PO-Revision-Date: 2021-06-20 16:43+0000\n"
+"Last-Translator: Hulen <shift0106@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
 "openwrt/luciapplicationsolsr/zh_Hant/>\n"
 "Language: zh_Hant\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.5-dev\n"
+"X-Generator: Weblate 4.7\n"
 
 #: applications/luci-app-olsr/luasrc/view/status-olsr/mid.htm:13
 msgid "Active MID announcements"
@@ -88,7 +88,9 @@ msgstr "組態"
 msgid ""
 "Could not get any data. Make sure the jsoninfo plugin is installed and "
 "allows connections from localhost."
-msgstr "無法取得任何資料；請確保已安裝 jsoninfo 外掛程式，並允許來自 localhost 的連接。"
+msgstr ""
+"無法取得任何資料；請確保已安裝 jsoninfo 外掛程式，並允許來自 localhost 的連"
+"接。"
 
 #: applications/luci-app-olsr/luasrc/view/status-olsr/interfaces.htm:24
 msgid "Device"
@@ -129,7 +131,9 @@ msgstr "啟用"
 msgid ""
 "Enable SmartGateway. If it is disabled, then all other SmartGateway "
 "parameters are ignored. Default is \"no\"."
-msgstr "啟用 SmartGateway。如果禁用，則將忽略 SmartGateway 的其他所有引數。預設值：“no”."
+msgstr ""
+"啟用 SmartGateway。如果禁用，則將忽略 SmartGateway 的其他所有引數。預設"
+"值：“no”."
 
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrdiface.lua:36
 #: applications/luci-app-olsr/luasrc/model/cbi/olsr/olsrdiface6.lua:36
@@ -1166,7 +1170,7 @@ msgstr "無限"
 #: applications/luci-app-olsr/luasrc/view/status-olsr/smartgw.htm:138
 #: applications/luci-app-olsr/luasrc/view/status-olsr/smartgw.htm:139
 msgid "no"
-msgstr "不"
+msgstr "否"
 
 #: applications/luci-app-olsr/luasrc/view/status-olsr/interfaces.htm:38
 msgid "up"
@@ -1181,6 +1185,3 @@ msgstr "連接"
 #: applications/luci-app-olsr/luasrc/view/status-olsr/smartgw.htm:139
 msgid "yes"
 msgstr "是"
-
-#~ msgid "Status"
-#~ msgstr "狀態"

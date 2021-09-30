@@ -17,7 +17,7 @@ function handleAction(ev) {
 			]),
 			E('div', { 'class': 'right' }, [
 				E('button', {
-					'class': 'btn',
+					'class': 'btn cbi-button',
 					'click': L.hideModal
 				}, _('Cancel')),
 				' ',
@@ -68,7 +68,7 @@ function handleAction(ev) {
 			]),
 			E('div', { 'class': 'right' }, [
 				E('button', {
-					'class': 'btn',
+					'class': 'btn cbi-button',
 					'click': L.hideModal
 				}, _('Cancel')),
 				' ',
@@ -123,7 +123,7 @@ return view.extend({
 				E('th', { 'class': 'th' }, _('Count MAC')),
 				E('th', { 'class': 'th' }, _('Count ACC')),
 				E('th', { 'class': 'th' }, _('Entry Details')),
-				E('th', { 'class': 'th' }, _('')),
+				E('th', { 'class': 'th' }, '\xa0'),
 				E('th', { 'class': 'th' }, _('Action'))
 			])
 		]);
@@ -142,10 +142,9 @@ return view.extend({
 				]);
 				for (var i = 0; i < content.ipsets[key].member_acc.length; i++) {
 					if (key != 'maclist' && key.substr(0,9) != 'whitelist') {
-						urlprefix = content.ipsets[key].member_acc[i].member.includes('/') ? 'prefix/' : 'ip/';
-						member = '<a href="https://api.bgpview.io/' + urlprefix + encodeURIComponent(content.ipsets[key].member_acc[i].member) + '" target="_blank" rel="noreferrer noopener" title="IP/CIDR Lookup" >' + content.ipsets[key].member_acc[i].member + '</a>';
+						member = '<a href="https://ipwhois.app/json/' + encodeURIComponent(content.ipsets[key].member_acc[i].member) + '" target="_blank" rel="noreferrer noopener" title="IP/CIDR Lookup" >' + content.ipsets[key].member_acc[i].member + '</a>';
 						button = E('button', {
-							'class': 'cbi-button cbi-button-apply',
+							'class': 'btn cbi-button cbi-button-apply',
 							'style': 'word-break: inherit',
 							'name': 'whitelist',
 							'value': content.ipsets[key].member_acc[i].member,
@@ -206,14 +205,14 @@ return view.extend({
 				]),
 				E('div', { 'class': 'right' }, [
 					E('button', {
-						'class': 'cbi-button cbi-button-apply',
+						'class': 'btn cbi-button cbi-button-apply',
 						'click': ui.createHandlerFn(this, function() {
 							return handleAction('query');
 						})
 					}, [ _('IPSet Query...') ]),
 					'\xa0\xa0\xa0',
 					E('button', {
-						'class': 'cbi-button cbi-button-positive',
+						'class': 'btn cbi-button cbi-button-positive',
 						'click': ui.createHandlerFn(this, async function() {
 							L.resolveDefault(fs.exec_direct('/etc/init.d/banip', ['report', 'gen']),'');
 							var running = 1;

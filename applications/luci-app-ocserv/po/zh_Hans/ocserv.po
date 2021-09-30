@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-01-13 00:56+0000\n"
-"Last-Translator: 孤爺仔 <7312140@qq.com>\n"
+"PO-Revision-Date: 2021-03-06 14:44+0000\n"
+"Last-Translator: Meano Lee <meanocat@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "openwrt/luciapplicationsocserv/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.4.1-dev\n"
+"X-Generator: Weblate 4.5.1\n"
 
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/main.lua:124
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/user-config.lua:80
@@ -338,16 +338,3 @@ msgid ""
 "View the CA certificate used by this server. You will need to save it as 'ca."
 "pem' and import it into the clients."
 msgstr "查看该服务器使用的 CA 证书。您需要将其另存为“ca.pem”并导入客户端。"
-
-#~ msgid ""
-#~ "An alternative value to be communicated to the client to verify the "
-#~ "server's certificate; this value only depends on the public key"
-#~ msgstr "要传送给客户端以验证服务器证书的替代值；该值仅取决于公钥"
-
-#~ msgid "Server's certificate SHA1 hash"
-#~ msgstr "服务器证书 SHA1 哈希"
-
-#~ msgid ""
-#~ "That value should be communicated to the client to verify the server's "
-#~ "certificate"
-#~ msgstr "该值应传达给客户端以验证服务器的证书"

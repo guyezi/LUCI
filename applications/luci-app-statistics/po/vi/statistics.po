@@ -474,6 +474,19 @@ msgstr "Tên host"
 msgid "IP or hostname where to get the txtinfo output from"
 msgstr ""
 
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/ipstatistics.js:7
+#: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/ipstatistics.json:2
+msgid "IP-Statistics"
+msgstr ""
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/ipstatistics.js:7
+msgid "IP-Statistics Plugin Configuration"
+msgstr ""
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/ipstatistics.js:11
+msgid "IPv4/IPv6 Statistics monitoring enabled"
+msgstr ""
+
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/irq.js:7
 msgid "IRQ Plugin Configuration"
 msgstr "Cấu hình IRQ Plugin "
@@ -657,10 +670,9 @@ msgstr ""
 msgid "Monitoring %s, %s, %s"
 msgstr ""
 
-#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/apcups.js:29
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/apcups.js:26
 msgid "Monitoring APC UPS at host %s, port %d"
-msgid_plural "Monitoring APC UPS at hosts %s, port %d"
-msgstr[0] ""
+msgstr ""
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/dhcpleases.js:19
 msgid "Monitoring DHCP leases enabled"
@@ -1294,6 +1306,11 @@ msgstr ""
 "Giao diện plugin thu thập những thống kê lưu thông trên những giao diện được "
 "chọn"
 
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/ipstatistics.js:8
+msgid ""
+"The ipstatistics plugin collects IPv4 and IPv6 statistics to compare them."
+msgstr ""
+
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/iptables.js:9
 msgid ""
 "The iptables plugin will monitor selected firewall rules and collect "
@@ -1600,60 +1617,3 @@ msgstr[0] ""
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/rrdtool.js:29
 msgid "reduces rrd size"
 msgstr "Giảm rrd size"
-
-#~ msgid "Cache flush interval"
-#~ msgstr "Cache flush interval"
-
-#~ msgid "Action (target)"
-#~ msgstr "Action (target)"
-
-#~ msgid "Add matching rule"
-#~ msgstr "Thêm matching rule"
-
-#~ msgid ""
-#~ "Collectd is a small daemon for collecting data from various sources "
-#~ "through different plugins. On this page you can change general settings "
-#~ "for the collectd daemon."
-#~ msgstr ""
-#~ "Collectd là một daemon nhỏ để thu thập dữ liệu từ nhiều nguồn thông qua "
-#~ "các plugins khác nhau. Trên trang này, bạn có thể thay đổi cài đặt tổng "
-#~ "quát cho cai collectd daemon. "
-
-#~ msgid "Destination ip range"
-#~ msgstr "Điểm đến ip range"
-
-#~ msgid "Incoming interface"
-#~ msgstr "Giao diện đang tới"
-
-#~ msgid "Name of the rule"
-#~ msgstr "Tên của rule"
-
-#~ msgid "Network protocol"
-#~ msgstr "Network protocol"
-
-#~ msgid "Options"
-#~ msgstr "Tùy chọn"
-
-#~ msgid "Outgoing interface"
-#~ msgstr "Giao diện ra ngoài"
-
-#~ msgid "Source ip range"
-#~ msgstr "Nguồn ip range"
-
-#~ msgid "e.g. br-ff"
-#~ msgstr "e.g. br-ff"
-
-#~ msgid "e.g. br-lan"
-#~ msgstr "e.g. br-lan"
-
-#~ msgid "e.g. reject-with tcp-reset"
-#~ msgstr "e.g. reject-with tcp-reset"
-
-#~ msgid "max. 16 chars"
-#~ msgstr "max. 16 chars"
-
-#~ msgid "seconds; multiple separated by space"
-#~ msgstr "giây; nhiều phân tách bởi khoảng trống"
-
-#~ msgid "server interfaces"
-#~ msgstr "giao diện server"

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2020-11-29 22:23+0000\n"
-"Last-Translator: Franco Castillo <castillofrancodamian@gmail.com>\n"
+"PO-Revision-Date: 2021-04-18 12:54+0000\n"
+"Last-Translator: Enrique Lapenta <enriquelap20@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsadvanced-reboot/es/>\n"
 "Language: es\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4-dev\n"
+"X-Generator: Weblate 4.6-dev\n"
 
 #: applications/luci-app-advanced-reboot/htdocs/luci-static/resources/view/system/advanced_reboot.js:187
 #: applications/luci-app-advanced-reboot/root/usr/share/luci/menu.d/luci-app-advanced-reboot.json:3
@@ -211,67 +211,3 @@ msgstr "Advertencia: ¡Este sistema no admite el apagado!"
 #: applications/luci-app-advanced-reboot/htdocs/luci-static/resources/view/system/advanced_reboot.js:216
 msgid "Warning: Unable to obtain device information!"
 msgstr "Advertencia: ¡No se puede obtener información del dispositivo!"
-
-#~ msgid "Alternative"
-#~ msgstr "Alternativo"
-
-#~ msgid "Changes applied."
-#~ msgstr "Cambios aplicados."
-
-#~ msgid "Current"
-#~ msgstr "Actual"
-
-#~ msgid "Loading"
-#~ msgstr "Cargando"
-
-#~ msgid "Rebooting..."
-#~ msgstr "Reiniciando..."
-
-#~ msgid "System"
-#~ msgstr "Sistema"
-
-#~ msgid ""
-#~ "The system is rebooting now.<br /> DO NOT POWER OFF THE DEVICE!<br /> "
-#~ "Wait a few minutes before you try to reconnect. It might be necessary to "
-#~ "renew the address of your computer to reach the device again, depending "
-#~ "on your settings."
-#~ msgstr ""
-#~ "El sistema se está reiniciando ahora.<br /> ¡NO APAGUE EL DISPOSITIVO!"
-#~ "<br /> Espere unos minutos antes de intentar volver a conectarse. Es "
-#~ "posible que sea necesario renovar la dirección de su computadora para "
-#~ "llegar al dispositivo nuevamente, dependiendo de su configuración."
-
-#~ msgid "Waiting for changes to be applied..."
-#~ msgstr "Esperando a que se apliquen los cambios..."
-
-#~ msgid "attempting to mount alternative partition (mtd%s)"
-#~ msgstr "intentando montar una partición alternativa (mtd%s)"
-
-#~ msgid "attempting to unmount alternative partition (mtd%s)"
-#~ msgstr "intentando desmontar una partición alternativa (mtd%s)"
-
-#~ msgid "Unable to obtain firmware environment variable"
-#~ msgstr "No se puede obtener la variable de entorno de firmware"
-
-#~ msgid "Unable to set Dual Boot Flag Partition entry for partition"
-#~ msgstr ""
-#~ "No se puede establecer la entrada de la partición del indicador de inicio "
-#~ "dual para la partición"
-
-#~ msgid "Unable to set firmware environment variable"
-#~ msgstr "No se puede establecer la variable de entorno de firmware"
-
-#~ msgid "attempting to mount alternative partition"
-#~ msgstr "intentando montar una partición alternativa"
-
-#~ msgid "attempting to unmount alternative partition"
-#~ msgstr "intentando desmontar una partición alternativa"
-
-#~ msgid "to"
-#~ msgstr "a"
-
-#~ msgid "Action"
-#~ msgstr "Acción"
-
-#~ msgid "Firmware/OS (Kernel)"
-#~ msgstr "Firmware"

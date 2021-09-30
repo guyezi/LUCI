@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2020-03-31 13:27+0000\n"
-"Last-Translator: Tamas Szanto <taszanto@gmail.com>\n"
+"PO-Revision-Date: 2021-08-12 12:55+0000\n"
+"Last-Translator: Tudós Péter <tudi.sk@gmail.com>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsstatistics/hu/>\n"
 "Language: hu\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.0-dev\n"
+"X-Generator: Weblate 4.8-dev\n"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/apcups.js:7
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/apcups.json:2
@@ -156,7 +156,7 @@ msgstr ""
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/collectd.js:174
 msgid "Configure…"
-msgstr ""
+msgstr "Konfigurálás…"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/conntrack.js:7
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/conntrack.json:2
@@ -472,6 +472,19 @@ msgstr "Gépnév"
 msgid "IP or hostname where to get the txtinfo output from"
 msgstr "IP vagy gépnév, ahonnan a txtinfo kimenete beszerezhető"
 
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/ipstatistics.js:7
+#: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/ipstatistics.json:2
+msgid "IP-Statistics"
+msgstr ""
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/ipstatistics.js:7
+msgid "IP-Statistics Plugin Configuration"
+msgstr ""
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/ipstatistics.js:11
+msgid "IPv4/IPv6 Statistics monitoring enabled"
+msgstr ""
+
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/irq.js:7
 msgid "IRQ Plugin Configuration"
 msgstr "IRQ bővítmény beállítása"
@@ -659,11 +672,9 @@ msgstr ""
 msgid "Monitoring %s, %s, %s"
 msgstr ""
 
-#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/apcups.js:29
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/apcups.js:26
 msgid "Monitoring APC UPS at host %s, port %d"
-msgid_plural "Monitoring APC UPS at hosts %s, port %d"
-msgstr[0] ""
-msgstr[1] ""
+msgstr ""
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/dhcpleases.js:19
 msgid "Monitoring DHCP leases enabled"
@@ -1322,6 +1333,11 @@ msgid ""
 msgstr ""
 "A csatoló bővítmény forgalmi statisztikákat gyűjt a kiválasztott csatolókról."
 
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/ipstatistics.js:8
+msgid ""
+"The ipstatistics plugin collects IPv4 and IPv6 statistics to compare them."
+msgstr ""
+
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/iptables.js:9
 msgid ""
 "The iptables plugin will monitor selected firewall rules and collect "
@@ -1531,7 +1547,7 @@ msgstr "Unixsock bővítmény beállítása"
 #: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/uptime.js:15
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/uptime.json:2
 msgid "Uptime"
-msgstr "Működési idő"
+msgstr "Futási idő"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/uptime.js:6
 msgid "Uptime Plugin Configuration"
@@ -1650,90 +1666,3 @@ msgstr[1] ""
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/rrdtool.js:29
 msgid "reduces rrd size"
 msgstr "csökkenti az RRD méretét"
-
-#~ msgid "Cache flush interval"
-#~ msgstr "Gyorsítótár-ürítés időköze"
-
-#~ msgid ""
-#~ "The statistics package uses <a href=\"https://collectd.org/\">Collectd</"
-#~ "a> to gather data and <a href=\"http://oss.oetiker.ch/rrdtool/\">RRDtool</"
-#~ "a> to render diagram images."
-#~ msgstr ""
-#~ "A statisztikák csomag a <a href=\"https://collectd.org/\">Collectd</a> "
-#~ "démont használja adatgyűjtéshez, valamint az <a href=\"http://oss.oetiker."
-#~ "ch/rrdtool/\">RRDtool</a> eszközt a diagramok megjelenítéséhez."
-
-#~ msgid ""
-#~ "You can install additional collectd-mod-* plugins to enable more "
-#~ "statistics."
-#~ msgstr ""
-#~ "Telepíthet további collectd-mod-* bővítményeket is több statisztika "
-#~ "engedélyezéséhez."
-
-#~ msgid "Action (target)"
-#~ msgstr "Művelet (cél)"
-
-#~ msgid "Add matching rule"
-#~ msgstr "Illeszkedési szabály hozzáadása"
-
-#~ msgid "Add multiple hosts separated by space."
-#~ msgstr "Több gép hozzáadása szóközzel elválasztva."
-
-#~ msgid ""
-#~ "Collectd is a small daemon for collecting data from various sources "
-#~ "through different plugins. On this page you can change general settings "
-#~ "for the collectd daemon."
-#~ msgstr ""
-#~ "A collectd változatos forrásokból különféle bővítményeken keresztül "
-#~ "történő adatgyűjtésre szolgáló kis méretű démon. Ezen az oldalon "
-#~ "változtathatja meg a collectd démon általános beállításait."
-
-#~ msgid "Destination ip range"
-#~ msgstr "Cél IP-tartomány"
-
-#~ msgid "Hold Ctrl to select multiple items or to deselect entries."
-#~ msgstr ""
-#~ "Tartsa nyomva a Ctrl billentyűt több elem kijelöléséhez vagy bejegyzések "
-#~ "kijelölésének eltávolításához."
-
-#~ msgid "Incoming interface"
-#~ msgstr "Bejövő csatoló"
-
-#~ msgid "Monitor all sensors"
-#~ msgstr "Összes érzékelő megfigyelése"
-
-#~ msgid "Name of the rule"
-#~ msgstr "A szabály neve"
-
-#~ msgid "Network protocol"
-#~ msgstr "Hálózati protokoll"
-
-#~ msgid "Options"
-#~ msgstr "Beállítások"
-
-#~ msgid "Outgoing interface"
-#~ msgstr "Kimenő csatoló"
-
-#~ msgid "Processes to monitor separated by space"
-#~ msgstr "Megfigyelendő folyamatok szóközzel elválasztva"
-
-#~ msgid "Source ip range"
-#~ msgstr "Forrás IP-tartomány"
-
-#~ msgid "e.g. br-ff"
-#~ msgstr "például br-ff"
-
-#~ msgid "e.g. br-lan"
-#~ msgstr "például br-lan"
-
-#~ msgid "e.g. reject-with tcp-reset"
-#~ msgstr "például reject-with tcp-reset"
-
-#~ msgid "max. 16 chars"
-#~ msgstr "legfeljebb 16 karakter"
-
-#~ msgid "seconds; multiple separated by space"
-#~ msgstr "másodpercek; több is lehet szóközzel elválasztva"
-
-#~ msgid "server interfaces"
-#~ msgstr "kiszolgáló csatolók"

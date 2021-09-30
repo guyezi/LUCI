@@ -3,16 +3,16 @@
 -- Licensed to the public under the GNU General Public License v3.
 local m, s, sec, o, kcp_enable
 local uci = luci.model.uci.cursor()
-m = Map("shadowsocksr", translate("ShadowSocksR Plus+ Settings"), translate("<h3>Support SS/SSR/V2RAY/TROJAN/NAIVEPROXY/SOCKS5/TUN etc.</h3>"))
+m = Map("shadowsocksr", translate("ShadowSocksR Plus+ Settings"), translate("<h3>Support SS/SSR/V2RAY/XRAY/TROJAN/NAIVEPROXY/SOCKS5/TUN etc.</h3>"))
 
 m:section(SimpleSection).template = "shadowsocksr/status"
 
 local server_table = {}
 uci:foreach("shadowsocksr", "servers", function(s)
 	if s.alias then
-		server_table[s[".name"]] = "[%s]:%s" % {string.upper(s.type), s.alias}
+		server_table[s[".name"]] = "[%s]:%s" % {string.upper(s.v2ray_protocol or s.type), s.alias}
 	elseif s.server and s.server_port then
-		server_table[s[".name"]] = "[%s]:%s:%s" % {string.upper(s.type), s.server, s.server_port}
+		server_table[s[".name"]] = "[%s]:%s:%s" % {string.upper(s.v2ray_protocol or s.type), s.server, s.server_port}
 	end
 end)
 
@@ -42,6 +42,7 @@ for _, key in pairs(key_table) do
 	o:value(key, server_table[key])
 end
 
+if uci:get_first("shadowsocksr", 'global', 'netflix_enable', '0') ~= '0' then
 o = s:option(ListValue, "netflix_server", translate("Netflix Node"))
 o:value("nil", translate("Disable"))
 o:value("same", translate("Same as Global Server"))
@@ -55,6 +56,7 @@ o = s:option(Flag, "netflix_proxy", translate("External Proxy Mode"))
 o.rmempty = false
 o.description = translate("Forward Netflix Proxy through Main Proxy")
 o.default = "0"
+end
 
 o = s:option(ListValue, "threads", translate("Multi Threads Option"))
 o:value("0", translate("Auto Threads"))

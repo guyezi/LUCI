@@ -5,8 +5,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-06-10 03:40+0200\n"
-"PO-Revision-Date: 2020-01-14 15:21+0000\n"
-"Last-Translator: Franco Castillo <castillofrancodamian@gmail.com>\n"
+"PO-Revision-Date: 2021-03-08 13:03+0000\n"
+"Last-Translator: BenRoura <benrouravkg@gmail.com>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsstatistics/ca/>\n"
 "Language: ca\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.11-dev\n"
+"X-Generator: Weblate 4.5.1\n"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/apcups.js:7
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/apcups.json:2
@@ -328,7 +328,7 @@ msgstr "Activa aquest connector"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/collectd.js:113
 msgid "Enabled"
-msgstr ""
+msgstr "Activat"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/entropy.js:10
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/entropy.json:2
@@ -474,6 +474,19 @@ msgstr "Nom de l’amfitrió"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/olsrd.js:15
 msgid "IP or hostname where to get the txtinfo output from"
+msgstr ""
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/ipstatistics.js:7
+#: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/ipstatistics.json:2
+msgid "IP-Statistics"
+msgstr ""
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/ipstatistics.js:7
+msgid "IP-Statistics Plugin Configuration"
+msgstr ""
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/ipstatistics.js:11
+msgid "IPv4/IPv6 Statistics monitoring enabled"
 msgstr ""
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/irq.js:7
@@ -659,11 +672,9 @@ msgstr ""
 msgid "Monitoring %s, %s, %s"
 msgstr ""
 
-#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/apcups.js:29
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/apcups.js:26
 msgid "Monitoring APC UPS at host %s, port %d"
-msgid_plural "Monitoring APC UPS at hosts %s, port %d"
-msgstr[0] ""
-msgstr[1] ""
+msgstr ""
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/dhcpleases.js:19
 msgid "Monitoring DHCP leases enabled"
@@ -891,7 +902,7 @@ msgstr "Connectors de sortida"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/graphs.js:60
 msgid "Overview"
-msgstr ""
+msgstr "Visió de conjunt"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/memory.js:18
 msgid "Percent values"
@@ -1312,6 +1323,11 @@ msgstr ""
 "El connector d'interfície recull estadístiques de tràfic a les interfícies "
 "seleccionades."
 
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/ipstatistics.js:8
+msgid ""
+"The ipstatistics plugin collects IPv4 and IPv6 statistics to compare them."
+msgstr ""
+
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/iptables.js:9
 msgid ""
 "The iptables plugin will monitor selected firewall rules and collect "
@@ -1629,63 +1645,3 @@ msgstr[1] ""
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/rrdtool.js:29
 msgid "reduces rrd size"
 msgstr "redueix mida RRD"
-
-#~ msgid "Cache flush interval"
-#~ msgstr "Interval de neteja de memòria cau"
-
-#~ msgid "Action (target)"
-#~ msgstr "Acció (objectiu)"
-
-#~ msgid "Add matching rule"
-#~ msgstr "Afegeix regla coincident"
-
-#~ msgid "Add multiple hosts separated by space."
-#~ msgstr "Afegeix múltiples hosts separats per espai."
-
-#~ msgid ""
-#~ "Collectd is a small daemon for collecting data from various sources "
-#~ "through different plugins. On this page you can change general settings "
-#~ "for the collectd daemon."
-#~ msgstr ""
-#~ "Collectd és un petit dimoni per recollir dades de diverses fonts a través "
-#~ "dels connectors. En aquesta pàgina podeu canviar la configuració general "
-#~ "del dimoni Collectd."
-
-#~ msgid "Destination ip range"
-#~ msgstr "Interval d’IP de destinació"
-
-#~ msgid "Incoming interface"
-#~ msgstr "Interfície entrant"
-
-#~ msgid "Name of the rule"
-#~ msgstr "Nom de la regla"
-
-#~ msgid "Network protocol"
-#~ msgstr "Protocol de xarxa"
-
-#~ msgid "Options"
-#~ msgstr "Opcions"
-
-#~ msgid "Outgoing interface"
-#~ msgstr "Interfície sortint"
-
-#~ msgid "Source ip range"
-#~ msgstr "Rang d'IP origen"
-
-#~ msgid "e.g. br-ff"
-#~ msgstr "p.e. br-ff"
-
-#~ msgid "e.g. br-lan"
-#~ msgstr "p.e. br-lan"
-
-#~ msgid "e.g. reject-with tcp-reset"
-#~ msgstr "p.e. reject-with tcp-reset"
-
-#~ msgid "max. 16 chars"
-#~ msgstr "màx. 16 caràcters"
-
-#~ msgid "seconds; multiple separated by space"
-#~ msgstr "segons; múltiples separats per espais"
-
-#~ msgid "server interfaces"
-#~ msgstr "interfícies de servidor"

@@ -41,6 +41,7 @@ msgstr "%d minutes"
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interfaceconfig.lua:165
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interfaceconfig.lua:181
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interfaceconfig.lua:201
+#, fuzzy
 msgid "%d second"
 msgstr "%d seconde"
 
@@ -115,7 +116,7 @@ msgstr "Vérifier la qualité du lien"
 msgid "Check routing table"
 msgstr "Vérifier la table de routage"
 
-#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:98
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:112
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_detail.htm:34
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_troubleshooting.htm:34
 msgid "Collecting data..."
@@ -153,7 +154,7 @@ msgstr "Détail"
 msgid "Diagnostics"
 msgstr "Diagnostiques"
 
-#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:50
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:64
 msgid "Disabled"
 msgstr "Désactivé"
 
@@ -163,6 +164,10 @@ msgid ""
 msgstr ""
 "L'interface désactivée sera considérée comme opérationnelle après ces "
 "nombreux tests ping réussis"
+
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:44
+msgid "Downtime"
+msgstr ""
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/globalsconfig.lua:26
 msgid "Emergency"
@@ -293,6 +298,7 @@ msgstr "État initial"
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interface.lua:149
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/member.lua:27
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/memberconfig.lua:18
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:74
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_detail.htm:10
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_diagnostics.htm:10
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_diagnostics.htm:61
@@ -344,7 +350,7 @@ msgstr "Dernier recours"
 msgid "Load Balancing"
 msgstr "Répartition de charges"
 
-#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:97
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:111
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_detail.htm:33
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_diagnostics.htm:36
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_troubleshooting.htm:33
@@ -388,7 +394,7 @@ msgstr "MWAN - Règles"
 msgid "MWAN Interface Configuration - %s"
 msgstr "Configuration de l’interface MWAN - %s"
 
-#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:95
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:109
 msgid "MWAN Interfaces"
 msgstr "MWAN Interfaces"
 
@@ -480,9 +486,13 @@ msgstr ""
 msgid "No"
 msgstr "Non"
 
-#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:77
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:91
 msgid "No MWAN interfaces found"
 msgstr "Aucune interface MWAN trouvée"
+
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:50
+msgid "No Tracking"
+msgstr ""
 
 #: applications/luci-app-mwan3/luasrc/controller/mwan3.lua:159
 msgid "No gateway for interface %s found."
@@ -664,6 +674,10 @@ msgstr "Adresse source"
 msgid "Source port"
 msgstr "Port source"
 
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:78
+msgid "Status"
+msgstr ""
+
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/ruleconfig.lua:55
 #, fuzzy
 msgid "Sticky"
@@ -770,6 +784,11 @@ msgstr ""
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_troubleshooting.htm:13
 msgid "Troubleshooting"
 msgstr "Dépannage"
+
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:36
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:53
+msgid "Uptime"
+msgstr ""
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/ruleconfig.lua:46
 msgid "View the content of /etc/protocols for protocol description"
@@ -884,39 +903,3 @@ msgstr ""
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/ruleconfig.lua:81
 msgid "unreachable (reject)"
 msgstr "inaccessible (rejeter)"
-
-#~ msgid "Max packet latency [ms]"
-#~ msgstr "Latence maximale des paquets [ms]"
-
-#~ msgid "Max packet loss [%]"
-#~ msgstr "Perte de paquets maximale [%]"
-
-#~ msgid "Min packet latency [ms]"
-#~ msgstr "Latence minimale des paquets [ms]"
-
-#~ msgid "Min packet loss [%]"
-#~ msgstr "Perte minimale de paquets [%]"
-
-#~ msgid "How often should rtmon update the interface routing table"
-#~ msgstr ""
-#~ "À quelle fréquence rtmon doit-il mettre à jour la table de routage de "
-#~ "l’interface"
-
-#~ msgid ""
-#~ "MWAN supports up to 252 physical and/or logical interfaces<br />MWAN "
-#~ "requires that all interfaces have a unique metric configured in /etc/"
-#~ "config/network<br />Names must match the interface name found in /etc/"
-#~ "config/network<br />Names may contain characters A-Z, a-z, 0-9, _ and no "
-#~ "spaces<br />Interfaces may not share the same name as configured members, "
-#~ "policies or rules"
-#~ msgstr ""
-#~ "Le MWAN prend en charge jusqu'à 252 interfaces physiques et/ou "
-#~ "logiques<br />Le MWAN exige que toutes les interfaces aient une métrique "
-#~ "unique configurée dans /etc/config/network<br />Les noms doivent "
-#~ "correspondre au nom de l'interface trouvé dans /etc/config/network<br /"
-#~ ">Les noms peuvent contenir les caractères A-Z, a-z, 0-9, _ et aucun "
-#~ "espace<br />Les interfaces ne peuvent pas partager le même nom que les "
-#~ "membres, les politiques ou les règles configurés"
-
-#~ msgid "Update interval"
-#~ msgstr "Intervalle de mise à jour"

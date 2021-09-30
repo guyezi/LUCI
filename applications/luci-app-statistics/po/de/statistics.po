@@ -476,6 +476,19 @@ msgstr "Hostname"
 msgid "IP or hostname where to get the txtinfo output from"
 msgstr "IP-Adresse oder Hostname zum Abfragen der Txtinfo-Ausagabe"
 
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/ipstatistics.js:7
+#: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/ipstatistics.json:2
+msgid "IP-Statistics"
+msgstr ""
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/ipstatistics.js:7
+msgid "IP-Statistics Plugin Configuration"
+msgstr ""
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/ipstatistics.js:11
+msgid "IPv4/IPv6 Statistics monitoring enabled"
+msgstr ""
+
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/irq.js:7
 msgid "IRQ Plugin Configuration"
 msgstr "IRQ Plugin Konfiguration"
@@ -663,11 +676,10 @@ msgstr "Überwachung von %s und %s"
 msgid "Monitoring %s, %s, %s"
 msgstr "Überwachung von %s, %s, %s"
 
-#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/apcups.js:29
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/apcups.js:26
+#, fuzzy
 msgid "Monitoring APC UPS at host %s, port %d"
-msgid_plural "Monitoring APC UPS at hosts %s, port %d"
-msgstr[0] "Überwachung von APC USV am Host %s, Port %d"
-msgstr[1] "Überwachung von APC USV an Hosts %s, Port %d"
+msgstr "Überwachung von APC USV am Host %s, Port %d"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/dhcpleases.js:19
 msgid "Monitoring DHCP leases enabled"
@@ -1326,6 +1338,11 @@ msgstr ""
 "Das Interface-Plugin sammelt allgemeine Verkehrsstatistiken auf ausgewählten "
 "Schnittstellen."
 
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/ipstatistics.js:8
+msgid ""
+"The ipstatistics plugin collects IPv4 and IPv6 statistics to compare them."
+msgstr ""
+
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/iptables.js:9
 msgid ""
 "The iptables plugin will monitor selected firewall rules and collect "
@@ -1654,66 +1671,3 @@ msgstr[1] "%d ferne Ports"
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/rrdtool.js:29
 msgid "reduces rrd size"
 msgstr "reduziert die RRD Größe"
-
-#~ msgid "Cache flush interval"
-#~ msgstr "Cache-Leerungsintervall"
-
-#~ msgid "Action (target)"
-#~ msgstr "Aktion (Ziel)"
-
-#~ msgid "Add matching rule"
-#~ msgstr "Auswahlregel hinzufügen"
-
-#~ msgid "Add multiple hosts separated by space."
-#~ msgstr "Mehrere Hosts durch Leerzeichen getrennt hinzufuegen."
-
-#~ msgid ""
-#~ "Collectd is a small daemon for collecting data from various sources "
-#~ "through different plugins. On this page you can change general settings "
-#~ "for the collectd daemon."
-#~ msgstr ""
-#~ "Collectd ist ein schlankes Dienstprogramm zum Sammeln von Systemdaten aus "
-#~ "verschiedenen Quellen mittels diverser Plugins. Auf dieser Seite können "
-#~ "generelle Einstellungen für den Collectd-Daemon vorgenommen werden."
-
-#~ msgid "Destination ip range"
-#~ msgstr "Ziel-IP-Bereich"
-
-#~ msgid "Incoming interface"
-#~ msgstr "eingehende Schnittstelle"
-
-#~ msgid "Name of the rule"
-#~ msgstr "Name der Regel"
-
-#~ msgid "Network protocol"
-#~ msgstr "Netzwerkprotokoll"
-
-#~ msgid "Options"
-#~ msgstr "Optionen"
-
-#~ msgid "Outgoing interface"
-#~ msgstr "ausgehende Schnittstelle"
-
-#~ msgid "Processes to monitor separated by space"
-#~ msgstr "Zu überwachende Prozesse (getrennt durch Leerzeichen)"
-
-#~ msgid "Source ip range"
-#~ msgstr "Quell-IP-Bereich"
-
-#~ msgid "e.g. br-ff"
-#~ msgstr "z.B. br-ff"
-
-#~ msgid "e.g. br-lan"
-#~ msgstr "z.B. br-lan"
-
-#~ msgid "e.g. reject-with tcp-reset"
-#~ msgstr "z.B. reject-with tcp-reset"
-
-#~ msgid "max. 16 chars"
-#~ msgstr "max. 16 Buchstaben"
-
-#~ msgid "seconds; multiple separated by space"
-#~ msgstr "mehrere mit Leerzeichen trennen"
-
-#~ msgid "server interfaces"
-#~ msgstr "Server-Schnittstellen"

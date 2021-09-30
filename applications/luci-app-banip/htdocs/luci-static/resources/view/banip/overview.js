@@ -10,7 +10,7 @@
 /*
 	button handling
 */
-async function handleAction(ev) {
+function handleAction(ev) {
 	if (ev === 'timer') {
 		L.ui.showModal(_('Refresh Timer'), [
 			E('p', _('To keep your banIP lists up-to-date, you should setup an automatic update job for these lists.')),
@@ -68,7 +68,7 @@ async function handleAction(ev) {
 			]),
 			E('div', { 'class': 'right' }, [
 				E('button', {
-					'class': 'btn',
+					'class': 'btn cbi-button',
 					'click': L.hideModal
 				}, _('Cancel')),
 				' ',
@@ -115,29 +115,11 @@ async function handleAction(ev) {
 		return
 	}
 
-	if (document.getElementById('status') && document.getElementById('btn_suspend')) {
-		if (document.getElementById('status').textContent.substr(0,6) === 'paused') {
-			ev = 'resume';
-		}
+	if (document.getElementById('status') && document.getElementById('status').textContent.substr(0,6) === 'paused') {
+		ev = 'resume';
 	}
 
-	poll.start();
 	fs.exec_direct('/etc/init.d/banip', [ev])
-	var running = 1;
-	while (running === 1) {
-		await new Promise(r => setTimeout(r, 1000));
-		L.resolveDefault(fs.read_direct('/var/run/banip.pid')).then(function(res) {
-			if (!res) {
-				running = 0;
-				if (document.getElementById('status') && document.getElementById('btn_suspend')) {
-					if (document.getElementById('status').textContent.substr(0,7) === 'enabled') {
-						document.querySelector('#btn_suspend').textContent = 'Suspend';
-					}
-				}
-			}
-		})
-	}
-	poll.stop();
 }
 
 return view.extend({
@@ -176,11 +158,15 @@ return view.extend({
 					} else {
 						if (inf_stat.classList.contains("spinning")) {
 							inf_stat.classList.remove("spinning");
-							poll.stop();
+							if (document.getElementById('btn_suspend')) {
+								if (inf_stat.textContent.substr(0,6) === 'paused') {
+									document.querySelector('#btn_suspend').textContent = 'Resume';
+								}
+								if (document.getElementById('status').textContent.substr(0,7) === 'enabled') {
+									document.querySelector('#btn_suspend').textContent = 'Suspend';
+								}
+							}
 						}
-					}
-					if (inf_stat.textContent.substr(0,6) === 'paused' && document.getElementById('btn_suspend')) {
-						document.querySelector('#btn_suspend').textContent = 'Resume';
 					}
 				} else if (inf_stat) {
 					inf_stat.textContent = '-';
@@ -316,14 +302,14 @@ return view.extend({
 				]),
 				E('div', { class: 'right' }, [
 					E('button', {
-						'class': 'cbi-button cbi-button-apply',
+						'class': 'btn cbi-button cbi-button-apply',
 						'click': ui.createHandlerFn(this, function() {
 							return handleAction('timer');
 						})
 					}, [ _('Refresh Timer...') ]),
 					'\xa0\xa0\xa0',
 					E('button', {
-						'class': 'cbi-button cbi-button-apply',
+						'class': 'btn cbi-button cbi-button-apply',
 						'id': 'btn_suspend',
 						'click': ui.createHandlerFn(this, function() {
 							return handleAction('suspend');
@@ -331,14 +317,14 @@ return view.extend({
 					}, [ _('Suspend') ]),
 					'\xa0\xa0\xa0',
 					E('button', {
-						'class': 'cbi-button cbi-button-positive',
+						'class': 'btn cbi-button cbi-button-positive',
 						'click': ui.createHandlerFn(this, function() {
 							return handleAction('refresh');
 						})
 					}, [ _('Refresh') ]),
 					'\xa0\xa0\xa0',
 					E('button', {
-						'class': 'cbi-button cbi-button-negative',
+						'class': 'btn cbi-button cbi-button-negative',
 						'click': ui.createHandlerFn(this, function() {
 							return handleAction('restart');
 						})
@@ -402,6 +388,10 @@ return view.extend({
 			Logging such packets may cause an increase in latency due to it requiring additional system resources.'));
 		o.rmempty = false;
 
+		o = s.taboption('general', form.Flag, 'ban_whitelistonly', _('Whitelist Only'), _('Restrict the internet access from/to a small number of secure websites/IPs \
+			and block access from/to the rest of the internet.'));
+		o.rmempty = true;
+
 		o = s.taboption('general', form.Flag, 'ban_mail_enabled', _('E-Mail Notification'), _('Send banIP related notification e-mails. \
 			This needs the installation and setup of the additional \'msmtp\' package.'));
 		o.rmempty = false;
@@ -462,7 +452,12 @@ return view.extend({
 		o.optional = true;
 		o.rmempty = true;
 
-		o = s.taboption('additional', form.Value, 'ban_fetchparm', _('Download Parameters'), _('Special config options for the selected download utility.'))
+		o = s.taboption('additional', form.Flag, 'ban_fetchinsecure', _('Download Insecure'), _('Don\'t check SSL server certificates during download.'));
+		o.default = 0
+		o.rmempty = true;
+
+		o = s.taboption('additional', form.Value, 'ban_fetchparm', _('Download Parameters'), _('Manually override the pre-configured download options for the selected download utility.'))
+		o.optional = true;
 		o.rmempty = true;
 
 		/*
@@ -525,6 +520,8 @@ return view.extend({
 		}
 
 		o = s.taboption('adv_chain', form.MultiValue, 'ban_settype_src', _('SRC IPSet Type'), _('Set individual SRC type per IPset to block only incoming packets.'));
+		o.value('whitelist');
+		o.value('blacklist');
 		for (var i = 0; i < sources.length; i++) {
 			if (sources[i].match(/^\s+\+/)) {
 				source = sources[i].match(/^\s+\+\s(\w+)\s/)[1].trim();
@@ -535,6 +532,8 @@ return view.extend({
 		o.rmempty = true;
 
 		o = s.taboption('adv_chain', form.MultiValue, 'ban_settype_dst', _('DST IPSet Type'), _('Set individual DST type per IPset to block only outgoing packets.'));
+		o.value('whitelist');
+		o.value('blacklist');
 		for (var i = 0; i < sources.length; i++) {
 			if (sources[i].match(/^\s+\+/)) {
 				source = sources[i].match(/^\s+\+\s(\w+)\s/)[1].trim();
@@ -545,6 +544,8 @@ return view.extend({
 		o.rmempty = true;
 
 		o = s.taboption('adv_chain', form.MultiValue, 'ban_settype_all', _('SRC+DST IPSet Type'), _('Set individual SRC+DST type per IPset to block incoming and outgoing packets.'));
+		o.value('whitelist');
+		o.value('blacklist');
 		for (var i = 0; i < sources.length; i++) {
 			if (sources[i].match(/^\s+\+/)) {
 				source = sources[i].match(/^\s+\+\s(\w+)\s/)[1].trim();
@@ -574,7 +575,7 @@ return view.extend({
 			result_v6 = result[1].trim().split('\n');
 		}
 
-		o = s.taboption('adv_chain', form.DynamicList, 'ban_lan_inputchains_4', _('LAN Input'), _('Default chain used by banIP is \'input_lan_rule\''));
+		o = s.taboption('adv_chain', form.DynamicList, 'ban_lan_inputchains_4', _('LAN Input'), _('Assign one or more relevant firewall chains to banIP. The default chain used by banIP is \'input_lan_rule\'.'));
 		for (var i = 0; i < result_v4.length; i++) {
 			if (result_v4[i].match(/^Chain input[\w_]+\s+/)) {
 				chain = result_v4[i].match(/\s+(input[\w_]+)\s+/)[1].trim();
@@ -585,7 +586,7 @@ return view.extend({
 		o.optional = true;
 		o.rmempty = true;
 
-		o = s.taboption('adv_chain', form.DynamicList, 'ban_lan_forwardchains_4', _('LAN Forward'), _('Default chain used by banIP is \'forwarding_lan_rule\''));
+		o = s.taboption('adv_chain', form.DynamicList, 'ban_lan_forwardchains_4', _('LAN Forward'), _('Assign one or more relevant firewall chains to banIP. The default chain used by banIP is \'forwarding_lan_rule\'.'));
 		for (var i = 0; i < result_v4.length; i++) {
 			if (result_v4[i].match(/^Chain forwarding[\w_]+\s+/)) {
 				chain = result_v4[i].match(/\s+(forwarding[\w_]+)\s+/)[1].trim();
@@ -596,7 +597,7 @@ return view.extend({
 		o.optional = true;
 		o.rmempty = true;
 
-		o = s.taboption('adv_chain', form.DynamicList, 'ban_wan_inputchains_4', _('WAN Input'), _('Default chain used by banIP is \'input_wan_rule\''));
+		o = s.taboption('adv_chain', form.DynamicList, 'ban_wan_inputchains_4', _('WAN Input'), _('Assign one or more relevant firewall chains to banIP. The default chain used by banIP is \'input_wan_rule\'.'));
 		for (var i = 0; i < result_v4.length; i++) {
 			if (result_v4[i].match(/^Chain input[\w_]+\s+/)) {
 				chain = result_v4[i].match(/\s+(input[\w_]+)\s+/)[1].trim();
@@ -607,7 +608,7 @@ return view.extend({
 		o.optional = true;
 		o.rmempty = true;
 
-		o = s.taboption('adv_chain', form.DynamicList, 'ban_wan_forwardchains_4', _('WAN Forward'), _('Default chain used by banIP is \'forwarding_wan_rule\''));
+		o = s.taboption('adv_chain', form.DynamicList, 'ban_wan_forwardchains_4', _('WAN Forward'), _('Assign one or more relevant firewall chains to banIP. The default chain used by banIP is \'forwarding_wan_rule\'.'));
 		for (var i = 0; i < result_v4.length; i++) {
 			if (result_v4[i].match(/^Chain forwarding[\w_]+\s+/)) {
 				chain = result_v4[i].match(/\s+(forwarding[\w_]+)\s+/)[1].trim();
@@ -622,7 +623,7 @@ return view.extend({
 		o.rawhtml = true;
 		o.default = '<em><b>IPv6 Chains</b></em>';
 
-		o = s.taboption('adv_chain', form.DynamicList, 'ban_lan_inputchains_6', _('LAN Input'), _('Default chain used by banIP is \'input_lan_rule\''));
+		o = s.taboption('adv_chain', form.DynamicList, 'ban_lan_inputchains_6', _('LAN Input'), _('Assign one or more relevant firewall chains to banIP. The default chain used by banIP is \'input_lan_rule\'.'));
 		for (var i = 0; i < result_v6.length; i++) {
 			if (result_v6[i].match(/^Chain input[\w_]+\s+/)) {
 				chain = result_v6[i].match(/\s+(input[\w_]+)\s+/)[1].trim();
@@ -633,7 +634,7 @@ return view.extend({
 		o.optional = true;
 		o.rmempty = true;
 
-		o = s.taboption('adv_chain', form.DynamicList, 'ban_lan_forwardchains_6', _('LAN Forward'), _('Default chain used by banIP is \'forwarding_lan_rule\''));
+		o = s.taboption('adv_chain', form.DynamicList, 'ban_lan_forwardchains_6', _('LAN Forward'), _('Assign one or more relevant firewall chains to banIP. The default chain used by banIP is \'forwarding_lan_rule\'.'));
 		for (var i = 0; i < result_v6.length; i++) {
 			if (result_v6[i].match(/^Chain forwarding[\w_]+\s+/)) {
 				chain = result_v6[i].match(/\s+(forwarding[\w_]+)\s+/)[1].trim();
@@ -644,7 +645,7 @@ return view.extend({
 		o.optional = true;
 		o.rmempty = true;
 
-		o = s.taboption('adv_chain', form.DynamicList, 'ban_wan_inputchains_6', _('WAN Input'), _('Default chain used by banIP is \'input_wan_rule\''));
+		o = s.taboption('adv_chain', form.DynamicList, 'ban_wan_inputchains_6', _('WAN Input'), _('Assign one or more relevant firewall chains to banIP. The default chain used by banIP is \'input_wan_rule\'.'));
 		for (var i = 0; i < result_v6.length; i++) {
 			if (result_v6[i].match(/^Chain input[\w_]+\s+/)) {
 				chain = result_v6[i].match(/\s+(input[\w_]+)\s+/)[1].trim();
@@ -655,7 +656,7 @@ return view.extend({
 		o.optional = true;
 		o.rmempty = true;
 
-		o = s.taboption('adv_chain', form.DynamicList, 'ban_wan_forwardchains_6', _('WAN Forward'), _('Default chain used by banIP is \'forwarding_wan_rule\''));
+		o = s.taboption('adv_chain', form.DynamicList, 'ban_wan_forwardchains_6', _('WAN Forward'), _('Assign one or more relevant firewall chains to banIP. The default chain used by banIP is \'forwarding_wan_rule\'.'));
 		for (var i = 0; i < result_v6.length; i++) {
 			if (result_v6[i].match(/^Chain forwarding[\w_]+\s+/)) {
 				chain = result_v6[i].match(/\s+(forwarding[\w_]+)\s+/)[1].trim();
@@ -684,7 +685,23 @@ return view.extend({
 		o.value('dropbear');
 		o.value('sshd');
 		o.value('luci');
+		o.value('nginx');
 		o.optional = true;
+		o.rmempty = true;
+
+		o = s.taboption('adv_log', form.Value, 'ban_ssh_logcount', _('SSH Log Count'), _('Number of failed ssh login repetitions of the same ip in the log before banning.'));
+		o.placeholder = '3';
+		o.datatype = 'range(1,10)';
+		o.rmempty = true;
+
+		o = s.taboption('adv_log', form.Value, 'ban_luci_logcount', _('LuCI Log Count'), _('Number of failed LuCI login repetitions of the same ip in the log before banning.'));
+		o.placeholder = '3';
+		o.datatype = 'range(1,10)';
+		o.rmempty = true;
+
+		o = s.taboption('adv_log', form.Value, 'ban_nginx_logcount', _('NGINX Log Count'), _('Number of failed nginx requests of the same ip in the log before banning.'));
+		o.placeholder = '5';
+		o.datatype = 'range(1,20)';
 		o.rmempty = true;
 
 		o = s.taboption('adv_log', form.Value, 'ban_logopts_src', _('SRC Log Options'), _('Set special SRC log options, e.g. to set a limit rate.'));
@@ -746,7 +763,7 @@ return view.extend({
 
 		o = s.taboption('sources', form.DummyValue, '_sub');
 		o.rawhtml = true;
-		o.default = '<em><b>Country selection</b></em>';
+		o.default = '<em><b>Country Selection</b></em>';
 
 		/*
 			prepare country data
@@ -767,7 +784,7 @@ return view.extend({
 
 		o = s.taboption('sources', form.DummyValue, '_sub');
 		o.rawhtml = true;
-		o.default = '<em><b>ASN selection</b></em>';
+		o.default = '<em><b>ASN Selection</b></em>';
 
 		o = s.taboption('sources', form.DynamicList, 'ban_asns', _('ASNs'));
 		o.datatype = 'uinteger';

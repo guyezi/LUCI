@@ -1,2 +1,0 @@
-msgid "fileassistant"
-msgstr "fileassistant"

@@ -467,6 +467,19 @@ msgstr "Όνομα κεντρικού υπολογιστή"
 msgid "IP or hostname where to get the txtinfo output from"
 msgstr ""
 
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/ipstatistics.js:7
+#: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/ipstatistics.json:2
+msgid "IP-Statistics"
+msgstr ""
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/ipstatistics.js:7
+msgid "IP-Statistics Plugin Configuration"
+msgstr ""
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/ipstatistics.js:11
+msgid "IPv4/IPv6 Statistics monitoring enabled"
+msgstr ""
+
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/irq.js:7
 msgid "IRQ Plugin Configuration"
 msgstr ""
@@ -650,11 +663,9 @@ msgstr ""
 msgid "Monitoring %s, %s, %s"
 msgstr ""
 
-#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/apcups.js:29
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/apcups.js:26
 msgid "Monitoring APC UPS at host %s, port %d"
-msgid_plural "Monitoring APC UPS at hosts %s, port %d"
-msgstr[0] ""
-msgstr[1] ""
+msgstr ""
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/dhcpleases.js:19
 msgid "Monitoring DHCP leases enabled"
@@ -1284,6 +1295,11 @@ msgid ""
 "The interface plugin collects traffic statistics on selected interfaces."
 msgstr ""
 
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/ipstatistics.js:8
+msgid ""
+"The ipstatistics plugin collects IPv4 and IPv6 statistics to compare them."
+msgstr ""
+
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/iptables.js:9
 msgid ""
 "The iptables plugin will monitor selected firewall rules and collect "
@@ -1569,21 +1585,3 @@ msgstr[1] ""
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/rrdtool.js:29
 msgid "reduces rrd size"
 msgstr ""
-
-#~ msgid ""
-#~ "Collectd is a small daemon for collecting data from various sources "
-#~ "through different plugins. On this page you can change general settings "
-#~ "for the collectd daemon."
-#~ msgstr ""
-#~ "Το Collectd είναι ένας μικρός δαίμονας για τη συλλογή δεδομένων από "
-#~ "διάφορες πηγές μέσω διάφορων προσθέτων. Σε αυτή τη σελίδα μπορείτε να "
-#~ "αλλάξετε τις γενικές ρυθμίσεις του δαίμονα collectd."
-
-#~ msgid "Name of the rule"
-#~ msgstr "Όνομα κανόνα"
-
-#~ msgid "e.g. br-ff"
-#~ msgstr "π.χ. br-ff"
-
-#~ msgid "e.g. br-lan"
-#~ msgstr "π.χ. br-lan"

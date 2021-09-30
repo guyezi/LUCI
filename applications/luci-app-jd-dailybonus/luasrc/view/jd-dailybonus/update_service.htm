@@ -1,22 +1,20 @@
 <%+cbi/valueheader%>
 <label class="cbi-value-title"><%= translate("执行") %></label>
 <div class="cbi-value-field">
-    <input class="cbi-button cbi-button-reload" id="update_service" type="button" size="0" onclick="run()"
-        value="<%= translate("手动执行签到") %>">
+    <input class="btn cbi-button cbi-button-reload" id="update_service" type="button" size="0" onclick="run()" value="<%= translate('手动执行签到') %>" />
 </div>
 
 <label class="cbi-value-title"><%= translate("更新脚本") %></label>
 <div class="cbi-value-field">
-    <input class="cbi-button cbi-button-reload" id="update_script" type="button" size="0" onclick="check_version()" data-version="<%= self.version %>"
-        value="<%= translate("手动检查脚本更新，当前版本：v")..self.version %>">
+    <input class="btn cbi-button cbi-button-reload" id="update_script" type="button" size="0" onclick="check_version()" data-version="<%= self.version %>" value="<%= translate('手动检查脚本更新，当前版本：v')..self.version %>" />
 </div>
 
 <script type="text/javascript">
 
-    const RUN_URL = '<%=luci.dispatcher.build_url("admin", "robot", "jd-dailybonus","run")%>';
-    const CHECK_URL = '<%=luci.dispatcher.build_url("admin", "robot", "jd-dailybonus","check_update")%>';
-    const UPDATE_URL = '<%=luci.dispatcher.build_url("admin", "robot", "jd-dailybonus","update")%>';
-    const LOG_URL = '<%=luci.dispatcher.build_url("admin", "robot", "jd-dailybonus","log")%>';
+    const RUN_URL = '<%=luci.dispatcher.build_url("admin", "services", "jd-dailybonus","run")%>';
+    const CHECK_URL = '<%=luci.dispatcher.build_url("admin", "services", "jd-dailybonus","check_update")%>';
+    const UPDATE_URL = '<%=luci.dispatcher.build_url("admin", "services", "jd-dailybonus","update")%>';
+    const LOG_URL = '<%=luci.dispatcher.build_url("admin", "services", "jd-dailybonus","log")%>';
     const CHECKING_TEXT = '<%= translate("正在检查是否存在新的版本 ...") %>';
     const UPDATING_TEXT = '<%= translate("正在更新脚本，请稍候 ...") %>';
     const NEW_VERSION = '<%= translate("当前已是最新版本：") %>';

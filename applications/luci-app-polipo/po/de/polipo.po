@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-05-26 17:57+0200\n"
-"PO-Revision-Date: 2020-07-11 21:29+0000\n"
-"Last-Translator: ssantos <ssantos@web.de>\n"
+"PO-Revision-Date: 2021-02-08 04:46+0000\n"
+"Last-Translator: Zocker1012 <julian.schoemer.1997@gmail.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationspolipo/de/>\n"
 "Language: de\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.2-dev\n"
+"X-Generator: Weblate 4.5-dev\n"
 
 #: applications/luci-app-polipo/luasrc/model/cbi/polipo.lua:121
 msgid "Advanced Settings"
@@ -74,7 +74,7 @@ msgstr "Allgemeine Einstellungen"
 
 #: applications/luci-app-polipo/root/usr/share/rpcd/acl.d/luci-app-polipo.json:3
 msgid "Grant UCI access for luci-app-polipo"
-msgstr "Gewähre UCI Zugriff auf luci-app-polipo"
+msgstr "UCI-Zugriff für luci-app-polipo erlauben"
 
 #: applications/luci-app-polipo/luasrc/model/cbi/polipo.lua:113
 msgid "How much RAM should Polipo use for its cache."
@@ -296,41 +296,3 @@ msgstr ""
 #: applications/luci-app-polipo/luasrc/model/cbi/polipo.lua:16
 msgid "enable"
 msgstr "aktivieren"
-
-#, fuzzy
-#~ msgid "Time after which cached files will be deleted. (default value: 32d)"
-#~ msgstr ""
-#~ "Speicherort für permanent gespeicherte Dateien. Es wird die Benutzung von "
-#~ "externen Datenträgern empfohlen, da der Cache sehr groß werden kann. "
-#~ "Lassen Sie diese Option leer um den Cache zu deaktivieren."
-
-#~ msgid "General"
-#~ msgstr "Allgemein"
-
-#, fuzzy
-#~ msgid ""
-#~ "When listen address is set to 0.0.0.0 or :: (IPv6), you must list clients "
-#~ "that are allowed to connect. The format is IP address or network address "
-#~ "(192.168.1.123, 192.168.1.0/24, 2001:660:116::/48 (IPv6))."
-#~ msgstr ""
-#~ "Wenn der Server auf alle Anfragen (0.0.0.0 bzw. ::) hört, dann müssen die "
-#~ "zugelassenen Gegenpunkte, die berechtig sind eine Verbindung aufzubauen, "
-#~ "hier eingetragen werden. Als Format hier bitte die IP-Adresse oder "
-#~ "Nerzwerkmaske auswählen (192.168.1.123, 192.168.1.0/24, 2001:660:116::/48 "
-#~ "(IPv6))"
-
-#, fuzzy
-#~ msgid ""
-#~ "false = Do not query IPv6; reluctantly = Query both, prefer IPv4; happily "
-#~ "= Query both, prefer IPv6; true = Query only IPv6"
-#~ msgstr ""
-#~ "false = Beachtet IPv6 nicht, nur IPv4 möglich; reluctantly = Beachtet "
-#~ "sowohl IPv4 als auch IPv6, IPv4 wird bevorzugt; happily = Beachtet sowohl "
-#~ "IPv4 als auch IPv6, IPv6 wird bevorzugt; true = Beachtet IPv4 nicht, nur "
-#~ "IPv6 möglich"
-
-#, fuzzy
-#~ msgid "Port on which Polipo will listen. (default value: 8123)"
-#~ msgstr ""
-#~ "Beschreibt, welcher Port von Polipo genutzt werden soll. "
-#~ "Grundeinstellung: Port 8123"

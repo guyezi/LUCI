@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-10-21 08:14+0000\n"
-"Last-Translator: malrubaei <mhmd.alrubaei@gmail.com>\n"
+"PO-Revision-Date: 2021-03-04 13:50+0000\n"
+"Last-Translator: Said Zakaria <said.zakaria@gmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsmwan3/ar/>\n"
 "Language: ar\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 4.3.1\n"
+"X-Generator: Weblate 4.5.1-dev\n"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interfaceconfig.lua:176
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interfaceconfig.lua:192
@@ -74,7 +74,7 @@ msgstr ""
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/ruleconfig.lua:67
 msgid "-- Please choose --"
-msgstr ""
+msgstr "-- اختر من فضلك --"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interfaceconfig.lua:66
 msgid ""
@@ -92,7 +92,7 @@ msgstr ""
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/globalsconfig.lua:27
 msgid "Alert"
-msgstr ""
+msgstr "انذار"
 
 #: applications/luci-app-mwan3/luasrc/controller/mwan3.lua:177
 msgid "All required IP rules for interface %s found"
@@ -114,7 +114,7 @@ msgstr ""
 msgid "Check routing table"
 msgstr ""
 
-#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:98
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:112
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_detail.htm:34
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_troubleshooting.htm:34
 msgid "Collecting data..."
@@ -122,21 +122,21 @@ msgstr "جمع البيانات..."
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/globalsconfig.lua:28
 msgid "Critical"
-msgstr ""
+msgstr "حرج"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/globalsconfig.lua:33
 msgid "Debug"
-msgstr ""
+msgstr "تصحيح الأخطاء"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/rule.lua:85
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/ruleconfig.lua:36
 msgid "Destination address"
-msgstr ""
+msgstr "عنوان الوجهة"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/rule.lua:91
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/ruleconfig.lua:40
 msgid "Destination port"
-msgstr ""
+msgstr "بوابة الوجهة"
 
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_detail.htm:11
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_diagnostics.htm:11
@@ -150,20 +150,24 @@ msgstr ""
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_interface.htm:12
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_troubleshooting.htm:12
 msgid "Diagnostics"
-msgstr ""
+msgstr "التشخيص"
 
-#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:50
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:64
 msgid "Disabled"
-msgstr ""
+msgstr "معطل"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interfaceconfig.lua:229
 msgid ""
 "Downed interface will be deemed up after this many successful ping tests"
 msgstr ""
 
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:44
+msgid "Downtime"
+msgstr ""
+
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/globalsconfig.lua:26
 msgid "Emergency"
-msgstr ""
+msgstr "طوارئ"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interfaceconfig.lua:59
 msgid "Enable ssl tracking"
@@ -193,7 +197,7 @@ msgstr ""
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/globalsconfig.lua:29
 msgid "Error"
-msgstr ""
+msgstr "خطأ"
 
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_diagnostics.htm:88
 msgid "Execute"
@@ -259,23 +263,23 @@ msgstr ""
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interfaceconfig.lua:34
 msgid "IPv4"
-msgstr ""
+msgstr "IPv4"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/ruleconfig.lua:23
 msgid "IPv4 and IPv6"
-msgstr ""
+msgstr "IPv4 و IPv6"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/ruleconfig.lua:24
 msgid "IPv4 only"
-msgstr ""
+msgstr "IPv4 فقط"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interfaceconfig.lua:35
 msgid "IPv6"
-msgstr ""
+msgstr "IPv6"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/ruleconfig.lua:25
 msgid "IPv6 only"
-msgstr ""
+msgstr "IPv6 فقط"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/globalsconfig.lua:32
 msgid "Info"
@@ -288,13 +292,14 @@ msgstr ""
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interface.lua:149
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/member.lua:27
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/memberconfig.lua:18
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:74
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_detail.htm:10
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_diagnostics.htm:10
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_diagnostics.htm:61
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_interface.htm:10
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_troubleshooting.htm:10
 msgid "Interface"
-msgstr ""
+msgstr "واجهه"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interface.lua:207
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interfaceconfig.lua:214
@@ -312,7 +317,7 @@ msgstr ""
 
 #: applications/luci-app-mwan3/luasrc/controller/mwan3.lua:48
 msgid "Interfaces"
-msgstr ""
+msgstr "واجهات"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interfaceconfig.lua:32
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/ruleconfig.lua:21
@@ -337,7 +342,7 @@ msgstr ""
 msgid "Load Balancing"
 msgstr ""
 
-#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:97
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:111
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_detail.htm:33
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_diagnostics.htm:36
 #: applications/luci-app-mwan3/luasrc/view/mwan/status_troubleshooting.htm:33
@@ -347,7 +352,7 @@ msgstr "جار التحميل"
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/globalsconfig.lua:19
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/ruleconfig.lua:72
 msgid "Logging"
-msgstr ""
+msgstr "تسجيل"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/globalsconfig.lua:23
 msgid "Loglevel"
@@ -381,7 +386,7 @@ msgstr ""
 msgid "MWAN Interface Configuration - %s"
 msgstr ""
 
-#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:95
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:109
 msgid "MWAN Interfaces"
 msgstr ""
 
@@ -448,7 +453,7 @@ msgstr ""
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/member.lua:33
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/memberconfig.lua:25
 msgid "Metric"
-msgstr ""
+msgstr "قياس"
 
 #: applications/luci-app-mwan3/luasrc/controller/mwan3.lua:190
 msgid "Missing both IP rules for interface %s"
@@ -463,10 +468,14 @@ msgstr ""
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interface.lua:165
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/ruleconfig.lua:59
 msgid "No"
+msgstr "لا"
+
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:91
+msgid "No MWAN interfaces found"
 msgstr ""
 
-#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:77
-msgid "No MWAN interfaces found"
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:50
+msgid "No Tracking"
 msgstr ""
 
 #: applications/luci-app-mwan3/luasrc/controller/mwan3.lua:159
@@ -479,7 +488,7 @@ msgstr ""
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/globalsconfig.lua:31
 msgid "Notice"
-msgstr ""
+msgstr "ملاحضة"
 
 #: applications/luci-app-mwan3/luasrc/controller/mwan3.lua:60
 msgid "Notification"
@@ -550,7 +559,7 @@ msgstr ""
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/policy.lua:51
 msgid "Policy"
-msgstr ""
+msgstr "سياسة"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/rule.lua:103
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/ruleconfig.lua:75
@@ -560,7 +569,7 @@ msgstr ""
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/rule.lua:97
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/ruleconfig.lua:45
 msgid "Protocol"
-msgstr ""
+msgstr "بروتوكول"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interfaceconfig.lua:198
 msgid "Recovery interval"
@@ -592,7 +601,7 @@ msgstr ""
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/rule.lua:59
 msgid "Rule"
-msgstr ""
+msgstr "القاعدة"
 
 #: applications/luci-app-mwan3/luasrc/controller/mwan3.lua:57
 msgid "Rules"
@@ -618,11 +627,15 @@ msgstr ""
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/rule.lua:73
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/ruleconfig.lua:27
 msgid "Source address"
-msgstr ""
+msgstr "عنوان المصدر"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/rule.lua:79
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/ruleconfig.lua:31
 msgid "Source port"
+msgstr "منفذ المصدر"
+
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:78
+msgid "Status"
 msgstr ""
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/ruleconfig.lua:55
@@ -703,6 +716,11 @@ msgstr ""
 msgid "Troubleshooting"
 msgstr ""
 
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:36
+#: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:53
+msgid "Uptime"
+msgstr ""
+
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/ruleconfig.lua:46
 msgid "View the content of /etc/protocols for protocol description"
 msgstr ""
@@ -745,7 +763,7 @@ msgstr "في انتظار اكتمال الأمر ..."
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/globalsconfig.lua:30
 msgid "Warning"
-msgstr ""
+msgstr "تحذير"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/member.lua:39
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/memberconfig.lua:29
@@ -760,7 +778,7 @@ msgstr ""
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interface.lua:163
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/ruleconfig.lua:58
 msgid "Yes"
-msgstr ""
+msgstr "نعم"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/policy.lua:84
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/policyconfig.lua:29

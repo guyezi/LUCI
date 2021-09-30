@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-05-26 19:03+0200\n"
-"PO-Revision-Date: 2020-11-15 19:47+0000\n"
-"Last-Translator: Ricardo Nunes <ricardofsonunes@gmail.com>\n"
+"PO-Revision-Date: 2021-03-13 09:19+0000\n"
+"Last-Translator: ssantos <ssantos@web.de>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsupnp/pt/>\n"
 "Language: pt\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.4-dev\n"
+"X-Generator: Weblate 4.5.2-dev\n"
 
 #: applications/luci-app-upnp/htdocs/luci-static/resources/view/upnp/upnp.js:182
 msgid ""
@@ -222,7 +222,7 @@ msgstr "Desconhecido"
 
 #: applications/luci-app-upnp/htdocs/luci-static/resources/view/upnp/upnp.js:139
 msgid "Uplink"
-msgstr "Uplink"
+msgstr "Ligação ascendente"
 
 #: applications/luci-app-upnp/htdocs/luci-static/resources/view/upnp/upnp.js:170
 msgid "Use STUN"
@@ -232,23 +232,3 @@ msgstr "Utilizar STUN"
 #: applications/luci-app-upnp/htdocs/luci-static/resources/view/upnp/upnp.js:140
 msgid "Value in KByte/s, informational only"
 msgstr "Valor em KByte/s, apenas informativo"
-
-#~ msgid "Collecting data..."
-#~ msgstr "A recolher dados..."
-
-#~ msgid ""
-#~ "UPNP allows clients in the local network to automatically configure the "
-#~ "router."
-#~ msgstr ""
-#~ "UPNP permite os clientes da rede local automaticamente configurar o "
-#~ "roteador."
-
-#~ msgid "Log output"
-#~ msgstr "Log de saída"
-
-#~ msgid ""
-#~ "UPNP should only be enabled if absolutely necessary as it can result in "
-#~ "high security risks for your network."
-#~ msgstr ""
-#~ "O UPNP deve ser ativado apenas se for absolutamente necessário, pois ele "
-#~ "pode resultar em elevados riscos de segurança para sua rede."

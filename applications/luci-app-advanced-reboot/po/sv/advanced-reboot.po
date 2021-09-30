@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-08-20 15:36+0000\n"
+"PO-Revision-Date: 2021-04-07 17:42+0000\n"
 "Last-Translator: Luna Jernberg <droidbittin@gmail.com>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsadvanced-reboot/sv/>\n"
@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.2.1-dev\n"
+"X-Generator: Weblate 4.6-dev\n"
 
 #: applications/luci-app-advanced-reboot/htdocs/luci-static/resources/view/system/advanced_reboot.js:187
 #: applications/luci-app-advanced-reboot/root/usr/share/luci/menu.d/luci-app-advanced-reboot.json:3
@@ -22,7 +22,7 @@ msgstr "Avbryt"
 
 #: applications/luci-app-advanced-reboot/htdocs/luci-static/resources/view/system/advanced_reboot.js:162
 msgid "Compressed"
-msgstr ""
+msgstr "Komprimerad"
 
 #: applications/luci-app-advanced-reboot/htdocs/luci-static/resources/view/system/advanced_reboot.js:124
 msgid "Confirm"
@@ -31,7 +31,7 @@ msgstr "Bekräfta"
 #: applications/luci-app-advanced-reboot/htdocs/luci-static/resources/view/system/advanced_reboot.js:76
 #: applications/luci-app-advanced-reboot/htdocs/luci-static/resources/view/system/advanced_reboot.js:105
 msgid "Device unreachable! Still waiting for device..."
-msgstr ""
+msgstr "Enheten  ej  nåbar!  Väntar fortfarande på enheten..."
 
 #: applications/luci-app-advanced-reboot/htdocs/luci-static/resources/view/system/advanced_reboot.js:197
 msgid "ERROR:"
@@ -39,7 +39,7 @@ msgstr "FEL:"
 
 #: applications/luci-app-advanced-reboot/htdocs/luci-static/resources/view/system/advanced_reboot.js:205
 msgid "Firmware"
-msgstr "Firmware"
+msgstr "fast programvara"
 
 #: applications/luci-app-advanced-reboot/root/usr/share/rpcd/acl.d/luci-app-advanced-reboot.json:3
 msgid "Grant UCI and file access for luci-app-advanced-reboot"
@@ -91,7 +91,7 @@ msgstr "Starta om till nuvarande partition"
 #: applications/luci-app-advanced-reboot/htdocs/luci-static/resources/view/system/advanced_reboot.js:98
 #: applications/luci-app-advanced-reboot/htdocs/luci-static/resources/view/system/advanced_reboot.js:103
 msgid "Rebooting…"
-msgstr ""
+msgstr "Startar om…"
 
 #: applications/luci-app-advanced-reboot/htdocs/luci-static/resources/view/system/advanced_reboot.js:37
 msgid "Shutting down..."
@@ -150,7 +150,7 @@ msgstr ""
 
 #: applications/luci-app-advanced-reboot/htdocs/luci-static/resources/view/system/advanced_reboot.js:162
 msgid "Unknown"
-msgstr ""
+msgstr "Okänd"
 
 #: applications/luci-app-advanced-reboot/htdocs/luci-static/resources/view/system/advanced_reboot.js:125
 msgid ""
@@ -185,7 +185,7 @@ msgstr ""
 
 #: applications/luci-app-advanced-reboot/htdocs/luci-static/resources/view/system/advanced_reboot.js:70
 msgid "Waiting for device..."
-msgstr ""
+msgstr "Väntar på enhet..."
 
 #: applications/luci-app-advanced-reboot/htdocs/luci-static/resources/view/system/advanced_reboot.js:215
 msgid "Warning: Device (%s) is unknown or isn't a dual-partition device!"
@@ -205,43 +205,3 @@ msgstr "Varning: Det här systemet har inte stöd för avstängning!"
 #: applications/luci-app-advanced-reboot/htdocs/luci-static/resources/view/system/advanced_reboot.js:216
 msgid "Warning: Unable to obtain device information!"
 msgstr "Varning: Det går inte att få information om enheten!"
-
-#~ msgid "Alternative"
-#~ msgstr "Alternativ"
-
-#~ msgid "Changes applied."
-#~ msgstr "Ändringar tillämpade. "
-
-#~ msgid "Current"
-#~ msgstr "Nuvarande"
-
-#~ msgid "Loading"
-#~ msgstr "Laddar"
-
-#~ msgid "Rebooting..."
-#~ msgstr "Startar om..."
-
-#~ msgid "System"
-#~ msgstr "System"
-
-#~ msgid ""
-#~ "The system is rebooting now.<br /> DO NOT POWER OFF THE DEVICE!<br /> "
-#~ "Wait a few minutes before you try to reconnect. It might be necessary to "
-#~ "renew the address of your computer to reach the device again, depending "
-#~ "on your settings."
-#~ msgstr ""
-#~ "Systemet startar om nu. <br /> STÄNG INTE AV ENHETEN!<br /> Vänta ett par "
-#~ "minuter innan du försöker ansluta. Du kan behöva förnya adressen på din "
-#~ "dator för att nå enheten igen, beroende på inställningarna."
-
-#~ msgid "Waiting for changes to be applied..."
-#~ msgstr "Väntar på att ändringarna ska bli verkställda..."
-
-#~ msgid "Action"
-#~ msgstr "Åtgärd"
-
-#~ msgid "Firmware/OS (Kernel)"
-#~ msgstr "Inre mjukvara/OS (Kärna)"
-
-#~ msgid "Warning: This system does not have two partitions!"
-#~ msgstr "Varning: Det här systemet har inte två partitioner!"

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-05-19 19:36+0200\n"
-"PO-Revision-Date: 2020-12-28 06:11+0000\n"
+"PO-Revision-Date: 2021-02-07 07:33+0000\n"
 "Last-Translator: Satoru Yoshida <ramat@ram.ne.jp>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsstatistics/ja/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.4.1-dev\n"
+"X-Generator: Weblate 4.5-dev\n"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/apcups.js:7
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/apcups.json:2
@@ -126,11 +126,11 @@ msgstr ""
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/chrony.js:6
 msgid "Chrony Plugin Configuration"
-msgstr ""
+msgstr "Chrony プラグイン構成"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/chrony.js:32
 msgid "Chrony monitoring enabled"
-msgstr ""
+msgstr "Chrony モニタリングが有効"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/olsrd.js:21
 msgid "CollectLinks"
@@ -473,6 +473,19 @@ msgstr "ホスト名"
 msgid "IP or hostname where to get the txtinfo output from"
 msgstr "txtinfo 出力取得元の IP またはホスト名"
 
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/ipstatistics.js:7
+#: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/ipstatistics.json:2
+msgid "IP-Statistics"
+msgstr ""
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/ipstatistics.js:7
+msgid "IP-Statistics Plugin Configuration"
+msgstr ""
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/ipstatistics.js:11
+msgid "IPv4/IPv6 Statistics monitoring enabled"
+msgstr ""
+
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/irq.js:7
 msgid "IRQ Plugin Configuration"
 msgstr "IRQ プラグイン設定"
@@ -661,10 +674,10 @@ msgstr "%s および %s を監視"
 msgid "Monitoring %s, %s, %s"
 msgstr "%s、%s および %s を監視"
 
-#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/apcups.js:29
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/apcups.js:26
+#, fuzzy
 msgid "Monitoring APC UPS at host %s, port %d"
-msgid_plural "Monitoring APC UPS at hosts %s, port %d"
-msgstr[0] "ホスト %s、ポート %d で APC UPS を監視中"
+msgstr "ホスト %s、ポート %d で APC UPS を監視中"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/dhcpleases.js:19
 msgid "Monitoring DHCP leases enabled"
@@ -911,7 +924,7 @@ msgstr "apcupsd 通信用のポート"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/chrony.js:20
 msgid "Port for chronyd"
-msgstr ""
+msgstr "chronyd 用のポート"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/chrony.js:15
 msgid "Possibly bug in collectd. Only 127.0.0.1 and localhost work"
@@ -985,7 +998,7 @@ msgstr ""
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/snmp6.js:7
 msgid "SNMP6 Plugin Configuration"
-msgstr ""
+msgstr "SNMP6 プラグイン構成"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/sqm.js:7
 msgid "SQM"
@@ -1218,7 +1231,7 @@ msgstr "チェイン名にスペースを含めることはできません"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/chrony.js:7
 msgid "The chrony plugin will monitor chrony NTP server statistics"
-msgstr ""
+msgstr "chrony プラグインは、chrony NTP サーバーの統計をモニターします"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/iptables.js:153
 msgid "The comment to match must not contain spaces"
@@ -1306,6 +1319,11 @@ msgid ""
 msgstr ""
 "インターフェース プラグインは、選択したインターフェースのトラフィックの統計情"
 "報を収集します。"
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/ipstatistics.js:8
+msgid ""
+"The ipstatistics plugin collects IPv4 and IPv6 statistics to compare them."
+msgstr ""
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/iptables.js:9
 msgid ""
@@ -1396,7 +1414,7 @@ msgstr ""
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/snmp6.js:8
 msgid "The snmp6 plugin collects IPv6 statistics for selected interfaces."
-msgstr ""
+msgstr "snmp6 プラグインは、選択したインターフェースの IPv6 統計を収集します。"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/splash_leases.js:7
 msgid ""
@@ -1476,7 +1494,7 @@ msgstr ""
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/chrony.js:25
 msgid "Timeout for polling chrony"
-msgstr ""
+msgstr "chrony ポーリングのタイムアウト"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/collectd.js:80
 msgid "Try to lookup fully qualified hostname"
@@ -1626,90 +1644,3 @@ msgstr[0] "%d 個のリモート・ポート"
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/rrdtool.js:29
 msgid "reduces rrd size"
 msgstr "rrdファイルのサイズを小さくします。"
-
-#~ msgid "Cache flush interval"
-#~ msgstr "キャッシュ クリア間隔"
-
-#~ msgid ""
-#~ "The statistics package uses <a href=\"https://collectd.org/\">Collectd</"
-#~ "a> to gather data and <a href=\"http://oss.oetiker.ch/rrdtool/\">RRDtool</"
-#~ "a> to render diagram images."
-#~ msgstr ""
-#~ "statistics パッケージは、データの収集に<a href=\"https://collectd.org/"
-#~ "\">Collectd</a>を、統計図のレンダリングに<a href=\"http://oss.oetiker.ch/"
-#~ "rrdtool/\">RRDtool</a>を使用します。"
-
-#~ msgid ""
-#~ "You can install additional collectd-mod-* plugins to enable more "
-#~ "statistics."
-#~ msgstr ""
-#~ "追加の collectd-mod-* プラグインをインストールすることで、より多くの統計を"
-#~ "有効にできます。"
-
-#~ msgid "Action (target)"
-#~ msgstr "アクション（対象）"
-
-#~ msgid "Add matching rule"
-#~ msgstr "マッチング規則の追加"
-
-#~ msgid "Add multiple hosts separated by space."
-#~ msgstr "スペースで区切られた複数のホストを追加します。"
-
-#~ msgid ""
-#~ "Collectd is a small daemon for collecting data from various sources "
-#~ "through different plugins. On this page you can change general settings "
-#~ "for the collectd daemon."
-#~ msgstr ""
-#~ "Collectd は、様々なソースから別々のプラグインを通してデータを収集する軽量"
-#~ "デーモンです。"
-
-#~ msgid "Destination ip range"
-#~ msgstr "対象IPの範囲"
-
-#~ msgid "Hold Ctrl to select multiple items or to deselect entries."
-#~ msgstr "複数の項目を選択または解除するには、Ctrlキーを押したままにします。"
-
-#~ msgid "Incoming interface"
-#~ msgstr "着信インターフェース"
-
-#~ msgid "Monitor all sensors"
-#~ msgstr "全てのセンサーをモニターする"
-
-#~ msgid "Name of the rule"
-#~ msgstr "ルール名"
-
-#~ msgid "Network protocol"
-#~ msgstr "ネットワークプロトコル"
-
-#~ msgid "Options"
-#~ msgstr "オプション"
-
-#~ msgid "Outgoing interface"
-#~ msgstr "送信インターフェース"
-
-#~ msgid "Processes to monitor separated by space"
-#~ msgstr "スペースで区切られた、モニターするプロセスです。"
-
-#~ msgid "Source ip range"
-#~ msgstr "ソースIPの範囲"
-
-#~ msgid "e.g. br-ff"
-#~ msgstr "例: br-ff"
-
-#~ msgid "e.g. br-lan"
-#~ msgstr "例: br-lan"
-
-#~ msgid "e.g. reject-with tcp-reset"
-#~ msgstr "例: reject-with tcp-reset"
-
-#~ msgid "max. 16 chars"
-#~ msgstr "最大16文字"
-
-#~ msgid "server interfaces"
-#~ msgstr "サーバー インターフェース"
-
-#~ msgid "Collectd"
-#~ msgstr "Collectd"
-
-#~ msgid "System plugins"
-#~ msgstr "システムプラグイン"

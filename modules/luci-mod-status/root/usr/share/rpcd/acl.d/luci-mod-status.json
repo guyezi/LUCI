@@ -104,6 +104,9 @@
 				"file": [ "list", "read" ],
 				"system": [ "board", "info" ]
 			}
+		},
+		"write": {
+			"uci": [ "dhcp" ]
 		}
 	},
 
@@ -120,7 +123,7 @@
 		"description": "Grant access to DSL status display",
 		"read": {
 			"ubus": {
-				"luci-rpc": [ "getDSLStatus" ]
+				"dsl": [ "metrics" ]
 			}
 		}
 	},

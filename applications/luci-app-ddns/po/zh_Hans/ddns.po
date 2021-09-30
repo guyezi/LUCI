@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: luci-app-ddns 2.4.0-1\n"
 "POT-Creation-Date: 2016-01-30 11:07+0100\n"
-"PO-Revision-Date: 2021-02-05 14:57+0000\n"
-"Last-Translator: zheshifandian <sunjiazheng321521@gmail.com>\n"
+"PO-Revision-Date: 2021-06-29 18:07+0000\n"
+"Last-Translator: xiazhang <xz@xia.plus>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "openwrt/luciapplicationsddns/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.5-dev\n"
+"X-Generator: Weblate 4.7.1-dev\n"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:430
 msgid "\"../\" not allowed in path for Security Reason."
@@ -77,11 +77,11 @@ msgstr "用于下载服务数据的 Ca 证书路径。设置 IGNORE 将跳过证
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:537
 msgid "Cancel"
-msgstr "关闭"
+msgstr "取消"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:962
 msgid "Check Interval"
-msgstr "检查时间周期"
+msgstr "检查间隔"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:977
 msgid "Check Unit"
@@ -301,7 +301,7 @@ msgstr "全局设置"
 
 #: applications/luci-app-ddns/root/usr/share/rpcd/acl.d/luci-app-ddns.json:3
 msgid "Grant access to ddns procedures"
-msgstr "授予访问 ddns 程序的权限"
+msgstr "授予访问 DDNS 程序的权限"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:318
 msgid "HTTPS not supported"
@@ -472,7 +472,7 @@ msgstr "DDNS 更新脚本将会运行于该网络"
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:214
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1141
 msgid "Never"
-msgstr "从不"
+msgstr "永不"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:498
 msgid "New DDns Service…"
@@ -487,7 +487,7 @@ msgstr "下次更新"
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1125
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/status/include/70_ddns.js:40
 msgid "No Data"
-msgstr "没有数据"
+msgstr "无数据"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:390
 msgid "No certificates found"
@@ -536,7 +536,7 @@ msgstr "可选：使用非默认 DNS 服务器检测\"已注册的 IP 地址\"�
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1043
 msgid "On Error the script will retry the failed action after given time"
-msgstr "当出错时，脚本将会重试失败的动作的次数"
+msgstr "当出错时，脚本将会重试失败操作的次数"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1023
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1033
@@ -595,7 +595,7 @@ msgstr "已注册的 IP 地址"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:572
 msgid "Reload"
-msgstr "重新载入"
+msgstr "重新加载"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:555
 msgid "Reload this service"
@@ -890,402 +890,3 @@ msgstr "秒"
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:778
 msgid "to run HTTPS without verification of server certificates (insecure)"
 msgstr "使用 HTTPS 但不检查服务器证书（不安全）"
-
-#~ msgid ""
-#~ "Configure here the details for all Dynamic DNS services including this "
-#~ "LuCI application."
-#~ msgstr "在这里修改动态 DNS 服务的详细配置。"
-
-#~ msgid "Example for IPv4: http://checkip.dyndns.com"
-#~ msgstr "IPv4示例: http://checkip.dyndns.com"
-
-#~ msgid "Example for IPv6: http://checkipv6.dyndns.com"
-#~ msgstr "IPv6示例: http://checkipv6.dyndns.com"
-
-#~ msgid "For detailed information about parameter settings look here."
-#~ msgstr "请看这里获得关于参数设置的详细信息。"
-
-#~ msgid "Global Configuration"
-#~ msgstr "全局配置"
-
-#~ msgid ""
-#~ "If this service section is disabled it could not be started.<br />Neither "
-#~ "from LuCI interface nor from console"
-#~ msgstr ""
-#~ "如果服务配置被禁用，那么它将不能被启动。<br />无论是通过 LuCI 页面还是通过"
-#~ "终端。"
-
-#~ msgid ""
-#~ "Interval to force updates send to DDNS Provider<br />Setting this "
-#~ "parameter to 0 will force the script to only run once"
-#~ msgstr ""
-#~ "向 DDNS 提供商发送记录更新请求的时间间隔<br />将此参数设置为 0 则脚本仅运"
-#~ "行一次"
-
-#~ msgid ""
-#~ "It is NOT recommended for casual users to change settings on this page."
-#~ msgstr "强烈不建议初次使用的用户修改本页设定。"
-
-#~ msgid ""
-#~ "Update URL to be used for updating your DDNS Provider.<br />Follow "
-#~ "instructions you will find on their WEB page."
-#~ msgstr ""
-#~ "DDNS 提供商用于更新 DDNS 的 URL。<br />跟随教程，您可以在它们的网站上找到"
-#~ "这个 URL。"
-
-#~ msgid "Defines the Web page to read systems IP-Address from<br>"
-#~ msgstr "定义要从读取系统 IP 地址的网页<br>"
-
-#~ msgid "BusyBox's nslookup and Wget do not support to specify"
-#~ msgstr "不支持指定 Busybox 的 nslookup 和 wget"
-
-#~ msgid "BusyBox's nslookup and hostip do not support to specify to use TCP"
-#~ msgstr "Busybox 的 nslookup 和 hostip 不支持指定使用 TCP"
-
-#~ msgid "BusyBox's nslookup in the current compiled version"
-#~ msgstr "BusyBox 的 nslookup 存在于当前编译版本"
-
-#~ msgid "Defines the Web page to read systems IP-Address from"
-#~ msgstr "设定用来读取系统 IP 地址的网页"
-
-#~ msgid "Install 'ca-certificates' package or needed certificates"
-#~ msgstr "请安装 'ca-certificates' 包或者需要的证书"
-
-#~ msgid ""
-#~ "You should install 'bind-host' or 'knot-host' or 'drill' or 'hostip' "
-#~ "package,"
-#~ msgstr "您应该安装“ bind-host”或“ knot-host”或“ drill”或“ hostip”软件包，"
-
-#~ msgid "&"
-#~ msgstr "&"
-
-#~ msgid "-- custom --"
-#~ msgstr "-- 自定义 --"
-
-#~ msgid "-- default --"
-#~ msgstr "-- 默认 --"
-
-#~ msgid "Applying changes"
-#~ msgstr "正在应用更改"
-
-#~ msgid ""
-#~ "Below a list of configuration tips for your system to run Dynamic DNS "
-#~ "updates without limitations"
-#~ msgstr "以下是一个能够让您的系统不受限制地进行动态 DNS 更新设置的提示列表"
-
-#~ msgid ""
-#~ "Below is a list of configured DDNS configurations and their current state."
-#~ msgstr "以下是当前已经配置好的 DDNS 设置项列表以及它们的当前状态。"
-
-#~ msgid "Casual users should not change this setting"
-#~ msgstr "普通用户不应该改变这个设置"
-
-#~ msgid "Change provider"
-#~ msgstr "更改提供者"
-
-#~ msgid "Collecting data..."
-#~ msgstr "正在收集数据…"
-
-#~ msgid "Configure here the details for selected Dynamic DNS service."
-#~ msgstr "在这里修改选择的 DDNS 服务的详细配置。"
-
-#~ msgid "Current setting"
-#~ msgstr "当前设置"
-
-#~ msgid ""
-#~ "Currently DDNS updates are not started at boot or on interface events."
-#~ "<br />This is the default if you run DDNS scripts by yourself (i.e. via "
-#~ "cron with force_interval set to '0')"
-#~ msgstr ""
-#~ "现在，DDNS 更新在开机或者接口动作时不会被触发。<br />如果您手工运行 DDNS "
-#~ "脚本的话（例如使用 cron 时把 force_interval 设置为 0），这是默认设置。"
-
-#~ msgid ""
-#~ "Currently DDNS updates are not started at boot or on interface events."
-#~ "<br />You can start/stop each configuration here. It will run until next "
-#~ "reboot."
-#~ msgstr ""
-#~ "现在，DDNS 更新在开机或者接口动作时不会被触发。<br />您可以在这里开始/停止"
-#~ "每一个设置的条目。它在下次重启之前一直有效。"
-
-#~ msgid "DDNS Client Configuration"
-#~ msgstr "DDNS 客户端配置"
-
-#~ msgid "DDNS Client Documentation"
-#~ msgstr "DDNS 客户端文档"
-
-#~ msgid "Defines the Web page to read systems IPv4-Address from"
-#~ msgstr "设定用来读取系统 IPv4 地址的网页"
-
-#~ msgid "Defines the Web page to read systems IPv6-Address from"
-#~ msgstr "设定用来读取系统 IPv6 地址的网页"
-
-#~ msgid "Defines the network to read systems IPv4-Address from"
-#~ msgstr "设定用来读取系统 IPv4 地址的网络"
-
-#~ msgid "Defines the network to read systems IPv6-Address from"
-#~ msgstr "设定用来读取系统 IPv6 地址的网络"
-
-#~ msgid ""
-#~ "Defines the source to read systems IPv4-Address from, that will be send "
-#~ "to the DDNS provider"
-#~ msgstr "设定 IPv4 地址的来源。这将会被发送给 DDNS 提供商"
-
-#~ msgid ""
-#~ "Defines the source to read systems IPv6-Address from, that will be send "
-#~ "to the DDNS provider"
-#~ msgstr "设定 IPv6 地址的来源。这将会被发送给 DDNS 提供商"
-
-#~ msgid "Details for"
-#~ msgstr "详情"
-
-#~ msgid "Directory contains Log files for each running section"
-#~ msgstr "保存每一个运行中的设置的运行日志的目录"
-
-#~ msgid ""
-#~ "Directory contains PID and other status information for each running "
-#~ "section"
-#~ msgstr "保存每个运行中的设置的PID以及其它状态信息的目录"
-
-#~ msgid ""
-#~ "Dynamic DNS allows that your router can be reached with a fixed hostname "
-#~ "while having a dynamically changing IP address."
-#~ msgstr "动态 DNS 允许为拥有动态 IP 的主机配置一个固定的可访问域名。"
-
-#~ msgid "File not found"
-#~ msgstr "文件未找到"
-
-#~ msgid "File not found or empty"
-#~ msgstr "文件未找到或为空"
-
-#~ msgid ""
-#~ "Follow this link<br />You will find more hints to optimize your system to "
-#~ "run DDNS scripts with all options"
-#~ msgstr ""
-#~ "打开这个链接<br />您将会得到更多关于如何通过所有设置项优化您的系统以运行 "
-#~ "DDNS 脚本的提示"
-
-#~ msgid "Forced IP Version don't matched"
-#~ msgstr "强制设定的 IP 版本不匹配"
-
-#~ msgid "Hints"
-#~ msgstr "提示"
-
-#~ msgid ""
-#~ "IPv6 is currently not (fully) supported by this system<br />Please follow "
-#~ "the instructions on OpenWrt's homepage to enable IPv6 support<br />or "
-#~ "update your system to the latest OpenWrt Release"
-#~ msgstr ""
-#~ "当前系统暂时不能（完整地）支持 IPv6<br />请查看 OpenWrt 首页的介绍以启用 "
-#~ "IPv6 支持<br />或者更新您的系统到最新 OpenWrt 版本"
-
-#~ msgid "If both cURL and GNU Wget are installed, Wget is used by default."
-#~ msgstr "如果 cURL 和 GNU Wget 同时被安装，那么 Wget 将会被优先使用。"
-
-#~ msgid ""
-#~ "If you want to send updates for IPv4 and IPv6 you need to define two "
-#~ "separate Configurations i.e. 'myddns_ipv4' and 'myddns_ipv6'"
-#~ msgstr ""
-#~ "如果您需要同时更新 IPv4 和 IPv6 地址，您需要单独添加两个配置项（例"
-#~ "如'myddns_ipv4'和'myddns_ipv6'）"
-
-#~ msgid ""
-#~ "Interval to check for changed IP<br />Values below 5 minutes == 300 "
-#~ "seconds are not supported"
-#~ msgstr "检查 IP 是否改变的时间隔<br />不支持小于 5 分钟（300 秒）的数值。"
-
-#~ msgid ""
-#~ "Interval to force updates send to DDNS Provider<br />Setting this "
-#~ "parameter to 0 will force the script to only run once<br />Values lower "
-#~ "'Check Interval' except '0' are not supported"
-#~ msgstr ""
-#~ "强制向提供商更新 DDNS 的时间周期<br />将这个参数设置为 0 则会让脚本仅执行"
-#~ "一次<br />不支持小于\"检查时间周期\"的数值（除了 0）。"
-
-#~ msgid "Loading"
-#~ msgstr "加载中"
-
-#~ msgid "NOT installed"
-#~ msgstr "未安装"
-
-#~ msgid "No data"
-#~ msgstr "无数据"
-
-#~ msgid "OpenWrt Wiki"
-#~ msgstr "OpenWrt Wiki"
-
-#~ msgid "Overview"
-#~ msgstr "概览"
-
-#~ msgid "PROXY-Server not supported"
-#~ msgstr "不支持代理服务器"
-
-#~ msgid "Please [Save & Apply] your changes first"
-#~ msgstr "请先保存并应用您的设置"
-
-#~ msgid "Please update to the current version!"
-#~ msgstr "请更新到最新版本!"
-
-#~ msgid "Process ID"
-#~ msgstr "进程 ID"
-
-#~ msgid "Really change DDNS provider?"
-#~ msgstr "确定更改 DDNS 提供商吗？"
-
-#~ msgid "Replaces [DOMAIN] in Update-URL"
-#~ msgstr "替换更新 URL 中的 [DOMAIN]"
-
-#~ msgid "Show more"
-#~ msgstr "查看更多"
-
-#~ msgid "Software update required"
-#~ msgstr "需要进行软件更新"
-
-#~ msgid "Specifying a DNS-Server is not supported"
-#~ msgstr "不支持指定 DNS 服务器"
-
-#~ msgid "Start"
-#~ msgstr "启动"
-
-#~ msgid "Start / Stop"
-#~ msgstr "启动 / 停止"
-
-#~ msgid ""
-#~ "The currently installed 'ddns-scripts' package did not support all "
-#~ "available settings."
-#~ msgstr "当前已安装的“ddns-scripts”软件包不支持所有可用设置项。"
-
-#~ msgid "To change global settings click here"
-#~ msgstr "点击这里更改全局设置"
-
-#~ msgid "To use cURL activate this option."
-#~ msgstr "选中此项以使用 cURL"
-
-#~ msgid "Unknown error"
-#~ msgstr "未知错误"
-
-#~ msgid "Version"
-#~ msgstr "版本"
-
-#~ msgid "Version Information"
-#~ msgstr "版本信息"
-
-#~ msgid "Waiting for changes to be applied..."
-#~ msgstr "正在应用更改…"
-
-#~ msgid ""
-#~ "can not detect local IP. Please select a different Source combination"
-#~ msgstr "无法确定本地 IP。请更换 IP 来源。"
-
-#~ msgid "can not resolve host:"
-#~ msgstr "无法解析主机："
-
-#~ msgid "config error"
-#~ msgstr "配置错误"
-
-#~ msgid "either url or script could be set"
-#~ msgstr "接受 URL 或者脚本"
-
-#~ msgid "enable here"
-#~ msgstr "在这里启用"
-
-#~ msgid "file or directory not found or not 'IGNORE'"
-#~ msgstr "文件或目录未找到或未\"被忽视\""
-
-#~ msgid "help"
-#~ msgstr "帮助"
-
-#~ msgid "installed"
-#~ msgstr "已安装"
-
-#~ msgid "invalid FQDN / required - Sample"
-#~ msgstr "FQDN 无效 / 必需 - 示例"
-
-#~ msgid "minimum value '0'"
-#~ msgstr "最小值 0"
-
-#~ msgid "minimum value '1'"
-#~ msgstr "最小值 1"
-
-#~ msgid "minimum value 5 minutes == 300 seconds"
-#~ msgstr "最小值为 5 分钟（300 秒）"
-
-#~ msgid "missing / required"
-#~ msgstr "必须填写"
-
-#~ msgid "must be greater or equal 'Check Interval'"
-#~ msgstr "必须大于或等于\"检查时间周期\""
-
-#~ msgid "must start with 'http://'"
-#~ msgstr "必须以'http://'开头"
-
-#~ msgid "nc (netcat) can not connect"
-#~ msgstr "nc（netcat）不可连接"
-
-#~ msgid "never"
-#~ msgstr "从不"
-
-#~ msgid "no data"
-#~ msgstr "无数据"
-
-#~ msgid "not found or not executable - Sample: '/path/to/script.sh'"
-#~ msgstr "未找到或者不可执行 - 示例：“/path/to/script.sh”"
-
-#~ msgid "nslookup can not resolve host"
-#~ msgstr "nslookup 不能解析主机"
-
-#~ msgid "or higher"
-#~ msgstr "或者更大"
-
-#~ msgid "please disable"
-#~ msgstr "请禁用"
-
-#~ msgid "please remove entry"
-#~ msgstr "请移除该字段"
-
-#~ msgid "please select 'IPv4' address version"
-#~ msgstr "请设定 IPv4 地址"
-
-#~ msgid "please select 'IPv4' address version in"
-#~ msgstr "请设定 IPv4 地址于"
-
-#~ msgid "please set to 'default'"
-#~ msgstr "请设置为\"默认\""
-
-#~ msgid "proxy port missing"
-#~ msgstr "代理端口未填"
-
-#~ msgid "required"
-#~ msgstr "必须填写"
-
-#~ msgid "unknown error"
-#~ msgstr "未知错误"
-
-#~ msgid "unspecific error"
-#~ msgstr "未指定的错误"
-
-#~ msgid "use hostname, FQDN, IPv4- or IPv6-Address"
-#~ msgstr "使用主机名或 IPv4/IPv6 地址"
-
-#~ msgid "Config error"
-#~ msgstr "配置错误"
-
-#~ msgid "Update error"
-#~ msgstr "更新错误"
-
-#~ msgid ""
-#~ "Neither GNU Wget with SSL nor cURL installed to support updates via HTTPS "
-#~ "protocol."
-#~ msgstr "包含SSL支持的GNU Wget或者cURL均未被安装.无法使用HTTPS更新DDNS"
-
-#~ msgid "You should install BIND host package for DNS requests."
-#~ msgstr "您需要安装BIND以请求DNS记录."
-
-#~ msgid "You should install GNU Wget with SSL (preferred) or cURL package."
-#~ msgstr "您需要安装包含SSL支持的GNU Wget(推荐)或是cURL软件包."
-
-#~ msgid "You should install GNU Wget with SSL or cURL package."
-#~ msgstr "您需要安装包含SSL支持的GNU Wget或是cURL软件包."
-
-#~ msgid "You should install GNU Wget with SSL or replace libcurl."
-#~ msgstr "您需要安装包含SSL支持的GNU Wget或替换libcurl."
